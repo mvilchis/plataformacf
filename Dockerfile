@@ -36,7 +36,7 @@ RUN sed -i 's/local   all             postgres                                pe
 # Apache
 # Listen port should be changed to forwarded port
 RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/sites-available/default
-RUN sed -i 's/\/var\/www/\/srv\/www\/ods\/public_html/' /etc/apache2/sites-available/default
+RUN sed -i 's/\/var\/www/\/srv\/www\/plataformacf\/public_html/' /etc/apache2/sites-available/default
 RUN echo "Listen 8080" >> /etc/apache2/ports.conf
 RUN sed -i 's/VirtualHost *:80/VirtualHost */' /etc/apache2/sites-available/default
 RUN a2enmod rewrite
@@ -57,11 +57,11 @@ RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/s
 RUN mkdir -p /srv/www
 RUN cd /srv/www && \
 	git clone https://github.com/EduardoClark/plataformacf.git
-RUN cp /srv/www/ods/public_html/sites/default/default.settings.php /srv/www/ods/public_html/sites/default/settings.php
-RUN chmod a+w /srv/www/ods/public_html/sites/default -R && \
-	chown -R www-data:www-data /srv/www/ods/public_html
+RUN cp /srv/www/plataformacf/public_html/sites/default/default.settings.php /srv/www/plataformacf/public_html/sites/default/settings.php
+RUN chmod a+w /srv/www/plataformacf/public_html/sites/default -R && \
+	chown -R www-data:www-data /srv/www/plataformacf/public_html
 RUN /etc/init.d/postgresql start && \
-	cd /srv/www/ods && \
+	cd /srv/www/plataformacf && \
 	createdb -U postgres -w pnud && \
 	psql -U postgres -w pnud < db/pnud.sql && \
 	psql -U postgres -w -c "alter user postgres with password 'postgres';"
