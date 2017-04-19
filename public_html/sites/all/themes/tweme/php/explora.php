@@ -101,7 +101,7 @@ foreach($metadata_grupos["results"] as $value) {
 			</div>
 		</div>
 	</section>
-
+	
 	<div id="map">
 		<div class="infobox" style="display: none;">
 			<div style="margin-bottom: 8px;" class="row">
