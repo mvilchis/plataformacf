@@ -1,4 +1,68 @@
 <?php
+
+include('h_objetivos.php');
+
+$o_id=pg_escape_string($_GET["o"]);
+$i_id=pg_escape_string($_GET["i"]);
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
+$result=curl_exec($ch);
+curl_close($ch);
+$metadata = json_decode($result, true);
+$indicadores_id = array();
+foreach($metadata["results"] as $value) {
+	if (array_key_exists($value["Nombre_del_objetivo"],$indicadores)) array_push($indicadores[$value["Nombre_del_objetivo"]],$value);
+	$indicadores_id[$value["Clave"]] = $value;
+}
+
+foreach($indicadores as $key => $obj) {
+	if (count($obj) < 1) unset($indicadores[$key]);
+}
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
+$result=curl_exec($ch);
+curl_close($ch);
+
+$metadata_desag = json_decode($result, true);
+$desagregacion = array();
+foreach($metadata_desag["results"] as $value) {
+	if (!array_key_exists($value["DesGeo"],$desagregacion)) $desagregacion[$value["DesGeo"]] = array();
+	array_push($desagregacion[$value["DesGeo"]],$value["id"]);
+}
+
+$desagregacion_by_obj = array();
+foreach($metadata["results"] as $value) {
+	if (!array_key_exists($value["Nombre_del_objetivo"],$desagregacion_by_obj)) $desagregacion_by_obj[$value["Nombre_del_objetivo"]] = array();
+	$des = array('N','E','M');
+	foreach ($des as $d) {
+		if (!array_key_exists($d,$desagregacion_by_obj[$value["Nombre_del_objetivo"]])) $desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d] = array();
+		if (in_array($value["Clave"],$desagregacion[$d])) array_push($desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d],$value["Clave"]);
+	}
+}
+
+$ch = curl_init();
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
+$result=curl_exec($ch);
+curl_close($ch);
+
+$metadata_grupos = json_decode($result, true);
+$grupos = array();
+foreach($metadata_grupos["results"] as $value) {
+	if (!array_key_exists($value["id"],$grupos)) $grupos[$value["id"]] = array();
+	array_push($grupos[$value["id"]],$value);
+}
+
+
+?>
+<?php
 	$page = "explora";
 	drupal_add_css('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css','external');
 	drupal_add_css(path_to_theme().'/js/leaflet-search.min.css');
@@ -37,7 +101,7 @@
 			</div>
 		</div>
 	</section>
-	
+
 	<div id="map">
 		<div class="infobox" style="display: none;">
 			<div style="margin-bottom: 8px;" class="row">

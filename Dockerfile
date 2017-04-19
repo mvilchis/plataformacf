@@ -55,8 +55,10 @@ RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/s
 
 # Drupal and PostgreSQL
 RUN mkdir -p /srv/www
-RUN cd /srv/www && \
-  git clone https://github.com/mvilchis/plataformacf.git
+RUN cd /srv/www
+#&& \ git clone https://github.com/mvilchis/plataformacf.git
+ADD . /srv/www/plataformacf/
+
 RUN cp /srv/www/plataformacf/public_html/sites/default/default.settings.php /srv/www/plataformacf/public_html/sites/default/settings.php
 RUN chmod a+w /srv/www/plataformacf/public_html/sites/default -R && \
 	chown -R www-data:www-data /srv/www/plataformacf/public_html
