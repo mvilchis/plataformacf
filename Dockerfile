@@ -21,6 +21,7 @@ RUN apt-get install -y \
 	postgresql-contrib \
 	openssh-server \
 	wget \
+  librsvg2-bin \
 	supervisor
 RUN apt-get clean
 

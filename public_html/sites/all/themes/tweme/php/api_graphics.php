@@ -75,6 +75,7 @@ foreach($metadata_grupos["results"] as $value) {
 	function exportToPDF(i) {
 		(function ($) {
 			if (i == "map") {
+				var svg = $("svg.leaflet-zoom-animated")[0];
 			}
 			else if (i == "line") {
 				(function ($) {
