@@ -1,0 +1,55 @@
+FROM debian:wheezy
+ENV DEBIAN_FRONTEND noninteractive
+RUN rm /bin/sh && ln -s /bin/bash /bin/sh
+
+# Get packages
+RUN apt-get update && apt-get install -y \
+    sudo \
+	vim \
+	git \
+	apache2 \
+	php-apc \
+	php5-fpm \
+	php5-cli \
+	php5-pgsql \
+	php5-gd \
+	php5-curl \
+	libapache2-mod-php5 \
+	curl \
+	openssh-server \
+	wget \
+  librsvg2-bin \
+	supervisor
+RUN apt-get clean
+
+# PHP
+RUN sed -i 's/display_errors = Off/display_errors = On/' /etc/php5/apache2/php.ini
+RUN sed -i 's/display_errors = Off/display_errors = On/' /etc/php5/cli/php.ini
+
+# Apache
+# Listen port should be changed to forwarded port
+RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/sites-available/default
+RUN sed -i 's/\/var\/www/\/srv\/www\/plataformacf/' /etc/apache2/sites-available/default
+RUN sed -i 's/DocumentRoot \/srv\/www\/plataformacf/DocumentRoot \/srv\/www\/plataformacf  \n DirectoryIndex index.php/' /etc/apache2/sites-available/default
+RUN echo "Listen 8080" >> /etc/apache2/ports.conf
+RUN sed -i 's/VirtualHost *:80/VirtualHost */' /etc/apache2/sites-available/default
+RUN a2enmod rewrite
+
+# SSH
+RUN echo 'root:root' | chpasswd
+RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
+RUN mkdir /var/run/sshd && chmod 0755 /var/run/sshd
+RUN mkdir -p /root/.ssh/ && touch /root/.ssh/authorized_keys
+RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
+
+# Supervisor
+RUN echo -e '[program:apache2]\ncommand=/bin/bash -c "source /etc/apache2/envvars && exec /usr/sbin/apache2 -DFOREGROUND"\nautorestart=true\n\n' >> /etc/supervisor/supervisord.conf
+RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/supervisord.conf
+
+# Plataforma
+RUN mkdir -p /srv/www
+ADD . /srv/www/plataformacf/
+
+
+EXPOSE 80 3306 22
+CMD exec supervisord -n
