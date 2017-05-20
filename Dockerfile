@@ -22,19 +22,6 @@ RUN apt-get update && apt-get install -y \
 	supervisor
 RUN apt-get clean
 
-# PHP
-RUN sed -i 's/display_errors = Off/display_errors = On/' /etc/php5/apache2/php.ini
-RUN sed -i 's/display_errors = Off/display_errors = On/' /etc/php5/cli/php.ini
-
-# Apache
-# Listen port should be changed to forwarded port
-RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/sites-available/default
-RUN sed -i 's/\/var\/www/\/srv\/www\/plataformacf/' /etc/apache2/sites-available/default
-RUN sed -i 's/DocumentRoot \/srv\/www\/plataformacf/DocumentRoot \/srv\/www\/plataformacf  \n DirectoryIndex index.php/' /etc/apache2/sites-available/default
-RUN echo "Listen 8080" >> /etc/apache2/ports.conf
-RUN sed -i 's/VirtualHost *:80/VirtualHost */' /etc/apache2/sites-available/default
-RUN a2enmod rewrite
-
 # SSH
 RUN echo 'root:root' | chpasswd
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
@@ -47,9 +34,13 @@ RUN echo -e '[program:apache2]\ncommand=/bin/bash -c "source /etc/apache2/envvar
 RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/supervisord.conf
 
 # Plataforma
-RUN mkdir -p /srv/www
-ADD . /srv/www/plataformacf/
 
+ADD . /var/www/
+
+RUN rm /var/www/index.html
+
+RUN chown -R $USER:$USER /var/www/
+RUN chmod -R 755 /var/www
 
 EXPOSE 80 3306 22
 CMD exec supervisord -n
