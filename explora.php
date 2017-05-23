@@ -48,12 +48,7 @@
       $o_id=pg_escape_string($_GET["o"]);
       $i_id=pg_escape_string($_GET["i"]);
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
-      $result=curl_exec($ch);
-      curl_close($ch);
+      $result = file_get_contents("json/cf_metadata.json");
       $metadata = json_decode($result, true);
       $indicadores_id = array();
       foreach ($metadata["results"] as $value) {
@@ -69,12 +64,8 @@
           }
       }
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
-      $result=curl_exec($ch);
-      curl_close($ch);
+      $result = file_get_contents("json/cf_geo.json");
+
 
       $metadata_desag = json_decode($result, true);
       $desagregacion = array();
@@ -101,13 +92,7 @@
           }
       }
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
-      $result=curl_exec($ch);
-      curl_close($ch);
-
+      $result = file_get_contents("json/cf_grupos.json");
       $metadata_grupos = json_decode($result, true);
       $grupos = array();
       foreach ($metadata_grupos["results"] as $value) {

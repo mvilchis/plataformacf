@@ -4,13 +4,7 @@ include('h_objetivos.php');
 
 $o_id=pg_escape_string($_GET["o"]);
 $i_id=pg_escape_string($_GET["i"]);
-
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
-$result=curl_exec($ch);
-curl_close($ch);
+$result = file_get_contents("json/cf_metadata.json");
 $metadata = json_decode($result, true);
 $indicadores_id = array();
 foreach($metadata["results"] as $value) {
@@ -21,14 +15,7 @@ foreach($metadata["results"] as $value) {
 foreach($indicadores as $key => $obj) {
 	if (count($obj) < 1) unset($indicadores[$key]);
 }
-
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
-$result=curl_exec($ch);
-curl_close($ch);
-
+$result = file_get_contents("json/cf_geo.json");
 $metadata_desag = json_decode($result, true);
 $desagregacion = array();
 foreach($metadata_desag["results"] as $value) {
@@ -46,12 +33,7 @@ foreach($metadata["results"] as $value) {
 	}
 }
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
-$result=curl_exec($ch);
-curl_close($ch);
+$result = file_get_contents("json/cf_grupos.json");
 
 $metadata_grupos = json_decode($result, true);
 $grupos = array();
@@ -103,9 +85,10 @@ foreach($metadata_grupos["results"] as $value) {
 				}(jQuery));
 				var svg = $("#gm-chart svg")[0];
 			}
-			// var svg = document.getElementsByTagName("svg")[1];
+			//var svg = document.getElementsByTagName("svg")[1];
 			var serializer = new XMLSerializer();
 			var str = serializer.serializeToString(svg);
+
 			$.post("svg2pdf/svg2pdf.php", str)
 				.done(function(data) {
 					window.open(data);
@@ -927,7 +910,8 @@ foreach($metadata_grupos["results"] as $value) {
 
 		(function ($) {
 			params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 <?php if ($page == "compara"): ?>, id2: 'a' <?php endif; ?>  };
-			$.getJSON("https://api.datos.gob.mx/v1/cf.datos", params, function (data) {
+
+			$.getJSON( 'json/cf.datos', {},function (data) {
 				<?php if ($page == "compara"): ?>
 				$.getJSON("https://api.datos.gob.mx/v1/cf.datos", { id: $("select#select-indicador-b option:selected").val(), pageSize: 999999, id2: 'a'}, function (data_b) {
 				<?php endif; ?>
@@ -951,7 +935,7 @@ foreach($metadata_grupos["results"] as $value) {
 						if (typeof data_grouped[time_val][valor["DesGeo"]][valor["id2"]] === 'undefined') data_grouped[time_val][valor["DesGeo"]][valor["id2"]] = [];
 						data_grouped[time_val][valor["DesGeo"]][valor["id2"]][String(parseInt(valor["cve"]))] = valor;
 					}
-				});
+    });
 
 				<?php if ($page == "compara"): ?>
 					$.each(data_b.results, function(key, valor) {

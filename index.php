@@ -37,12 +37,9 @@
    <?php
       include('h_objetivos.php');
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=999999");
-      $result=curl_exec($ch);
-      curl_close($ch);
+      
+      $result = file_get_contents("json/cf_metadata.json");
+
       $metadata = json_decode($result, true);
       $indicadores_id = array();
       foreach($metadata["results"] as $value) {
@@ -58,7 +55,7 @@
 			<section id="block-block-1" class="block block-block clearfix">
 				<div class="block block-block clearfix inner">
 						<div>
-							<h2>Fonde colectio en datos</h2>
+							<h2>Fondeo colectivo en datos</h2>
 						</div>
 						<div>
 							<p>La Comisión Nacional Bancaria y de Valores y la Asociación de Plataformas de Fondeo Colectivo, para impulsar proyectos vía</p>

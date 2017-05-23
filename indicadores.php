@@ -51,12 +51,8 @@
                            <?php
                               include('h_objetivos.php');
 
-                              $ch = curl_init();
-                              curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-                              curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-                              curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
-                              $result=curl_exec($ch);
-                              curl_close($ch);
+
+                              $result = file_get_contents("json/cf_metadata.json");
                               $metadata = json_decode($result, true);
                               $indicadores_id = array();
                               foreach($metadata["results"] as $value) {

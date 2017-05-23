@@ -1,7 +1,8 @@
-<?php
 
+<?php
 $id = uniqid();
-file_put_contents("tmp/".$id.".svg", file_get_contents("php://input"));
+
+file_put_contents("tmp/".$id.".svg",file_get_contents("php://input"));
 
 exec("rsvg-convert -f pdf -o tmp/".$id.".pdf tmp/".$id.".svg");
 
