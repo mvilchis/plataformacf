@@ -6,58 +6,55 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="canonical" href="compara">
       <title>Compara | Objetivos de Desarrollo Sostenible</title>
-      <style>
-         @import url("sites/all/modules/system/system.base.css?nuxtcd");
-         @import url("sites/all/modules/field/theme/field.css?nuxtcd");
-         @import url("sites/all/modules/views/css/views.css?nuxtcd");
-         @import url("sites/all/modules/ctools/css/ctools.css?nuxtcd");
-         @import url("sites/all/modules/panels/css/panels.css?nuxtcd");
-         @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css');
-         @import url("sites/all/themes/tweme/js/leaflet-search.min.css?nuxtcd");
-         @import url("sites/all/themes/tweme/js/dragit.css?nuxtcd");
-         @import url("sites/all/themes/tweme/js/jquery.magnific-popup.css?nuxtcd");
-         @import url("sites/all/themes/bootstrap/css/overrides.css?nuxtcd");
-         @import url("sites/all/themes/tweme/common.css?nuxtcd");
-         @import url("sites/all/themes/tweme/style.css?nuxtcd");
-      </style>
+      <!--                          Style                                    -->
+      <link rel="stylesheet" type="text/css" href="css/system.base.css" />
+      <link rel="stylesheet" type="text/css" href="css/field.css" />
+      <link rel="stylesheet" type="text/css" href="css/views.css" />
+      <link rel="stylesheet" type="text/css" href="css/ctools.css" />
+      <link rel="stylesheet" type="text/css" href="css/panels.css" />
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css" />
+      <link rel="stylesheet" type="text/css" href="css/leaflet-search.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/dragit.css" />
+      <link rel="stylesheet" type="text/css" href="css/jquery.magnific-popup.css" />
+      <link rel="stylesheet" type="text/css" href="css/overrides.css" />
+      <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+
+      <!--                      script                                       -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
-      <link type="text/css" rel="stylesheet" href="sites/all/themes/bootstrap/css/bootstrap.min.css" media="all">
-      <link href="sites/all/css" rel="stylesheet" type="text/css">
-      <script src="sites/all/themes/tweme/js/jquery.min.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.once.js"></script>
-      <script src="sites/all/themes/tweme/js/drupal.js"></script>
-      <script src="sites/all/themes/bootstrap/js/bootstrap.min.js"></script>
-      <script src="sites/all/themes/tweme/js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.once.js"></script>
+      <script src="js/drupal.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.svg.min.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.svgdom.min.js"></script>
+      <script src="js/jquery.svg.min.js"></script>
+      <script src="js/jquery.svgdom.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
       <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
-      <script src="sites/all/themes/tweme/js/dragit.js"></script>
-      <script type="text/javascript" src="sites/all/themes/tweme/js/geom/nacion.json"></script>
-      <script type="text/javascript" src="sites/all/themes/tweme/js/geom/entidad.json"></script>
-      <script type="text/javascript" src="sites/all/themes/tweme/js/geom/municipio.json"></script>
-      <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
-      <script src="sites/all/themes/tweme/js/tweme.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>
+      <script src="js/dragit.js"></script>
+      <script type="text/javascript" src="json/nacion.json"></script>
+      <script type="text/javascript" src="json/entidad.json"></script>
+      <script type="text/javascript" src="json/municipio.json"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/tweme.js"></script>
+      <script src="js/jquery.matchHeight-min.js"></script>
    </head>
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-8 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
-      <?php include("header.php"); ?>
+    <?php include("header.php"); ?>
       <header class="header">
-         <div class="jumbotron">
-            <div class="container">
-               <div class="col-xs-12 col-sm-6 page-caption">
-                  Esta sección permite llevar a cabo el cruce de dos indicadores seleccionados por el usuario, a fin de que pueda analizar de manera sencilla y visual la correlación existente entre dos variables. Igualmente se puede llevar a cabo un seguimiento del comportamiento de los dos indicadores seleccionados en el tiempo por medio de un gráfico y exportar la información, mapas y gráficos para su uso.
-               </div>
+        <div class="jumbotron">
+          <div class="container">
+            <div class="col-xs-12 col-sm-6 page-caption">
+              Esta sección permite llevar a cabo el cruce de dos indicadores seleccionados por el usuario, a fin de que pueda analizar de manera sencilla y visual la correlación existente entre dos variables. Igualmente se puede llevar a cabo un seguimiento del comportamiento de los dos indicadores seleccionados en el tiempo por medio de un gráfico y exportar la información, mapas y gráficos para su uso.
             </div>
-         </div>
+          </div>
+        </div>
       </header>
       <div class="region region-content-noncontainer">
-         <section id="block-block-6" class="block block-block clearfix">
-            <style>
-               @import url('https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css');
-            </style>
-            <script type="text/javascript" src="sites/all/themes/tweme/js/leaflet-search.min.js"></script>
+        <section id="block-block-6" class="block block-block clearfix">
+          <script type="text/javascript" src="js/leaflet-search.min.js"></script>
             <style>
                #gm-chart {
                padding: 30px;
@@ -98,23 +95,23 @@
                <div style="margin-right: 50px;">Cargando datos...</div>
             </div>
             <page class="explora">
-               <section class="objective-selector">
-                  <div class="container">
-                     <div class="row" style="margin-bottom: 10px;">
-                        <div class="col-xs-12 col-sm-2"><span class="circle-letter">A</span><span>Desagregación</span></div>
+              <section class="objective-selector">
+                <div class="container">
+                  <div class="row" style="margin-bottom: 10px;">
+                    <div class="col-xs-12 col-sm-2"><span class="circle-letter">A</span><span>Desagregación</span></div>
+                      <div class="col-xs-12 col-sm-4">
+                        <select id="filter-geo" class="filter-geo">
+                          <option value="N">Nacional</option>
+                          <option value="E" selected>Estatal</option>
+                          <option value="M">Municipal</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-bottom: 10px;">
+                      <div class="col-xs-12 col-sm-2"><span class="circle-letter">B</span><span>Tipo de plataforma</span></div>
                         <div class="col-xs-12 col-sm-4">
-                           <select id="filter-geo" class="filter-geo">
-                              <option value="N">Nacional</option>
-                              <option value="E" selected>Estatal</option>
-                              <option value="M">Municipal</option>
-                           </select>
-                        </div>
-                     </div>
-                     <div class="row" style="margin-bottom: 10px;">
-                        <div class="col-xs-12 col-sm-2"><span class="circle-letter">B</span><span>Tipo de plataforma</span></div>
-                        <div class="col-xs-12 col-sm-4">
-                           <select id="select-objetivo-a">
-                           </select>
+                          <select id="select-objetivo-a">
+                          </select>
                         </div>
                         <div class="col-xs-12 col-sm-1">Indicador</div>
                         <div class="col-xs-12 col-sm-5">
@@ -272,6 +269,6 @@
          </div>
       </section>
       <?php include("footer.php"); ?>
-      <script src="sites/all/themes/bootstrap/js/bootstrap.js"></script>
+      <script src="js/bootstrap.min.js"></script>
    </body>
 </html>

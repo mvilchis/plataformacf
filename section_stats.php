@@ -44,7 +44,7 @@
 		<div style="margin-top: 30px;" class="col-xs-12">
 			<div class="stat-column-header stat-column-header-chart">Indicador a nivel estatal</div>
 			<div id="chart"></div>
-			<div><img style="margin-left: 35px;" width=147 height=25 src='sites/all/themes/tweme/assets/promedio.png'/></div>
+			<div><img style="margin-left: 35px;" width=147 height=25 src='img/promedio.png'/></div>
 			<div onmousedown="exportToPDF('line');" class="btn btn-line-export btn-outline">Exportar gráfica</div>
 		</div>
 		<div style="margin-top: 40px;" id="stat-tables" class="col-xs-12 col-sm-8">
@@ -66,4 +66,3 @@
 		</div>
 	</div>
 </section>
-

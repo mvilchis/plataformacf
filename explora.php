@@ -1,109 +1,122 @@
 <!DOCTYPE html>
 <html lang="es" class="no-js js gr__104_196_231_10">
-   <head profile="http://www.w3.org/1999/xhtml/vocab">
+  <head profile="http://www.w3.org/1999/xhtml/vocab">
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="canonical" href="explora">
       <title>Explora | Objetivos de Desarrollo Sostenible</title>
-      <style>
-         @import url("sites/all/modules/system/system.base.css?nuxtcd");
-         @import url("sites/all/modules/field/theme/field.css?nuxtcd");
-         @import url("sites/all/modules/views/css/views.css?nuxtcd");
-         @import url("sites/all/modules/ctools/css/ctools.css?nuxtcd");
-         @import url("sites/all/modules/panels/css/panels.css?nuxtcd");
-         @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css');
-         @import url("sites/all/themes/tweme/js/leaflet-search.min.css?nuxtcd");
-         @import url('https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css');
-         @import url("sites/all/themes/tweme/js/jquery.magnific-popup.css?nuxtcd");
-         @import url("sites/all/themes/bootstrap/css/overrides.css?nuxtcd");
-         @import url("sites/all/themes/tweme/common.css?nuxtcd");
-         @import url("sites/all/themes/tweme/style.css?nuxtcd");
-      </style>
-      <link type="text/css" rel="stylesheet" href="sites/all/themes/bootstrap/css/bootstrap.min.css" media="all">
-      <link href="sites/all/css" rel="stylesheet" type="text/css">
-      <script src="sites/all/themes/tweme/js/jquery.min.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.once.js"></script>
-      <script src="sites/all/themes/tweme/js/drupal.js"></script>
-      <script src="sites/all/themes/bootstrap/js/bootstrap.min.js"></script>
-      <script src="sites/all/themes/tweme/js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
-      <script src="sites/all/themes/tweme/js/fuse.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.svg.min.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.svgdom.min.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.inline.min.js"></script>
-      <script src="sites/all/themes/tweme/js/leaflet-search.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+      <!--                          Style                                    -->
+      <link rel="stylesheet" type="text/css" href="css/system.base.css" />
+      <link rel="stylesheet" type="text/css" href="css/field.css" />
+      <link rel="stylesheet" type="text/css" href="css/views.css" />
+      <link rel="stylesheet" type="text/css" href="css/ctools.css" />
+      <link rel="stylesheet" type="text/css" href="css/panels.css" />
+      <link rel="stylesheet" type="text/css" href="css/leaflet-search.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/jquery.magnific-popup.css" />
+      <link rel="stylesheet" type="text/css" href="css/overrides.css" />
+      <link rel="stylesheet" type="text/css" href="css/common.css" />
+      <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
+      <link href="css/css" rel="stylesheet" type="text/css">
+      <!--                      script                                       -->
+
       <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
-      <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
-      <script src="sites/all/themes/tweme/js/geom/nacion.json"></script>
-      <script src="sites/all/themes/tweme/js/geom/entidad.json"></script>
-      <script src="sites/all/themes/tweme/js/geom/municipio.json"></script>
-      <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
-      <script src="sites/all/themes/tweme/js/tweme.js"></script>
-      <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>
+      <script src="js/jquery.min.js"></script>
+      <script src="js/jquery.once.js"></script>
+      <script src="js/drupal.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script src="js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
+      <script src="js/jquery.svg.min.js"></script>
+      <script src="js/jquery.svgdom.min.js"></script>
+      <script     src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+      <script     src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></    script>
+      <script src="js/dragit.js"></script>
+      <script type="text/javascript" src="json/nacion.json"></script>
+      <script type="text/javascript" src="json/entidad.json"></script>
+      <script type="text/javascript" src="json/municipio.json"></script>
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <script src="js/tweme.js"></script>
+      <script src="js/jquery.matchHeight-min.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+
    </head>
    <?php
       include('h_objetivos.php');
-      
+
       $o_id=pg_escape_string($_GET["o"]);
       $i_id=pg_escape_string($_GET["i"]);
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
+      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
       $result=curl_exec($ch);
       curl_close($ch);
       $metadata = json_decode($result, true);
       $indicadores_id = array();
-      foreach($metadata["results"] as $value) {
-      	if (array_key_exists($value["Nombre_del_objetivo"],$indicadores)) array_push($indicadores[$value["Nombre_del_objetivo"]],$value);
-      	$indicadores_id[$value["Clave"]] = $value;
+      foreach ($metadata["results"] as $value) {
+          if (array_key_exists($value["Nombre_del_objetivo"], $indicadores)) {
+              array_push($indicadores[$value["Nombre_del_objetivo"]], $value);
+          }
+          $indicadores_id[$value["Clave"]] = $value;
       }
-      
-      foreach($indicadores as $key => $obj) {
-      	if (count($obj) < 1) unset($indicadores[$key]);
+
+      foreach ($indicadores as $key => $obj) {
+          if (count($obj) < 1) {
+              unset($indicadores[$key]);
+          }
       }
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
+      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
       $result=curl_exec($ch);
       curl_close($ch);
-      
+
       $metadata_desag = json_decode($result, true);
       $desagregacion = array();
-      foreach($metadata_desag["results"] as $value) {
-      	if (!array_key_exists($value["DesGeo"],$desagregacion)) $desagregacion[$value["DesGeo"]] = array();
-      	array_push($desagregacion[$value["DesGeo"]],$value["id"]);
+      foreach ($metadata_desag["results"] as $value) {
+          if (!array_key_exists($value["DesGeo"], $desagregacion)) {
+              $desagregacion[$value["DesGeo"]] = array();
+          }
+          array_push($desagregacion[$value["DesGeo"]], $value["id"]);
       }
-      
+
       $desagregacion_by_obj = array();
-      foreach($metadata["results"] as $value) {
-      	if (!array_key_exists($value["Nombre_del_objetivo"],$desagregacion_by_obj)) $desagregacion_by_obj[$value["Nombre_del_objetivo"]] = array();
-      	$des = array('N','E','M');
-      	foreach ($des as $d) {
-      		if (!array_key_exists($d,$desagregacion_by_obj[$value["Nombre_del_objetivo"]])) $desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d] = array();
-      		if (in_array($value["Clave"],$desagregacion[$d])) array_push($desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d],$value["Clave"]);
-      	}
+      foreach ($metadata["results"] as $value) {
+          if (!array_key_exists($value["Nombre_del_objetivo"], $desagregacion_by_obj)) {
+              $desagregacion_by_obj[$value["Nombre_del_objetivo"]] = array();
+          }
+          $des = array('N','E','M');
+          foreach ($des as $d) {
+              if (!array_key_exists($d, $desagregacion_by_obj[$value["Nombre_del_objetivo"]])) {
+                  $desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d] = array();
+              }
+              if (in_array($value["Clave"], $desagregacion[$d])) {
+                  array_push($desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d], $value["Clave"]);
+              }
+          }
       }
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
+      curl_setopt($ch, CURLOPT_URL, "https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
       $result=curl_exec($ch);
       curl_close($ch);
-      
+
       $metadata_grupos = json_decode($result, true);
       $grupos = array();
-      foreach($metadata_grupos["results"] as $value) {
-      	if (!array_key_exists($value["id"],$grupos)) $grupos[$value["id"]] = array();
-      	array_push($grupos[$value["id"]],$value);
+      foreach ($metadata_grupos["results"] as $value) {
+          if (!array_key_exists($value["id"], $grupos)) {
+              $grupos[$value["id"]] = array();
+          }
+          array_push($grupos[$value["id"]], $value);
       }
-      
+
       ?>
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
       <script type="text/javascript"></script>
@@ -231,6 +244,6 @@
          </div>
       </section>
       <?php include("footer.php"); ?>
-      <script src="sites/all/themes/bootstrap/js/bootstrap.js"></script>
+      <script src="js/bootstrap.min.js"></script>
    </body>
 </html>

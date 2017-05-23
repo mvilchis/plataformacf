@@ -4,7 +4,7 @@ include('h_objetivos.php');
 
 $o_id=pg_escape_string($_GET["o"]);
 $i_id=pg_escape_string($_GET["i"]);
-	
+
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -64,7 +64,7 @@ foreach($metadata_grupos["results"] as $value) {
 ?>
 
 <script type="text/javascript">
-	
+
 	function commaSeparateNumber(x){var parts=x.toString().split(".");parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");return parts.join(".");}
 	var metadata_grouped = <?php echo json_encode($indicadores); ?>;
 	var metadata_groupedbyid = <?php echo json_encode($indicadores_id); ?>;
@@ -116,10 +116,10 @@ foreach($metadata_grupos["results"] as $value) {
 						gm();
 					}
 				});
-			
+
 		}(jQuery));
 	}
-	
+
 	function closest (num, arr) {
         var curr = arr[0];
         var diff = Math.abs (num - curr);
@@ -144,7 +144,7 @@ foreach($metadata_grupos["results"] as $value) {
 	var years_b = null;
 	var choro_layer = null;
 	var map_locked = false;
-	
+
 	var geom_grouped = {
 		"N": nacion,
 		"E": entidad,
@@ -166,14 +166,14 @@ foreach($metadata_grupos["results"] as $value) {
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		map.dragging.disable();
 	}
-	
+
 	// BEGIN API FUNCTIONS
-		
+
 	function gm() {
-		
+
 		var min_year = Math.min.apply(Math, [ Math.min.apply(Math, years), Math.min.apply(Math, years_b) ]);
 		var max_year = Math.max.apply(Math, [ Math.max.apply(Math, years), Math.max.apply(Math, years_b) ]);
-		
+
 		var v1_name = null, v2_name = null;
 		var v1_domain = null;
 		var v2_domain = null;
@@ -218,13 +218,13 @@ foreach($metadata_grupos["results"] as $value) {
 			v1_domain = [ Math.min.apply(Math, v1_values), Math.max.apply(Math, v1_values) ];
 			v2_domain = [ Math.min.apply(Math, v2_values), Math.max.apply(Math, v2_values) ];
 		}(jQuery));
-		
+
 		gmw = null;
 		(function ($) {
 			$("#gm-chart").empty();
 			gmw = $("#gm-chart").width();
 		}(jQuery));
-		
+
 		// Various accessors that specify the four dimensions of data to visualize.
 		function x(d) { return d.v2; }
 		function y(d) { return d.v1; }
@@ -353,7 +353,7 @@ foreach($metadata_grupos["results"] as $value) {
 		      };
 		    });
 		  }
-		  
+
 		  function returnValues(values,year,v) {
 			  vi = values.slice();
 			  vi.sort(function(a,b) {
@@ -370,9 +370,9 @@ foreach($metadata_grupos["results"] as $value) {
 			  }
 			  return null;
 		  }
-		  
+
 		  init();
-		 
+
 		  function update(v, duration) {
 		    dragit.time.current = v || dragit.time.current;
 		    displayYear(dragit.time.current)
@@ -383,14 +383,14 @@ foreach($metadata_grupos["results"] as $value) {
 		    dragit.time = {min:min_year, max:max_year, step:1, current:min_year}
 		    dragit.data = d3.range(scatter_data.length).map(function() { return Array(); })
 		    for(var yy = min_year; yy<=max_year; yy++) {
-		      interpolateData(yy).filter(function(d, i) { 
+		      interpolateData(yy).filter(function(d, i) {
 		        dragit.data[i][yy-dragit.time.min] = [xScale(x(d)), yScale(y(d))];
 		      })
 		    }
 		    dragit.evt.register("update", update);
 		    //d3.select("#slider-time").property("value", dragit.time.current);
 		    d3.select("#slider-time")
-		      .on("mousemove", function() { 
+		      .on("mousemove", function() {
 		        update(parseInt(this.value), 500);
 		      })
 		    var end_effect = function() {
@@ -402,7 +402,7 @@ foreach($metadata_grupos["results"] as $value) {
 		  }
 	}
 
-	
+
 	function render_line() {
 		var line_columns = [];
 		line_columns_years = ["x"];
@@ -450,7 +450,7 @@ foreach($metadata_grupos["results"] as $value) {
 			line_columns.push(prom_row);
 			line_colors.push('#f00');
 		}(jQuery));
-		
+
 		if (years[0].indexOf("-") != -1) date_format = '%Y-%m';
 		else date_format = '%Y';
 		var chart = c3.generate({
@@ -524,19 +524,19 @@ foreach($metadata_grupos["results"] as $value) {
 		    }
 		});
 	}
-	
+
 	function highlightFromLegend(i) {
 		(function ($) {
 			$("svg path.class-"+i).addClass("highlighted");
 		}(jQuery));
 	}
-	
+
 	function clearHighlight() {
 		(function ($) {
 			$("path").removeClass("highlighted");
 		}(jQuery));
 	}
-	
+
 	function render_map() {
 		(function ($) { $(".infobox").hide(); }(jQuery));
 		<?php if ($page == "compara"): ?>
@@ -556,7 +556,7 @@ foreach($metadata_grupos["results"] as $value) {
 						$(".legend-color-"+i+j).attr('title',(nb_breaks[i] + " - " + nb_breaks[i + 1] + " / " + nb_breaks_b[j] + " - " + nb_breaks_b[j + 1]));
 					}
 				}
-				$('[data-toggle="tooltip"]').tooltip(); 
+				$('[data-toggle="tooltip"]').tooltip();
 			}(jQuery));
 		}
 		function fill_color(a,b) {
@@ -606,7 +606,7 @@ foreach($metadata_grupos["results"] as $value) {
 				$("td.legend-breaks-1").html(commaSeparateNumber(Math.round(nb_breaks[1]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[2]*10)/10));
 				$("td.legend-breaks-2").html(commaSeparateNumber(Math.round(nb_breaks[2]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[3]*10)/10));
 				$("td.legend-breaks-3").html(commaSeparateNumber(Math.round(nb_breaks[3]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[4]*10)/10));
-			
+
 			}(jQuery));
 		}
 		function fill_color(v) {
@@ -626,7 +626,7 @@ foreach($metadata_grupos["results"] as $value) {
 			else if (v >= nb_breaks[0]) return "0";
 		}
 		<?php endif; ?>
-		
+
 		function on_mouseover(e,feature) {
 			var layer = e.target;
 			layer.setStyle({
@@ -659,14 +659,14 @@ foreach($metadata_grupos["results"] as $value) {
 					$(".indicador-valor").html(commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10));
 				else
 					$(".indicador-valor").html("N/A");
-				$(".indicador-nombre").html($("select#select-indicador-a option:selected").text() + " ("+active_year+")"); 
+				$(".indicador-nombre").html($("select#select-indicador-a option:selected").text() + " ("+active_year+")");
 				<?php if ($page == "compara"): ?>
 					closest_year = closest(active_year,years_b);
 					if (typeof feature.properties[closest_year+"_b"] != null)
 						$(".indicador-valor-b").html(commaSeparateNumber(Math.round(feature.properties[closest_year+"_b"]*10)/10));
 					else
 						$(".indicador-valor-b").html("N/A");
-					$(".indicador-nombre-b").html($("select#select-indicador-b option:selected").text() + " ("+closest_year+")"); 
+					$(".indicador-nombre-b").html($("select#select-indicador-b option:selected").text() + " ("+closest_year+")");
 				<?php endif; ?>
 			}(jQuery));
 			// Render individual line chart
@@ -699,7 +699,7 @@ foreach($metadata_grupos["results"] as $value) {
 			        x: 'x',
 			        xFormat: date_format,
 			        columns: line_columns,
-			        
+
 			    },
 			    axis: {
 			        x: {
@@ -735,7 +735,7 @@ foreach($metadata_grupos["results"] as $value) {
 			});
 			<?php endif; ?>
 		}
-		
+
 		if (choro_layer != null) map.removeLayer(choro_layer);
 		choro_layer = L.geoJson(active_geom, {
 			style: function(feature) {
@@ -788,23 +788,23 @@ foreach($metadata_grupos["results"] as $value) {
 			}
 		});
 		map.addLayer(choro_layer);
-		
-		if (searchControl != null) map.removeControl(searchControl);
-		searchControl = new L.Control.Search({layer: choro_layer, propertyName: 'name', circleLocation:false});
-		searchControl.on('search_locationfound', function(e) {
-			map.fitBounds(e.layer.getBounds());
-			choro_layer.eachLayer(function(layer) {	//restore feature color
-				choro_layer.resetStyle(layer);
-				e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
-			});
-		}).on('search_collapsed', function(e) {
-			choro_layer.eachLayer(function(layer) {	//restore feature color
-				choro_layer.resetStyle(layer);
-			});	
-		});
-		
-		map.addControl( searchControl );  //inizialize search control
-		
+
+		//if (searchControl != null) map.removeControl(searchControl);
+		//searchControl = new L.Control.Search({layer: choro_layer, propertyName: 'name', circleLocation:false});
+		//searchControl.on('search_locationfound', function(e) {
+		//	map.fitBounds(e.layer.getBounds());
+		//	choro_layer.eachLayer(function(layer) {	//restore feature color
+		//		choro_layer.resetStyle(layer);
+		//		e.layer.setStyle({fillColor: '#3f0', color: '#0f0'});
+		//	});
+		//}).on('search_collapsed', function(e) {
+		//	choro_layer.eachLayer(function(layer) {	//restore feature color
+		//		choro_layer.resetStyle(layer);
+		//	});	
+		//});
+		//
+		//map.addControl( searchControl );  //inizialize search control
+
 		<?php if ($page != "compara"): ?>
 			render_line();
 		<?php endif; ?>
@@ -813,7 +813,7 @@ foreach($metadata_grupos["results"] as $value) {
 		<?php endif; ?>
 		(function ($) { $("#loading_wrap").fadeOut(); }(jQuery));
 	}
-	
+
 	function change_active_year(y) {
 		active_year = y;
 		(function ($) {
@@ -835,12 +835,12 @@ foreach($metadata_grupos["results"] as $value) {
 		}
 		render_map();
 	}
-	
+
 	function change_active_group(g) {
 		active_group = g;
 		change_active_unit(active_unit);
 	}
-	
+
 	function change_active_unit(u) {
 		active_unit = u;
 		active_geom = geom_grouped[active_unit];
@@ -905,10 +905,10 @@ foreach($metadata_grupos["results"] as $value) {
 				});
 			<?php endif; ?>
 		}(jQuery));
-		
+
 		change_active_year(active_year);
 	}
-	
+
 	function change_variable() {
 		cont = true;
 		(function ($) {
@@ -924,14 +924,14 @@ foreach($metadata_grupos["results"] as $value) {
 		years_b = [];
 		units = [];
 		units_b = [];
-		
+
 		(function ($) {
 			params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 <?php if ($page == "compara"): ?>, id2: 'a' <?php endif; ?>  };
-			$.getJSON("https://api.datos.gob.mx/v1/cf.datos", params, function (data) {		
+			$.getJSON("https://api.datos.gob.mx/v1/cf.datos", params, function (data) {
 				<?php if ($page == "compara"): ?>
 				$.getJSON("https://api.datos.gob.mx/v1/cf.datos", { id: $("select#select-indicador-b option:selected").val(), pageSize: 999999, id2: 'a'}, function (data_b) {
 				<?php endif; ?>
-				
+
 				$.each(data.results, function(key, valor) {
 					if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
 						// Month present
@@ -952,7 +952,7 @@ foreach($metadata_grupos["results"] as $value) {
 						data_grouped[time_val][valor["DesGeo"]][valor["id2"]][String(parseInt(valor["cve"]))] = valor;
 					}
 				});
-				
+
 				<?php if ($page == "compara"): ?>
 					$.each(data_b.results, function(key, valor) {
 						if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
@@ -1022,7 +1022,7 @@ foreach($metadata_grupos["results"] as $value) {
 						$('select#filter-grupo option[value="'+ active_group +'"]').attr('selected', 'selected');
 				<?php endif; ?>
 				// Add to Datos table
-				
+
 				$("table#datos tbody tr").remove();
 				metadatos_a = metadata_groupedbyid[$("select#select-indicador-a option:selected").val()];
 				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a href='"+metadatos_a["URL_indicador"]+"'><img width=35 height=36 src=sites/all/themes/tweme/assets/icon-circle-arrow-right-gray.png /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion_del_indicador"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div><a class='masinf' href='"+metadatos_a["URL_metadatos"]+"'>MÁS INFORMACIÓN</a></td><td></td></tr>");
@@ -1037,7 +1037,7 @@ foreach($metadata_grupos["results"] as $value) {
 			});
 		}(jQuery));
 	}
-	
+
 	function populate_indicador_a() {
 		(function ($) {
 			$("select#select-indicador-a").empty();
@@ -1052,7 +1052,7 @@ foreach($metadata_grupos["results"] as $value) {
 			}
 			$.each(metadata_grouped[$("select#select-objetivo-a option:selected").val()], function(key, indicador) {
 				<?php if ($page == "compara"): ?>
-				if (indicadores_by_desagregacion[active_unit].indexOf(indicador.Clave) != -1) 
+				if (indicadores_by_desagregacion[active_unit].indexOf(indicador.Clave) != -1)
 				<?php endif; ?>
 					$("select#select-indicador-a").append("<option value='"+indicador.Clave+"'>"+indicador.Nombre_del_indicador+"</option>");
 			});
@@ -1079,13 +1079,13 @@ foreach($metadata_grupos["results"] as $value) {
 			<?php endif; ?>
 		}(jQuery));
 	}
-	
+
 	function populate_indicador_b() {
 		(function ($) {
 			$("select#select-indicador-b").empty();
 			$.each(metadata_grouped[$("select#select-objetivo-b option:selected").val()], function(key, indicador) {
 				<?php if ($page == "compara"): ?>
-				if (indicadores_by_desagregacion[active_unit].indexOf(indicador.Clave) != -1) 
+				if (indicadores_by_desagregacion[active_unit].indexOf(indicador.Clave) != -1)
 				<?php endif; ?>
 					$("select#select-indicador-b").append("<option value='"+indicador.Clave+"'>"+indicador.Nombre_del_indicador+"</option>");
 			});
@@ -1096,7 +1096,7 @@ foreach($metadata_grupos["results"] as $value) {
 			change_variable();
 		}(jQuery));
 	}
-	
+
 	function pop_all() {
 		(function ($) {
 		$("select#select-objetivo-a").off();
@@ -1124,7 +1124,7 @@ foreach($metadata_grupos["results"] as $value) {
 			else {
 				if ($("select#select-objetivo-a option[value='"+current_obj_a+"']").length > 0)
 					$("select#select-objetivo-a option[value='"+current_obj_a+"']").attr('selected', 'selected');
-				else $("select#select-objetivo-a option:first").attr('selected','selected'); 
+				else $("select#select-objetivo-a option:first").attr('selected','selected');
 			}
 			populate_indicador_a();
 			<?php if ($page == "compara"): ?>
@@ -1143,23 +1143,23 @@ foreach($metadata_grupos["results"] as $value) {
 					populate_indicador_b();
 				});
 				if (firstrun == true) {
-					$("select#select-objetivo-b option:nth-child(2)").attr('selected','selected'); 
+					$("select#select-objetivo-b option:nth-child(2)").attr('selected','selected');
 				}
 				else {
 					if ($("select#select-objetivo-b option[value='"+current_obj_b+"']").length > 0)
 						$("select#select-objetivo-b option[value='"+current_obj_b+"']").attr('selected', 'selected');
-					else $("select#select-objetivo-b option:nth-child(2)").attr('selected','selected'); 
+					else $("select#select-objetivo-b option:nth-child(2)").attr('selected','selected');
 				}
 				populate_indicador_b();
 			<?php endif; ?>
 			change_variable();
 		}(jQuery));
 	}
-	
+
 	(function ($) {
-		
+
 		pop_all();
-		
+
 		$("select#select-indicador-a").change(function() {
 			(function ($) { $("#loading_wrap").fadeIn(); }(jQuery));
 			change_variable();
@@ -1202,8 +1202,8 @@ foreach($metadata_grupos["results"] as $value) {
 			});
 		<?php endif; ?>
 	}(jQuery));
-	
+
 
 	// END API FUNCTIONS
-	
+
 </script>
