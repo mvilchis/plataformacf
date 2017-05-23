@@ -648,12 +648,12 @@ foreach($metadata_grupos["results"] as $value) {
 				else if (active_unit == "E") {
 					$(".unit-name").html(feature.properties.nom_ent);
 					$(".edo-name").html("");
-					$(".edo-image").html("<img width=40 height=40 src=sites/all/themes/tweme/estados/';?>"+feature.properties.cve+".png'/>");
+					$(".edo-image").html("<img width=40 height=40 src=img/estados/';?>"+feature.properties.cve+".png'/>");
 				}
 				else if (active_unit == "M") {
 					$(".unit-name").html(feature.properties.nom_mun);
 					$(".edo-name").html(feature.properties.nom_ent);
-					$(".edo-image").html("<img width=40 height=40 src=sites/all/themes/tweme/assets/estados/';?>"+feature.properties.cve.substring(0, feature.properties.cve.length - 3)+".png'/>");
+					$(".edo-image").html("<img width=40 height=40 src=img/estados/';?>"+feature.properties.cve.substring(0, feature.properties.cve.length - 3)+".png'/>");
 				}
 				if (typeof feature.properties[active_year] != null)
 					$(".indicador-valor").html(commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10));
@@ -800,7 +800,7 @@ foreach($metadata_grupos["results"] as $value) {
 		//}).on('search_collapsed', function(e) {
 		//	choro_layer.eachLayer(function(layer) {	//restore feature color
 		//		choro_layer.resetStyle(layer);
-		//	});	
+		//	});
 		//});
 		//
 		//map.addControl( searchControl );  //inizialize search control
@@ -1025,11 +1025,11 @@ foreach($metadata_grupos["results"] as $value) {
 
 				$("table#datos tbody tr").remove();
 				metadatos_a = metadata_groupedbyid[$("select#select-indicador-a option:selected").val()];
-				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a href='"+metadatos_a["URL_indicador"]+"'><img width=35 height=36 src=sites/all/themes/tweme/assets/icon-circle-arrow-right-gray.png /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion_del_indicador"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div><a class='masinf' href='"+metadatos_a["URL_metadatos"]+"'>MÁS INFORMACIÓN</a></td><td></td></tr>");
+				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a href='"+metadatos_a["URL_indicador"]+"'><img width=35 height=36 src=img/icon-circle-arrow-right-gray.png /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion_del_indicador"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div><a class='masinf' href='"+metadatos_a["URL_metadatos"]+"'>MÁS INFORMACIÓN</a></td><td></td></tr>");
 				<?php if ($page == "compara"): ?>
 					$("table#datos-b tbody tr").remove();
 					metadatos_b = metadata_groupedbyid[$("select#select-indicador-b option:selected").val()];
-					$("table#datos-b tbody").append("<tr class='datos-indicador'><td class='nombre-ind'>"+metadatos_b["Nombre_del_indicador"]+"</td><td>"+metadatos_b["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a href='"+metadatos_b["URL_indicador"]+"'><img width=35 height=36 src=sites/all/themes/tweme/assets/icon-circle-arrow-right-gray.png /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_b["Descripcion_del_indicador"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_b["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_b["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_b["RangoTiempo"]+"</div><a class='masinf' href='"+metadatos_b["URL_metadatos"]+"'>MÁS INFORMACIÓN</a></td><td></td></tr>");
+					$("table#datos-b tbody").append("<tr class='datos-indicador'><td class='nombre-ind'>"+metadatos_b["Nombre_del_indicador"]+"</td><td>"+metadatos_b["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a href='"+metadatos_b["URL_indicador"]+"'><img width=35 height=36 src=img/icon-circle-arrow-right-gray.png /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_b["Descripcion_del_indicador"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_b["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_b["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_b["RangoTiempo"]+"</div><a class='masinf' href='"+metadatos_b["URL_metadatos"]+"'>MÁS INFORMACIÓN</a></td><td></td></tr>");
 				<?php endif; ?>
 			<?php if ($page == "compara"): ?>
 				});
