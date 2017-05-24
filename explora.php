@@ -29,8 +29,8 @@
       <script src="js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
       <script src="js/jquery.svg.min.js"></script>
       <script src="js/jquery.svgdom.min.js"></script>
-      <script     src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
-      <script     src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></    script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+      <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
       <script src="js/dragit.js"></script>
       <script type="text/javascript" src="json/nacion.json"></script>
       <script type="text/javascript" src="json/entidad.json"></script>
@@ -39,7 +39,8 @@
       <script src="js/tweme.js"></script>
       <script src="js/jquery.matchHeight-min.js"></script>
       <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" integrity="sha512-07I2e+7D8p6he1SIM+1twR5TIrhUQn9+I6yjqD53JQjFiMf8EtC93ty0/5vJTZGF8aAocvHYNEDJajGdNx1IsQ==" crossorigin=""/>
-    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+      <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js" integrity="sha512-A7vV8IFfih/D732iSSKi20u/ooOfj/AGehOKq0f4vLT1Zr2Y+RX7C+w8A1gaSasGtRUZpF/NZgzSAu4/Gc41Lg==" crossorigin=""></script>
+      <?=include_once('header.php');?>
 
    </head>
    <?php
@@ -105,13 +106,17 @@
       ?>
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
       <script type="text/javascript"></script>
-      <?php include("header.php"); ?>
       <header class="header">
          <div class="jumbotron">
+           <div class="region region-header text-black">
+
             <div class="container">
+              <section id="block-block-1" class="block block-block clearfix">
                <div class="col-xs-12 col-sm-6 page-caption">
                   Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario.
                </div>
+             </section>
+           </div>
             </div>
          </div>
       </header>

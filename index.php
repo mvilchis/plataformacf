@@ -7,13 +7,7 @@
       <meta name="Generator" content="Drupal 7 (http://drupal.org)">
       <title>Inicio | Objetivos de Desarrollo Sostenible</title>
       <!--                          Style                                    -->
-      <link rel="stylesheet" type="text/css" href="css/system.base.css" />
-      <link rel="stylesheet" type="text/css" href="css/field.css" />
-      <link rel="stylesheet" type="text/css" href="css/views.css" />
-      <link rel="stylesheet" type="text/css" href="css/ctools.css" />
-      <link rel="stylesheet" type="text/css" href="css/panels.css" />
-      <link rel="stylesheet" type="text/css" href="css/flexible.css" />
-      <link rel="stylesheet" type="text/css" href="css/64d7d0a3c55866afec0187d45d6e1cfe.css" />
+
       <link rel="stylesheet" type="text/css" href="css/jquery.magnific-popup.css" />
       <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
       <link rel="stylesheet" type="text/css" href="css/overrides.css" />
@@ -25,11 +19,8 @@
       <!--                      script                                       -->
       <script src="js/jquery.min.js"></script>
       <script src="js/jquery.once.js"></script>
-      <script src="js/drupal.js"></script>
       <script src="js/bootstrap.min.js"></script>
-      <script src="js/es_dNYhQGVAOhMJCAxlNL1aHF3vfJWSIvo1OthwwbycR8U.js"></script>
       <script src="js/jquery.magnific-popup.min.js"></script>
-      <script src="js/tweme.js"></script>
       <script src="js/jquery.matchHeight-min.js"></script>
       <?=include_once('header.php');?>
 
@@ -37,7 +28,7 @@
    <?php
       include('h_objetivos.php');
 
-      
+
       $result = file_get_contents("json/cf_metadata.json");
 
       $metadata = json_decode($result, true);
@@ -111,6 +102,7 @@
                         </div>
                         </div><div style="display: none;" class="row listed-indicadores"><div class="listed-indicadores-title">INDICADORES</div>');
                     foreach($objetivo as $indicador) {
+                      echo ('<script> console.log('.$indicador["Clave"].'+"."); </script>');
                       echo ( '<div onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" class="listed-indicador"><div class="col-xs-12">'.$indicador["Nombre_del_indicador"]."</div></div>" );
                     }
                     echo ('</div></div>');

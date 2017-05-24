@@ -772,9 +772,9 @@ foreach($metadata_grupos["results"] as $value) {
 		});
 		map.addLayer(choro_layer);
 
-		//if (searchControl != null) map.removeControl(searchControl);
-		//searchControl = new L.Control.Search({layer: choro_layer, propertyName: 'name', circleLocation:false});
-		//searchControl.on('search_locationfound', function(e) {
+		if (searchControl != null) map.removeControl(searchControl);
+		searchControl = new L.Control.Search({layer: choro_layer, propertyName: 'name', circleLocation:false});
+		searchControl.on('search_locationfound', function(e) {
 		//	map.fitBounds(e.layer.getBounds());
 		//	choro_layer.eachLayer(function(layer) {	//restore feature color
 		//		choro_layer.resetStyle(layer);
@@ -909,14 +909,16 @@ foreach($metadata_grupos["results"] as $value) {
 		units_b = [];
 
 		(function ($) {
-			params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 <?php if ($page == "compara"): ?>, id2: 'a' <?php endif; ?>  };
 
-			$.getJSON( 'json/cf.datos', {},function (data) {
+			params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 <?php if ($page == "compara"): ?>, id2: 'a' <?php endif; ?>  };
+			var select_Data = $("select#select-indicador-a option:selected").val();
+			console.log('json/partition/'+select_Data+".json");
+			$.getJSON( 'json/partition/'+select_Data+".json", {},function (data) {
 				<?php if ($page == "compara"): ?>
 				$.getJSON("https://api.datos.gob.mx/v1/cf.datos", { id: $("select#select-indicador-b option:selected").val(), pageSize: 999999, id2: 'a'}, function (data_b) {
 				<?php endif; ?>
-
-				$.each(data.results, function(key, valor) {
+				$.each(data, function(key, valor) {
+					if (valor["id"] === select_Data) {
 					if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
 						// Month present
 						if (parseInt(valor["m"]) != 0) {
@@ -935,6 +937,7 @@ foreach($metadata_grupos["results"] as $value) {
 						if (typeof data_grouped[time_val][valor["DesGeo"]][valor["id2"]] === 'undefined') data_grouped[time_val][valor["DesGeo"]][valor["id2"]] = [];
 						data_grouped[time_val][valor["DesGeo"]][valor["id2"]][String(parseInt(valor["cve"]))] = valor;
 					}
+				}
     });
 
 				<?php if ($page == "compara"): ?>
