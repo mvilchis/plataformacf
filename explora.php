@@ -43,6 +43,8 @@
       <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
       <script src="sites/all/themes/tweme/js/tweme.js"></script>
       <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>
+      <?=include_once('header.php');?>
+
    </head>
    <?php
       include('h_objetivos.php');
@@ -50,29 +52,19 @@
       $o_id=pg_escape_string($_GET["o"]);
       $i_id=pg_escape_string($_GET["i"]);
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
-      $result=curl_exec($ch);
-      curl_close($ch);
+
+      $result = file_get_contents("json/cf_metadata.json");
       $metadata = json_decode($result, true);
       $indicadores_id = array();
       foreach($metadata["results"] as $value) {
       	if (array_key_exists($value["Nombre_del_objetivo"],$indicadores)) array_push($indicadores[$value["Nombre_del_objetivo"]],$value);
       	$indicadores_id[$value["Clave"]] = $value;
       }
-
       foreach($indicadores as $key => $obj) {
       	if (count($obj) < 1) unset($indicadores[$key]);
       }
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
-      $result=curl_exec($ch);
-      curl_close($ch);
+      $result = file_get_contents("json/cf_geo.json");
 
       $metadata_desag = json_decode($result, true);
       $desagregacion = array();
@@ -80,7 +72,6 @@
       	if (!array_key_exists($value["DesGeo"],$desagregacion)) $desagregacion[$value["DesGeo"]] = array();
       	array_push($desagregacion[$value["DesGeo"]],$value["id"]);
       }
-
       $desagregacion_by_obj = array();
       foreach($metadata["results"] as $value) {
       	if (!array_key_exists($value["Nombre_del_objetivo"],$desagregacion_by_obj)) $desagregacion_by_obj[$value["Nombre_del_objetivo"]] = array();
@@ -91,13 +82,7 @@
       	}
       }
 
-      $ch = curl_init();
-      curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-      curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-      curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
-      $result=curl_exec($ch);
-      curl_close($ch);
-
+      $result = file_get_contents("json/cf_grupos.json");
       $metadata_grupos = json_decode($result, true);
       $grupos = array();
       foreach($metadata_grupos["results"] as $value) {
@@ -106,18 +91,42 @@
       }
 
       ?>
+    <style>
+    .fronta h2::after {
+        content: '';
+        width: 40px;
+        position: absolute;
+        bottom: -6px;
+        left: 10px;
+        border-bottom: solid 5px #0c9;
+    }
+
+    </style>
+
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
-      <script type="text/javascript"></script>
-      <?php include("header.php"); ?>
-      <header class="header">
-         <div class="jumbotron">
-            <div class="container">
-               <div class="col-xs-12 col-sm-6 page-caption">
-                  Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario.
-               </div>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+   </br>
+      <div class="region region-header" style="color:black;">
+      <div class="container" style="width:1550px">
+            <section id="block-block-3" class="block block-block clearfix">
+            <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+              <div class="fronta">
+              <h2>Explora</h2>
             </div>
-         </div>
-      </header>
+            </div>
+            <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+            </br>
+              <p style="color:black">Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
+            </div>
+            </section>
+            </div>
+            </div>
+
+
       <div class="region region-content-noncontainer">
          <section id="block-block-5" class="block block-block clearfix">
             <div id='loading_wrap' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;'>

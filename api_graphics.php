@@ -5,12 +5,7 @@ include('h_objetivos.php');
 $o_id=pg_escape_string($_GET["o"]);
 $i_id=pg_escape_string($_GET["i"]);
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.metadata?pageSize=99999");
-$result=curl_exec($ch);
-curl_close($ch);
+$result = file_get_contents("json/cf_metadata.json");
 $metadata = json_decode($result, true);
 $indicadores_id = array();
 foreach($metadata["results"] as $value) {
@@ -22,13 +17,7 @@ foreach($indicadores as $key => $obj) {
 	if (count($obj) < 1) unset($indicadores[$key]);
 }
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
-$result=curl_exec($ch);
-curl_close($ch);
-
+$result = file_get_contents("json/cf_geo.json");
 $metadata_desag = json_decode($result, true);
 $desagregacion = array();
 foreach($metadata_desag["results"] as $value) {
@@ -46,13 +35,7 @@ foreach($metadata["results"] as $value) {
 	}
 }
 
-$ch = curl_init();
-curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
-$result=curl_exec($ch);
-curl_close($ch);
-
+$result = file_get_contents("json/cf_grupos.json");
 $metadata_grupos = json_decode($result, true);
 $grupos = array();
 foreach($metadata_grupos["results"] as $value) {
@@ -148,7 +131,6 @@ foreach($metadata_grupos["results"] as $value) {
 	var geom_grouped = {
 		"N": nacion,
 		"E": entidad,
-		"M": municipio
 	};
 	var searchControl = null;
 	var map = new L.Map('map', {
@@ -847,16 +829,16 @@ foreach($metadata_grupos["results"] as $value) {
 		(function ($) {
 			if (active_unit == "N") {
 				$("#form-filter-entidad-mpal").hide();
-				$(".stat-column-header-chart").html("Indicador a nivel nacional");
+				$(".stat-column-header-chart").html("<h2>Indicador a nivel nacional</h2>");
 			}
 			if (active_unit == "E") {
 				$("#form-filter-entidad-mpal").hide();
-				$(".stat-column-header-chart").html("Indicador a nivel estatal");
+				$(".stat-column-header-chart").html("<h2>Indicador a nivel estatal</h2>");
 				$(".stat-column-header-top").html("Top 3 Estados");
 			}
 			if (active_unit == "M") {
 				$("#form-filter-entidad-mpal").show();
-				$(".stat-column-header-chart").html("Indicador a nivel municipal");
+				$(".stat-column-header-chart").html("<h2>Indicador a nivel municipal</h2>");
 				$(".stat-column-header-top").html("Top 3 Municipios");
 			}
 			if (active_unit == "N") $("#stat-tables").hide();
@@ -927,12 +909,13 @@ foreach($metadata_grupos["results"] as $value) {
 
 		(function ($) {
 			params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 <?php if ($page == "compara"): ?>, id2: 'a' <?php endif; ?>  };
-			$.getJSON("https://api.datos.gob.mx/v1/cf.datos", params, function (data) {
+			var select_Data = $("select#select-indicador-a option:selected").val();
+			$.getJSON('json/partition/'+select_Data+'.json', {}, function (data) {
 				<?php if ($page == "compara"): ?>
 				$.getJSON("https://api.datos.gob.mx/v1/cf.datos", { id: $("select#select-indicador-b option:selected").val(), pageSize: 999999, id2: 'a'}, function (data_b) {
 				<?php endif; ?>
 
-				$.each(data.results, function(key, valor) {
+				$.each(data, function(key, valor) {
 					if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
 						// Month present
 						if (parseInt(valor["m"]) != 0) {

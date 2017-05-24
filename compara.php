@@ -37,7 +37,6 @@
       <script src="sites/all/themes/tweme/js/dragit.js"></script>
       <script type="text/javascript" src="sites/all/themes/tweme/js/geom/nacion.json"></script>
       <script type="text/javascript" src="sites/all/themes/tweme/js/geom/entidad.json"></script>
-      <script type="text/javascript" src="sites/all/themes/tweme/js/geom/municipio.json"></script>
       <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
       <script src="sites/all/themes/tweme/js/tweme.js"></script>
       <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>

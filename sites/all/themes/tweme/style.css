@@ -65,11 +65,11 @@ body.page-node .header .jumbotron {
 	text-align: left;
 	font-size: 20px;
 	font-weight: 600;
-	
+
 }
 .header .jumbotron .page-caption {
 	text-align: left;
-	font-size: 16px;	
+	font-size: 16px;
 }
 body.front .header .jumbotron {
   padding: 2rem 0;
@@ -189,7 +189,7 @@ body.page-node-5 h4 {
   margin-top: 1.5rem;
 }
 /* PNUD customizations */
-video#bgvid { 
+video#bgvid {
     position: absolute;
     top: 60px;
     left: 50%;
@@ -200,7 +200,7 @@ video#bgvid {
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
     background: url('assets/mapa.jpg') no-repeat;
-    background-size: cover; 
+    background-size: cover;
 }
 body.front section#block-block-1 {
 	margin-top: 60px;
@@ -216,7 +216,7 @@ body.front .jumbotron {
 	.header .jumbotron ul.navbar-nav li a {
 		font-size: 11px;
 	}
-	
+
 }
 @media screen and (max-width: 800px) {
 	.ver-video {
@@ -409,7 +409,7 @@ body.front .jumbotron-block p {
 	display: table;
 	margin-top: 30px;
 	padding: 10px;
-	
+
 }
 .objetivo-grid-value {
 	display: table-cell;
@@ -523,7 +523,7 @@ page.explora section {
 }
 .stat-column-header {
 	font-size: 18px;
-	color: #00CC99;
+	color: #6C6C6C;
 	font-weight: 700;
 	margin-bottom: 20px;
 }
