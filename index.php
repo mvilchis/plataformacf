@@ -99,7 +99,7 @@
                     <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="http://datos.gob.mx/blog">Blog</a>
                   </li>
                   <li>
-                    <a aria-label="Conoce más sobre este sitio" title="Conoce más sobre este sitio" href="http://datos.gob.mx/acerca">Acerca</a>
+                    <a aria-label="Conoce más sobre este sitio" title="Conoce más sobre este sitio" href="/acerca">Acerca</a>
                   </li>
                 </ul>
               </div>
@@ -114,7 +114,7 @@
                  <ul class="nav navbar-nav navbar-right " role="navigation">
                         <li>                             <a aria-label="Ir al catalogo de datos" title="Ir al catalogo de datos" href="/explora"  style="font-size:16px;">Explora</a>                         </li>
                         <li>                             <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="/"  style="font-size:16px;">Indicadores</a>                         </li>
-                        <li>                             <a aria-label="Conoce los Datos Abiertos más buscados" target="_self" title="Conoce los Datos Abiertos más buscados" href="/"  style="font-size:16px;">Acerca</a>                         </li>
+                        <li>                             <a aria-label="Conoce los Datos Abiertos más buscados" target="_self" title="Conoce los Datos Abiertos más buscados" href="/acerca"  style="font-size:16px;">Acerca</a>                         </li>
                      </ul>
                   </div>
                </div>

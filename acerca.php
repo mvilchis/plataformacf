@@ -27,17 +27,37 @@
       <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
       <script src="sites/all/themes/tweme/js/tweme.js"></script>
       <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>
+      <?=include_once('header.php');?>
+
    </head>
+       <style>
+       .fronta h2::after {
+           content: '';
+           width: 40px;
+           position: absolute;
+           bottom: -6px;
+           left: 10px;
+           border-bottom: solid 5px #0c9;
+       }
+
+       </style>
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-5 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
-      <?php include("header.php"); ?>
+</br>
+</br>
+</br>
       <section class="main">
-         <div class="container">
+         <div class="container"  style="width:1550px">
             <div class="row">
                <section class="main-col col-md-12">
                   <div class="region region-content">
                      <section id="block-system-main" class="block block-system clearfix">
                         <div id="node-5" class="node node-page clearfix" about="/acerca" typeof="foaf:Document">
-                           <span property="dc:title" content="Acerca" class="rdf-meta element-hidden"></span><span property="sioc:num_replies" content="0" datatype="xsd:integer" class="rdf-meta element-hidden"></span>
+                          <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+                            <div class="fronta">
+                              <h2>Acerca</h2>
+                            </div>
+                          </div>
+                        </div>
                            <div class="content">
                               <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                                  <div class="field-items">
