@@ -40,7 +40,7 @@ ADD . /var/www/
 RUN rm /var/www/index.html
 
 RUN chown -R $USER:$USER /var/www/
-RUN chmod -R 755 /var/www
+RUN chmod a+w /var/www -R
 
 EXPOSE 80 3306 22
 CMD exec supervisord -n
