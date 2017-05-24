@@ -39,7 +39,6 @@
       <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/turf/v2.0.0/turf.min.js"></script>
       <script src="sites/all/themes/tweme/js/geom/nacion.json"></script>
       <script src="sites/all/themes/tweme/js/geom/entidad.json"></script>
-      <script src="sites/all/themes/tweme/js/geom/municipio.json"></script>
       <script src="sites/all/themes/tweme/js/jquery.magnific-popup.min.js"></script>
       <script src="sites/all/themes/tweme/js/tweme.js"></script>
       <script src="sites/all/themes/tweme/js/jquery.matchHeight-min.js"></script>
