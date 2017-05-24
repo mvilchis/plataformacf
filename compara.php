@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="canonical" href="compara">
       <title>Compara | Objetivos de Desarrollo Sostenible</title>
-      <?php $page = "explora"; ?>
+      <?php $page = "compara"; ?>
       <style>
          @import url("sites/all/modules/system/system.base.css?nuxtcd");
          @import url("sites/all/modules/field/theme/field.css?nuxtcd");
