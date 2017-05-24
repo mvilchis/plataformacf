@@ -89,7 +89,7 @@ foreach($metadata_grupos["results"] as $value) {
 			// var svg = document.getElementsByTagName("svg")[1];
 			var serializer = new XMLSerializer();
 			var str = serializer.serializeToString(svg);
-			$.post("svg2pdf/svg2pdf.php", str)
+			$.post("svg2pdf/svg2pdf", str)
 				.done(function(data) {
 					window.open(data);
 					if (i == "line") {
