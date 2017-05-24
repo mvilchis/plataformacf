@@ -22,6 +22,10 @@ RUN apt-get update && apt-get install -y \
 	supervisor
 RUN apt-get clean
 
+# Apache
+ RUN sed -i 's/AllowOverride None/AllowOverride All/' /etc/apache2/sites-available/default
+ RUN a2enmod rewrite
+
 # SSH
 RUN echo 'root:root' | chpasswd
 RUN sed -i 's/PermitRootLogin without-password/PermitRootLogin yes/' /etc/ssh/sshd_config
