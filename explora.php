@@ -6,6 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="canonical" href="explora">
       <title>Explora | Objetivos de Desarrollo Sostenible</title>
+      <?php $page = "explora"; ?>
       <style>
          @import url("sites/all/modules/system/system.base.css?nuxtcd");
          @import url("sites/all/modules/field/theme/field.css?nuxtcd");
@@ -45,10 +46,10 @@
    </head>
    <?php
       include('h_objetivos.php');
-      
+
       $o_id=pg_escape_string($_GET["o"]);
       $i_id=pg_escape_string($_GET["i"]);
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -61,25 +62,25 @@
       	if (array_key_exists($value["Nombre_del_objetivo"],$indicadores)) array_push($indicadores[$value["Nombre_del_objetivo"]],$value);
       	$indicadores_id[$value["Clave"]] = $value;
       }
-      
+
       foreach($indicadores as $key => $obj) {
       	if (count($obj) < 1) unset($indicadores[$key]);
       }
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.geo?pageSize=999999");
       $result=curl_exec($ch);
       curl_close($ch);
-      
+
       $metadata_desag = json_decode($result, true);
       $desagregacion = array();
       foreach($metadata_desag["results"] as $value) {
       	if (!array_key_exists($value["DesGeo"],$desagregacion)) $desagregacion[$value["DesGeo"]] = array();
       	array_push($desagregacion[$value["DesGeo"]],$value["id"]);
       }
-      
+
       $desagregacion_by_obj = array();
       foreach($metadata["results"] as $value) {
       	if (!array_key_exists($value["Nombre_del_objetivo"],$desagregacion_by_obj)) $desagregacion_by_obj[$value["Nombre_del_objetivo"]] = array();
@@ -89,21 +90,21 @@
       		if (in_array($value["Clave"],$desagregacion[$d])) array_push($desagregacion_by_obj[$value["Nombre_del_objetivo"]][$d],$value["Clave"]);
       	}
       }
-      
+
       $ch = curl_init();
       curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
       curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
       curl_setopt($ch, CURLOPT_URL,"https://api.datos.gob.mx/v1/cf.grupos?pageSize=999999");
       $result=curl_exec($ch);
       curl_close($ch);
-      
+
       $metadata_grupos = json_decode($result, true);
       $grupos = array();
       foreach($metadata_grupos["results"] as $value) {
       	if (!array_key_exists($value["id"],$grupos)) $grupos[$value["id"]] = array();
       	array_push($grupos[$value["id"]],$value);
       }
-      
+
       ?>
    <body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-1 node-type-page navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
       <script type="text/javascript"></script>
