@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="canonical" href="explora">
-      <title>Explora | Objetivos de Desarrollo Sostenible</title>
+      <title>Explora | Sistema de monitoreo de fondeo colectivo en México</title>
       <?php $page = "explora"; ?>
       <style>
          @import url("sites/all/modules/system/system.base.css?nuxtcd");

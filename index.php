@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="Generator" content="Drupal 7 (http://drupal.org)">
-      <title>Inicio | Objetivos de Desarrollo Sostenible</title>
+      <title>Inicio | Sistema de monitoreo de fondeo colectivo en México</title>
       <style>
          @import url("sites/all/modules/system/system.base.css?nuxtcd");
       </style>
@@ -65,7 +65,17 @@
     bottom: -6px;
     left: 10px;
     border-bottom: solid 5px #0c9;
-}   </style>
+}
+.copy_right {
+    background: url("img/2b.jpg") repeat scroll 0 0 transparent;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    background-size: 100% ;
+    background-position: bottom;
+
+}
+
+</style>
           <nav class="navbar navbar-inverse navbar-fixed-top gob-mx-navbar" role="navigation" style="width: 100%; margin: 0; max-width: 100%;">
            <div class="container-fluid">
             <div class="navbar-header">
@@ -120,12 +130,12 @@
                </div>
             </nav>
         </header>
-      <header class="header"style="color:white;">
+      <header class="header" style="color:white;">
          <div style="background:white;">
           <!-- Banner -->
-      <div class="region region-header" style="background:#474747">
+      <div class="region region-header copy_right" >
 			<section id="block-block-1" class="block block-block clearfix">
-				<div class="block block-block clearfix inner">
+				<div class="block block-block clearfix inner ">
 						<div>
               </br>
               </br>
@@ -133,8 +143,8 @@
 							<h1 style="font-size: 45px;">Fondeo colectivo en datos</h1>
 						</div>
 						<div>
-							<p>La Comisión Nacional Bancaria y de Valores y la Asociación de Plataformas de Fondeo Colectivo, para impulsar proyectos vía</p>
-              <p> crowdfunding o de financiamiento/fondeo colectivo en México </p>
+							<p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b> </p>
+              <p> <b>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México <b</p>
               </br>
               </br>
               </br>

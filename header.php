@@ -47,7 +47,8 @@
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#00CC99;">
       <div class="container-fluid">
         <div class="navbar-header" style="padding-top: 15px;padding-bottom: 15px;">
-          <span style="font-size: 18px;font-weight: 700;color: white;"> Crowdfunding Mx </span>
+          <a href="/" style="font-size: 18px;font-weight: 700;color: white;"> Crowdfunding Mx</a>
+          
         </div>
         <div class="collapse navbar-collapse" id="navbarSecondCollapse">
            <ul class="nav navbar-nav navbar-right " role="navigation">
