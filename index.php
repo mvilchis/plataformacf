@@ -121,7 +121,7 @@
             </nav>
         </header>
       <header class="header"style="color:white;">
-         <div class="jumbotron" style="background:white;">
+         <div style="background:white;">
           <!-- Banner -->
       <div class="region region-header" style="background:#474747">
 			<section id="block-block-1" class="block block-block clearfix">
