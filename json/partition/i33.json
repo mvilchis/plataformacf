@@ -1,1 +1,3080 @@
-[{"t":2012,"m":6,"id":"i33","id2":"a","cve":0,"valor":198,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"a","cve":0,"valor":1062,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"a","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"a","cve":0,"valor":86,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"a","cve":0,"valor":1077,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"a","cve":0,"valor":3519,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"a","cve":0,"valor":1705,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"a","cve":0,"valor":1080,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"a","cve":0,"valor":478,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"a","cve":0,"valor":2430,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"a","cve":0,"valor":1013,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"a","cve":0,"valor":2556,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"a","cve":0,"valor":4314,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"a","cve":0,"valor":4417,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"a","cve":0,"valor":2753,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"a","cve":0,"valor":2383,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"a","cve":0,"valor":4103,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"a","cve":0,"valor":5881,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"a","cve":0,"valor":3356,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"a","cve":0,"valor":4293,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"a","cve":0,"valor":3352,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"a","cve":0,"valor":2887,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"a","cve":0,"valor":4496,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"a","cve":0,"valor":5715,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"a","cve":0,"valor":4572,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"a","cve":0,"valor":4572,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"a","cve":0,"valor":7259,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"a","cve":0,"valor":4222,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"a","cve":0,"valor":5557,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"a","cve":0,"valor":4514,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"a","cve":0,"valor":7168,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"a","cve":0,"valor":7548,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"a","cve":0,"valor":5642,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"a","cve":0,"valor":6262,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"a","cve":0,"valor":6070,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"a","cve":0,"valor":6957,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"a","cve":0,"valor":7470,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"a","cve":0,"valor":7968,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"a","cve":0,"valor":8547,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"a","cve":0,"valor":8349,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"a","cve":0,"valor":7313,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"a","cve":0,"valor":8247,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"a","cve":0,"valor":9163,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"a","cve":0,"valor":7566,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"a","cve":0,"valor":8970,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"a","cve":0,"valor":7672,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"a","cve":0,"valor":9123,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"a","cve":0,"valor":11251,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"a","cve":0,"valor":9934,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"a","cve":0,"valor":10061,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"a","cve":0,"valor":9809,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"a","cve":0,"valor":10502,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"a","cve":0,"valor":11970,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"a","cve":0,"valor":12759,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"a","cve":0,"valor":10202,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"a","cve":0,"valor":12953,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"a","cve":0,"valor":13599,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"a","cve":0,"valor":10842,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"a","cve":0,"valor":11856,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"a","cve":0,"valor":10292,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"a","cve":0,"valor":13525,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"a","cve":0,"valor":10934,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"a","cve":0,"valor":11329,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"a","cve":0,"valor":11116,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"b","cve":0,"valor":6096,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"b","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"b","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"b","cve":0,"valor":13492,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"b","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"b","cve":0,"valor":5497,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"b","cve":0,"valor":2890,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"b","cve":0,"valor":11231,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"b","cve":0,"valor":9802,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"b","cve":0,"valor":22205,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"b","cve":0,"valor":15442,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"b","cve":0,"valor":11564,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"b","cve":0,"valor":14300,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"b","cve":0,"valor":7504,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"b","cve":0,"valor":9767,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"b","cve":0,"valor":19716,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"b","cve":0,"valor":18313,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"b","cve":0,"valor":20416,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"b","cve":0,"valor":28566,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"b","cve":0,"valor":19029,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"b","cve":0,"valor":29572,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"b","cve":0,"valor":20374,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"b","cve":0,"valor":27580,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"b","cve":0,"valor":27207,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"b","cve":0,"valor":36469,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"b","cve":0,"valor":36840,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"b","cve":0,"valor":24252,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"b","cve":0,"valor":29152,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"b","cve":0,"valor":36735,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"b","cve":0,"valor":27488,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"b","cve":0,"valor":31475,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"b","cve":0,"valor":34263,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"b","cve":0,"valor":35253,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"b","cve":0,"valor":41476,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"b","cve":0,"valor":29298,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"b","cve":0,"valor":40582,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"b","cve":0,"valor":30565,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"b","cve":0,"valor":32105,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"b","cve":0,"valor":49091,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"b","cve":0,"valor":40180,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"b","cve":0,"valor":41956,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"b","cve":0,"valor":40222,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"b","cve":0,"valor":45944,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"b","cve":0,"valor":51554,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"b","cve":0,"valor":40139,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"b","cve":0,"valor":45988,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"b","cve":0,"valor":50411,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"b","cve":0,"valor":52006,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"b","cve":0,"valor":52903,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"b","cve":0,"valor":69032,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"b","cve":0,"valor":57446,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"b","cve":0,"valor":54668,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"b","cve":0,"valor":44278,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"c","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"c","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"c","cve":0,"valor":7104,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"c","cve":0,"valor":44233,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"c","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"c","cve":0,"valor":43004,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"c","cve":0,"valor":61962,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"c","cve":0,"valor":80707,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"c","cve":0,"valor":0,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"c","cve":0,"valor":137634,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"c","cve":0,"valor":83260,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"c","cve":0,"valor":126082,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"c","cve":0,"valor":107145,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"c","cve":0,"valor":87487,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"c","cve":0,"valor":61469,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"c","cve":0,"valor":99157,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"c","cve":0,"valor":135814,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"c","cve":0,"valor":145035,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"c","cve":0,"valor":208698,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"c","cve":0,"valor":55880,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"c","cve":0,"valor":129454,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"c","cve":0,"valor":185675,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"c","cve":0,"valor":185465,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"c","cve":0,"valor":126446,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"c","cve":0,"valor":173829,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"c","cve":0,"valor":225630,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"c","cve":0,"valor":242239,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"c","cve":0,"valor":170570,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"c","cve":0,"valor":128447,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"c","cve":0,"valor":176038,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"c","cve":0,"valor":188176,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"c","cve":0,"valor":202223,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"c","cve":0,"valor":196746,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"c","cve":0,"valor":265870,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"c","cve":0,"valor":237052,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"c","cve":0,"valor":208500,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"c","cve":0,"valor":273808,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"c","cve":0,"valor":286329,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"c","cve":0,"valor":251873,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"c","cve":0,"valor":311638,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"c","cve":0,"valor":274059,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"c","cve":0,"valor":259960,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"c","cve":0,"valor":350308,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"c","cve":0,"valor":374060,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"c","cve":0,"valor":356130,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"c","cve":0,"valor":320159,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"c","cve":0,"valor":283444,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"c","cve":0,"valor":374974,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"c","cve":0,"valor":403894,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"c","cve":0,"valor":437509,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"c","cve":0,"valor":442225,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"c","cve":0,"valor":427120,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"c","cve":0,"valor":439177,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"d","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"d","cve":0,"valor":351,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"d","cve":0,"valor":246,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"d","cve":0,"valor":1041,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"d","cve":0,"valor":704,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"d","cve":0,"valor":673,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"d","cve":0,"valor":2611,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"d","cve":0,"valor":2052,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"d","cve":0,"valor":1052,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"d","cve":0,"valor":2604,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"d","cve":0,"valor":2290,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"d","cve":0,"valor":2593,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"d","cve":0,"valor":1954,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"d","cve":0,"valor":3688,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"d","cve":0,"valor":3313,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"d","cve":0,"valor":3487,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"d","cve":0,"valor":3135,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"d","cve":0,"valor":1764,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"d","cve":0,"valor":3240,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"d","cve":0,"valor":4760,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"d","cve":0,"valor":3713,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"d","cve":0,"valor":4652,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"d","cve":0,"valor":5219,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"d","cve":0,"valor":4091,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"d","cve":0,"valor":5349,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"d","cve":0,"valor":4242,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"d","cve":0,"valor":6905,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"d","cve":0,"valor":5567,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"d","cve":0,"valor":8007,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"d","cve":0,"valor":3629,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"d","cve":0,"valor":5702,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"d","cve":0,"valor":6339,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"d","cve":0,"valor":7094,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"d","cve":0,"valor":7549,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"d","cve":0,"valor":7249,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"d","cve":0,"valor":7534,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"d","cve":0,"valor":6379,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"d","cve":0,"valor":8808,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"d","cve":0,"valor":6117,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"d","cve":0,"valor":7141,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"d","cve":0,"valor":9990,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"d","cve":0,"valor":8509,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"d","cve":0,"valor":9687,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"d","cve":0,"valor":8680,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"d","cve":0,"valor":9193,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"d","cve":0,"valor":10401,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"d","cve":0,"valor":9247,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"d","cve":0,"valor":8944,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"d","cve":0,"valor":11968,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"d","cve":0,"valor":11319,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"d","cve":0,"valor":10674,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"d","cve":0,"valor":10915,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"d","cve":0,"valor":10892,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"e","cve":0,"valor":495,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"e","cve":0,"valor":3741,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"e","cve":0,"valor":11082,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"e","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"e","cve":0,"valor":5674,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"e","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"e","cve":0,"valor":13535,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"e","cve":0,"valor":7392,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"e","cve":0,"valor":2113,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"e","cve":0,"valor":13369,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"e","cve":0,"valor":14824,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"e","cve":0,"valor":15323,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"e","cve":0,"valor":25370,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"e","cve":0,"valor":24424,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"e","cve":0,"valor":0,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"e","cve":0,"valor":13515,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"e","cve":0,"valor":20864,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"e","cve":0,"valor":22906,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"e","cve":0,"valor":7656,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"e","cve":0,"valor":18699,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"e","cve":0,"valor":11446,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"e","cve":0,"valor":16687,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"e","cve":0,"valor":24398,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"e","cve":0,"valor":13876,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"e","cve":0,"valor":16692,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"e","cve":0,"valor":27509,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"e","cve":0,"valor":18607,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"e","cve":0,"valor":18502,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"e","cve":0,"valor":30570,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"e","cve":0,"valor":27962,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"e","cve":0,"valor":20135,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"e","cve":0,"valor":25790,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"e","cve":0,"valor":33767,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"e","cve":0,"valor":27576,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"e","cve":0,"valor":36999,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"e","cve":0,"valor":39408,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"e","cve":0,"valor":30973,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"e","cve":0,"valor":37565,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"e","cve":0,"valor":43405,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"e","cve":0,"valor":42755,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"e","cve":0,"valor":36528,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"e","cve":0,"valor":39183,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"e","cve":0,"valor":35541,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"e","cve":0,"valor":28275,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"e","cve":0,"valor":34673,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"e","cve":0,"valor":43210,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"e","cve":0,"valor":47411,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"e","cve":0,"valor":45235,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"e","cve":0,"valor":47677,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"e","cve":0,"valor":52069,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"e","cve":0,"valor":41521,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"e","cve":0,"valor":45445,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"e","cve":0,"valor":36641,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"f","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"f","cve":0,"valor":3286,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"f","cve":0,"valor":82,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"f","cve":0,"valor":3419,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"f","cve":0,"valor":426,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"f","cve":0,"valor":1444,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"f","cve":0,"valor":2812,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"f","cve":0,"valor":3839,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"f","cve":0,"valor":3418,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"f","cve":0,"valor":2343,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"f","cve":0,"valor":3372,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"f","cve":0,"valor":4871,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"f","cve":0,"valor":4497,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"f","cve":0,"valor":3087,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"f","cve":0,"valor":6669,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"f","cve":0,"valor":7477,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"f","cve":0,"valor":1955,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"f","cve":0,"valor":5293,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"f","cve":0,"valor":6876,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"f","cve":0,"valor":5259,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"f","cve":0,"valor":4046,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"f","cve":0,"valor":8703,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"f","cve":0,"valor":6629,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"f","cve":0,"valor":7553,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"f","cve":0,"valor":9263,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"f","cve":0,"valor":8853,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"f","cve":0,"valor":7646,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"f","cve":0,"valor":8319,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"f","cve":0,"valor":10594,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"f","cve":0,"valor":8911,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"f","cve":0,"valor":8270,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"f","cve":0,"valor":12540,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"f","cve":0,"valor":9058,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"f","cve":0,"valor":9842,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"f","cve":0,"valor":9667,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"f","cve":0,"valor":12803,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"f","cve":0,"valor":11605,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"f","cve":0,"valor":12297,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"f","cve":0,"valor":9955,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"f","cve":0,"valor":7430,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"f","cve":0,"valor":11719,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"f","cve":0,"valor":15335,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"f","cve":0,"valor":14873,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"f","cve":0,"valor":11174,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"f","cve":0,"valor":15585,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"f","cve":0,"valor":13994,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"f","cve":0,"valor":16810,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"f","cve":0,"valor":11963,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"f","cve":0,"valor":17041,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"f","cve":0,"valor":16785,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"f","cve":0,"valor":17569,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"f","cve":0,"valor":15785,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"f","cve":0,"valor":15492,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"g","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"g","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"g","cve":0,"valor":402,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"g","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"g","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"g","cve":0,"valor":1942,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"g","cve":0,"valor":773,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"g","cve":0,"valor":3701,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"g","cve":0,"valor":9367,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"g","cve":0,"valor":5485,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"g","cve":0,"valor":9916,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"g","cve":0,"valor":6990,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"g","cve":0,"valor":9678,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"g","cve":0,"valor":8940,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"g","cve":0,"valor":10845,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"g","cve":0,"valor":8436,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"g","cve":0,"valor":9872,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"g","cve":0,"valor":8952,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"g","cve":0,"valor":12118,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"g","cve":0,"valor":18150,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"g","cve":0,"valor":12614,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"g","cve":0,"valor":9512,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"g","cve":0,"valor":14732,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"g","cve":0,"valor":14936,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"g","cve":0,"valor":17166,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"g","cve":0,"valor":18802,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"g","cve":0,"valor":14611,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"g","cve":0,"valor":21318,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"g","cve":0,"valor":22047,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"g","cve":0,"valor":19349,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"g","cve":0,"valor":22350,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"g","cve":0,"valor":20364,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"g","cve":0,"valor":15386,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"g","cve":0,"valor":18498,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"g","cve":0,"valor":21839,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"g","cve":0,"valor":24531,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"g","cve":0,"valor":25184,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"g","cve":0,"valor":30819,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"g","cve":0,"valor":28268,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"g","cve":0,"valor":23900,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"g","cve":0,"valor":24565,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"g","cve":0,"valor":26302,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"g","cve":0,"valor":28261,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"g","cve":0,"valor":28910,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"g","cve":0,"valor":31318,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"g","cve":0,"valor":24202,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"g","cve":0,"valor":29443,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"g","cve":0,"valor":27192,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"g","cve":0,"valor":35303,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"g","cve":0,"valor":29366,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"g","cve":0,"valor":29609,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"g","cve":0,"valor":29796,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"g","cve":0,"valor":29894,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"h","cve":0,"valor":0,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"h","cve":0,"valor":2496,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"h","cve":0,"valor":166,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"h","cve":0,"valor":3775,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"h","cve":0,"valor":2659,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"h","cve":0,"valor":3311,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"h","cve":0,"valor":13,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"h","cve":0,"valor":2690,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"h","cve":0,"valor":6164,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"h","cve":0,"valor":2018,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"h","cve":0,"valor":2843,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"h","cve":0,"valor":3917,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"h","cve":0,"valor":5900,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"h","cve":0,"valor":4752,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"h","cve":0,"valor":4485,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"h","cve":0,"valor":3480,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"h","cve":0,"valor":10442,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"h","cve":0,"valor":6230,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"h","cve":0,"valor":6164,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"h","cve":0,"valor":6114,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"h","cve":0,"valor":6966,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"h","cve":0,"valor":7522,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"h","cve":0,"valor":6513,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"h","cve":0,"valor":7035,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"h","cve":0,"valor":9347,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"h","cve":0,"valor":10072,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"h","cve":0,"valor":10586,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"h","cve":0,"valor":9220,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"h","cve":0,"valor":7937,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"h","cve":0,"valor":10520,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"h","cve":0,"valor":9814,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"h","cve":0,"valor":8552,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"h","cve":0,"valor":8897,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"h","cve":0,"valor":9024,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"h","cve":0,"valor":11956,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"h","cve":0,"valor":12277,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"h","cve":0,"valor":11555,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"h","cve":0,"valor":11393,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"h","cve":0,"valor":14905,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"h","cve":0,"valor":11658,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"h","cve":0,"valor":12199,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"h","cve":0,"valor":16752,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"h","cve":0,"valor":14420,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"h","cve":0,"valor":10790,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"h","cve":0,"valor":13348,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"h","cve":0,"valor":14525,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"h","cve":0,"valor":14875,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"h","cve":0,"valor":15507,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"h","cve":0,"valor":16138,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"h","cve":0,"valor":16658,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"h","cve":0,"valor":12748,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"h","cve":0,"valor":10676,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"h","cve":0,"valor":17052,"DesGeo":"N"},{"t":2012,"m":6,"id":"i33","id2":"i","cve":0,"valor":15689,"DesGeo":"N"},{"t":2012,"m":7,"id":"i33","id2":"i","cve":0,"valor":15697,"DesGeo":"N"},{"t":2012,"m":8,"id":"i33","id2":"i","cve":0,"valor":38632,"DesGeo":"N"},{"t":2012,"m":9,"id":"i33","id2":"i","cve":0,"valor":82340,"DesGeo":"N"},{"t":2012,"m":10,"id":"i33","id2":"i","cve":0,"valor":12829,"DesGeo":"N"},{"t":2012,"m":11,"id":"i33","id2":"i","cve":0,"valor":37038,"DesGeo":"N"},{"t":2012,"m":12,"id":"i33","id2":"i","cve":0,"valor":23494,"DesGeo":"N"},{"t":2013,"m":1,"id":"i33","id2":"i","cve":0,"valor":34314,"DesGeo":"N"},{"t":2013,"m":2,"id":"i33","id2":"i","cve":0,"valor":59191,"DesGeo":"N"},{"t":2013,"m":3,"id":"i33","id2":"i","cve":0,"valor":0,"DesGeo":"N"},{"t":2013,"m":4,"id":"i33","id2":"i","cve":0,"valor":39078,"DesGeo":"N"},{"t":2013,"m":5,"id":"i33","id2":"i","cve":0,"valor":44344,"DesGeo":"N"},{"t":2013,"m":6,"id":"i33","id2":"i","cve":0,"valor":32946,"DesGeo":"N"},{"t":2013,"m":7,"id":"i33","id2":"i","cve":0,"valor":73480,"DesGeo":"N"},{"t":2013,"m":8,"id":"i33","id2":"i","cve":0,"valor":88821,"DesGeo":"N"},{"t":2013,"m":9,"id":"i33","id2":"i","cve":0,"valor":67047,"DesGeo":"N"},{"t":2013,"m":10,"id":"i33","id2":"i","cve":0,"valor":69632,"DesGeo":"N"},{"t":2013,"m":11,"id":"i33","id2":"i","cve":0,"valor":58016,"DesGeo":"N"},{"t":2013,"m":12,"id":"i33","id2":"i","cve":0,"valor":53933,"DesGeo":"N"},{"t":2014,"m":1,"id":"i33","id2":"i","cve":0,"valor":104583,"DesGeo":"N"},{"t":2014,"m":2,"id":"i33","id2":"i","cve":0,"valor":67912,"DesGeo":"N"},{"t":2014,"m":3,"id":"i33","id2":"i","cve":0,"valor":102596,"DesGeo":"N"},{"t":2014,"m":4,"id":"i33","id2":"i","cve":0,"valor":55807,"DesGeo":"N"},{"t":2014,"m":5,"id":"i33","id2":"i","cve":0,"valor":98596,"DesGeo":"N"},{"t":2014,"m":6,"id":"i33","id2":"i","cve":0,"valor":59383,"DesGeo":"N"},{"t":2014,"m":7,"id":"i33","id2":"i","cve":0,"valor":97804,"DesGeo":"N"},{"t":2014,"m":8,"id":"i33","id2":"i","cve":0,"valor":101114,"DesGeo":"N"},{"t":2014,"m":9,"id":"i33","id2":"i","cve":0,"valor":100233,"DesGeo":"N"},{"t":2014,"m":10,"id":"i33","id2":"i","cve":0,"valor":148079,"DesGeo":"N"},{"t":2014,"m":11,"id":"i33","id2":"i","cve":0,"valor":85113,"DesGeo":"N"},{"t":2014,"m":12,"id":"i33","id2":"i","cve":0,"valor":123151,"DesGeo":"N"},{"t":2015,"m":1,"id":"i33","id2":"i","cve":0,"valor":108767,"DesGeo":"N"},{"t":2015,"m":2,"id":"i33","id2":"i","cve":0,"valor":113393,"DesGeo":"N"},{"t":2015,"m":3,"id":"i33","id2":"i","cve":0,"valor":109789,"DesGeo":"N"},{"t":2015,"m":4,"id":"i33","id2":"i","cve":0,"valor":126876,"DesGeo":"N"},{"t":2015,"m":5,"id":"i33","id2":"i","cve":0,"valor":123702,"DesGeo":"N"},{"t":2015,"m":6,"id":"i33","id2":"i","cve":0,"valor":169601,"DesGeo":"N"},{"t":2015,"m":7,"id":"i33","id2":"i","cve":0,"valor":158198,"DesGeo":"N"},{"t":2015,"m":8,"id":"i33","id2":"i","cve":0,"valor":117098,"DesGeo":"N"},{"t":2015,"m":9,"id":"i33","id2":"i","cve":0,"valor":169924,"DesGeo":"N"},{"t":2015,"m":10,"id":"i33","id2":"i","cve":0,"valor":144530,"DesGeo":"N"},{"t":2015,"m":11,"id":"i33","id2":"i","cve":0,"valor":190551,"DesGeo":"N"},{"t":2015,"m":12,"id":"i33","id2":"i","cve":0,"valor":178513,"DesGeo":"N"},{"t":2016,"m":1,"id":"i33","id2":"i","cve":0,"valor":154065,"DesGeo":"N"},{"t":2016,"m":2,"id":"i33","id2":"i","cve":0,"valor":142366,"DesGeo":"N"},{"t":2016,"m":3,"id":"i33","id2":"i","cve":0,"valor":230276,"DesGeo":"N"},{"t":2016,"m":4,"id":"i33","id2":"i","cve":0,"valor":220476,"DesGeo":"N"},{"t":2016,"m":5,"id":"i33","id2":"i","cve":0,"valor":187521,"DesGeo":"N"},{"t":2016,"m":6,"id":"i33","id2":"i","cve":0,"valor":209819,"DesGeo":"N"},{"t":2016,"m":7,"id":"i33","id2":"i","cve":0,"valor":195894,"DesGeo":"N"},{"t":2016,"m":8,"id":"i33","id2":"i","cve":0,"valor":215953,"DesGeo":"N"},{"t":2016,"m":9,"id":"i33","id2":"i","cve":0,"valor":177351,"DesGeo":"N"},{"t":2016,"m":10,"id":"i33","id2":"i","cve":0,"valor":194611,"DesGeo":"N"}]
+[
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "64542",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "168571",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "142581",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "163311",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "a",
+    "cve": "0",
+    "valor": "26937",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "16683",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "3580",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "b",
+    "cve": "0",
+    "valor": "1050",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "51458",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "154571",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "69114",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "103296",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "c",
+    "cve": "0",
+    "valor": "12722",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12184",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "200",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "900",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "14000",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "32872",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "10609",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "14809",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "44374",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "53933",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "153762",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "50783",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "50441",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "g",
+    "cve": "0",
+    "valor": "607",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "11102",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "20040",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "92026",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "h",
+    "cve": "0",
+    "valor": "13772",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "53440",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "168571",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "98829",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "14850",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i33",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "64542",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "233113",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "375694",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "539005",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "a",
+    "cve": "0",
+    "valor": "565942",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "16683",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "20263",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "b",
+    "cve": "0",
+    "valor": "21313",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "51458",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "206029",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "275143",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "378439",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "c",
+    "cve": "0",
+    "valor": "391161",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12184",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12184",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12384",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12384",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "d",
+    "cve": "0",
+    "valor": "12384",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "900",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "14900",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "47772",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "47772",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "e",
+    "cve": "0",
+    "valor": "47772",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "10609",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "25418",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "69792",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "69792",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "f",
+    "cve": "0",
+    "valor": "69792",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "53933",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "207695",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "258478",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "308919",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "g",
+    "cve": "0",
+    "valor": "309526",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "11102",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "11102",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "31142",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "123168",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "h",
+    "cve": "0",
+    "valor": "136940",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "2",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "3",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2012",
+    "m": "4",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "1",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "2",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "3",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2013",
+    "m": "4",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "1",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "2",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "3",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2014",
+    "m": "4",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "1",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "2",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "3",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "0",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2015",
+    "m": "4",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "53440",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "1",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "222011",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "2",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "320840",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "3",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "335690",
+    "DesGeo": "N"
+  },
+  {
+    "t": "2016",
+    "m": "4",
+    "id": "i331",
+    "id2": "i",
+    "cve": "0",
+    "valor": "335690",
+    "DesGeo": "N"
+  }
+]
