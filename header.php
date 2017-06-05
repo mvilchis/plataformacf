@@ -15,7 +15,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" title="Ir a la página de inicio de datos.gob.mx" href="http://datos.gob.mx/">
-            <img src="./sites/all/themes/tweme/assets/ic-dgm-logo.png" alt="datos.gob.mx" style="padding: 4px;">
+            <img src="img/ic-dgm-logo.png" alt="datos.gob.mx" style="padding: 4px;">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="navbarMainCollapse">
@@ -48,7 +48,7 @@
       <div class="container-fluid">
         <div class="navbar-header" style="padding-top: 15px;padding-bottom: 15px;">
           <a href="/" style="font-size: 18px;font-weight: 700;color: white;"> Crowdfunding Mx</a>
-          
+
         </div>
         <div class="collapse navbar-collapse" id="navbarSecondCollapse">
            <ul class="nav navbar-nav navbar-right " role="navigation">

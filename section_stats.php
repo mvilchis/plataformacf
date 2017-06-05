@@ -49,7 +49,7 @@
 
 
 			<div id="chart"></div>
-			<div><img style="margin-left: 35px;" width=147 height=25 src='sites/all/themes/tweme/assets/promedio.png'/></div>
+			<div><img style="margin-left: 35px;" width=147 height=25 src='img/promedio.png'/></div>
 			<div onmousedown="exportToPDF('line');" class="btn btn-line-export btn-outline">Exportar gráfica</div>
 		</div>
 		<div style="margin-top: 80px;" id="stat-tables" class="col-xs-12 col-sm-8">

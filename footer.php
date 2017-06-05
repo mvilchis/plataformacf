@@ -143,7 +143,7 @@
                         <h5><a href="http://datos.gob.mx/acerca">Acerca</a></h5>
                      </li>
                   </ul>
-                  <a href="http://opendefinition.org/" class="img-link first" target="_blank">                             <img alt="Este material es de Conocimiento Abierto" src="sites/all/themes/tweme/assets/ok_80x15_blue.png">                         </a>                         <a href="http://datos.gob.mx/libreusomx" class="img-link" alt="Libre Uso MX">                             <img src="sites/all/themes/tweme/assets/ic-libre-uso.png" alt="Libre Uso MX">                         </a>
+                  <a href="http://opendefinition.org/" class="img-link first" target="_blank">                             <img alt="Este material es de Conocimiento Abierto" src="img/ok_80x15_blue.png">                         </a>                         <a href="http://datos.gob.mx/libreusomx" class="img-link" alt="Libre Uso MX">                             <img src="img/ic-libre-uso.png" alt="Libre Uso MX">                         </a>
                </div>
             </div>
             <div class="row hidden-lg hidden-md">
@@ -162,7 +162,7 @@
       </div>
       <div class="container-fluid">
          <div class="row">
-            <div class="col-sm-4">                     <img class="gobmx-footer" src="sites/all/themes/tweme/assets/gobmxlogo.svg" width="126" height="70" alt="Página de inicio, Gobierno de México">                 </div>
+            <div class="col-sm-4">                     <img class="gobmx-footer" src="img/gobmxlogo.svg" width="126" height="70" alt="Página de inicio, Gobierno de México">                 </div>
          </div>
       </div>
    </footer>

@@ -272,6 +272,6 @@
          </div>
       </section>
       <?php include("footer.php"); ?>
-      <script src="sites/all/themes/bootstrap/js/bootstrap.js"></script>
+      <script src="sites/all/themes/bootstrap/js/bootstrap.min.js"></script>
    </body>
 </html>
