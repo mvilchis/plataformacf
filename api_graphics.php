@@ -641,7 +641,7 @@ foreach($metadata_grupos["results"] as $value) {
 					$(".indicador-valor").html(commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10));
 				else
 					$(".indicador-valor").html("N/A");
-				$(".indicador-nombre").html($("select#select-indicador-a option:selected").text() + " ("+active_year+")");
+				$(".indicador-nombre").html("");
 				<?php if ($page == "compara"): ?>
 					closest_year = closest(active_year,years_b);
 					if (typeof feature.properties[closest_year+"_b"] != null)
