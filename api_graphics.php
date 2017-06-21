@@ -450,7 +450,7 @@ foreach($metadata_grupos["results"] as $value) {
 			},
 		    axis: {
 		        x: {
-		            type: 'timeseries',
+		            type: 'categorized',
 		            tick: {
 		                format: date_format
 		            }
@@ -465,7 +465,7 @@ foreach($metadata_grupos["results"] as $value) {
 		        pattern: line_colors
 		    },
 		    size: {
-		        width: 700
+		        width: 1200
 		    },
 		    legend: {
 		        show: false
@@ -685,9 +685,10 @@ foreach($metadata_grupos["results"] as $value) {
 			    },
 			    axis: {
 			        x: {
-			            type: 'timeseries',
+			            type: 'categorized',
 			            tick: {
-			                format: date_format
+			                format:date_format,
+
 			            }
 			        },
 			        y : {
