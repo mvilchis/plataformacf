@@ -153,7 +153,11 @@ foreach ($metadata["results"] as $value) {
           </div>
           <div class="jumbotron-block col-xs-1 col-sm-12" style="color:#6A6A6A">
             </br>
-            <p style="color:black">Consulta datos de más de X indicadores sobre la evolución del financiamiento colectivo en México.</p>
+            <?php
+              $dire = __DIR__ . '/json/partition';
+              $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.</p>');
+              ?> 
             <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
           </div>
           <?php
@@ -244,7 +248,11 @@ foreach ($metadata["results"] as $value) {
         </div>
         <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
           </br>
-          <p style="color:black">Consulta datos de más de X indicadores sobre la evolución del financiamiento colectivo en México </p>
+          <?php
+              $dire = __DIR__ . '/json/partition';
+              $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México </p>');
+              ?>
           <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
         <section class="col-xs-12 col-sm-2">
