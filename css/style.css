@@ -599,9 +599,9 @@ path.highlighted{
 	position: absolute;
 	top: 60px;
 	right: 10px;
-	width: 280px;
+	width: 480px;
 	padding: 10px;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,1);
 }
 .infobox .unit-name {
 	font-weight: 700;

@@ -452,7 +452,9 @@ foreach($metadata_grupos["results"] as $value) {
 		        x: {
 		            type: 'categorized',
 		            tick: {
-		                format: date_format
+		                format: date_format,
+										rotate: 45,
+										multiline: false
 		            }
 		        },
 		        y : {
@@ -688,6 +690,8 @@ foreach($metadata_grupos["results"] as $value) {
 			            type: 'categorized',
 			            tick: {
 			                format:date_format,
+	 										rotate: 45,
+											multiline: false
 
 			            }
 			        },
@@ -701,7 +705,7 @@ foreach($metadata_grupos["results"] as $value) {
 			        pattern: ['#00cc99']
 			    },
 			    size: {
-			        width: 260,
+			        width: 460,
 			        height: 160
 			    },
 			    legend: {
