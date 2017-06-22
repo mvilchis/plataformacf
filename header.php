@@ -53,7 +53,7 @@
         <div class="collapse navbar-collapse" id="navbarSecondCollapse">
            <ul class="nav navbar-nav navbar-right " role="navigation">
                   <li>                             <a aria-label="Ir al catalogo de datos" title="Ir al catalogo de datos" href="/explora"  style="font-size:16px;">Explora</a>                         </li>
-                  <li>                             <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="/"   style="font-size:16px;">Indicadores</a>                         </li>
+                  <li>                             <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="/indicadores"   style="font-size:16px;">Indicadores</a>                         </li>
                   <li>                             <a aria-label="Conoce los Datos Abiertos más buscados" target="_self" title="Conoce los Datos Abiertos más buscados" href="/"  style="font-size:16px;">Acerca</a>                         </li>
                </ul>
             </div>

@@ -625,13 +625,13 @@ foreach($metadata_grupos["results"] as $value) {
 			(function ($) {
 				$(".infobox").show();
 				if (active_unit == "N") {
-					$(".unit-name").html("México");
+					$(".unit-name").html("México <hr>" );
 					$(".edo-name").html("Nacional");
 					$(".edo-image").html("");
 				}
 				else if (active_unit == "E") {
 					$(".unit-name").html(feature.properties.nom_ent);
-					$(".edo-name").html("");
+					$(".edo-name").html("<hr>");
 					$(".edo-image").html("<img width=40 height=40 src='img/estados/"+feature.properties.cve+".png'/>");
 				}
 				else if (active_unit == "M") {

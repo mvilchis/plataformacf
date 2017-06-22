@@ -114,7 +114,7 @@ foreach ($metadata["results"] as $value) {
             </br>
             </br>
             </br>
-            <h1 style="font-size: 45px;">Fondeo colectivo en datos</h1>
+            <h1 style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</h1>
           </div>
           <div>
             <p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b></p>
@@ -126,19 +126,19 @@ foreach ($metadata["results"] as $value) {
         </div>
         <row>
           <div class="col-xs-12 col-sm-4">
-            <h2> Proyectos totales fondeados:</h2>
-            <h3>23,422</h3>
+            <h3> Proyectos totales fondeados:</h3>
+            <h1 style="font-size: 40px;" >23,422</h1>
             </br>
             </br>
             </br>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h2>Fondeo total:</h2>
-            <h3>$132 MDP</h3>
+            <h3>Fondeo total:</h3>
+            <h1 style="font-size: 40px;">$132 MDP</h1>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h2>Plataformas en linea:</h2>
-            <h3>17</h3>
+            <h3>Plataformas en linea:</h3>
+            <h1 style="font-size: 40px;">17</h1>
           </div>
         </row>
       </section>
@@ -157,7 +157,7 @@ foreach ($metadata["results"] as $value) {
               $dire = __DIR__ . '/json/partition';
               $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
               echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.</p>');
-              ?> 
+              ?>
             <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
           </div>
           <?php
