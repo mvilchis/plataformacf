@@ -149,7 +149,7 @@
                     </div>
                       <div class="edo-image col-xs-3">--</div>
                     </div>
-                    <div class="row values-row">
+                    <div class="row values-row" style="display: block;">
                       <table>
                         <tr>
                           <td class="col-xs-4 indicador-valor">--</td>

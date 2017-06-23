@@ -652,6 +652,7 @@ table#legend-colors tr td.legend-breaks {
 .indicador-nombre, .indicador-nombre-b {
 	font-weight: 300;
 	margin-bottom: 10px;
+        font-size: 20px;
 }
 .btn-outline {
 	text-transform: uppercase;
