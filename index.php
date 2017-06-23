@@ -175,7 +175,7 @@ foreach ($metadata["results"] as $value) {
                 $empty_class = "";
                 $tt = "";
               }
-              echo('<div class="col-xs-12 noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
+              echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
                     <div class="row indicador-row"><div class="col-xs-12">
                     <div class="objetivo-name" style="color:#6A6A6A">
                     <img src="img/'.$objetivo_icons[$key].'.png"/>
