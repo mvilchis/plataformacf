@@ -39,7 +39,7 @@ RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/s
 
 # Plataforma
 
-ADD plataformacf/* /var/www/
+ADD plataformacf /var/www
 
 RUN rm /var/www/index.html
 
@@ -48,3 +48,4 @@ RUN chmod a+w /var/www -R
 
 EXPOSE 80 3306 22
 CMD exec supervisord -n
+
