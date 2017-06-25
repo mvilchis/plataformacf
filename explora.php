@@ -13,6 +13,7 @@
       <link rel="stylesheet" type="text/css" href="css/views.css" />
       <link rel="stylesheet" type="text/css" href="css/ctools.css" />
       <link rel="stylesheet" type="text/css" href="css/panels.css" />
+      <link rel="stylesheet" type="text/css" href="css/tmp.css" />
       <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css');
         @import url('https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css');
@@ -48,16 +49,6 @@
       <script src="json/nacion.json"></script>
       <script src="json/entidad.json"></script>
       <?=include_once('header.php');?>
-       <style>
-       .fronta h2::after {
-           content: '';
-           width: 40px;
-           position: absolute;
-           bottom: -6px;
-           left: 10px;
-           border-bottom: solid 5px #0c9;
-       }
-
        </style>
   </head>
   <?php
@@ -111,12 +102,12 @@
     <div class="region region-header" style="color:black;">
       <div class="container" style="width:1550px">
         <section id="block-block-3" class="block block-block clearfix">
-          <div class="jumbotron-block col-xs-12 col-sm-9" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-12" style="color:#6A6A6A">
             <div class="header_mx">
               <h1>Explora</h1>
             </div>
           </div>
-          <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-12" style="color:#6A6A6A">
             </br>
             <p style="color:black">Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
           </div>

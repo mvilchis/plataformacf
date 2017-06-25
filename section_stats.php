@@ -42,8 +42,8 @@
 			</form>
 		</div>
 		<div style="margin-top: 30px;margin-bottom: 30px;" class="col-xs-12">
-			<div class="stat-column-header stat-column-header-chart fronta">
-			<h2>Indicador a nivel estatal</h2>
+			<div class="stat-column-header stat-column-header-chart header_mx">
+			<h1>Indicador a nivel estatal</h1>
 		</div>
 		</div>
 

@@ -1,7 +1,7 @@
 <section class="datatable">
 	<div style="margin-top: 30px;margin-bottom: 30px;width:1550px" class="container">
 		<div class="col-xs-12 col-sm-12">
-			<div class="stat-column-header fronta"><h2>Datos</h2></div>
+			<div class="stat-column-header "><h1>Datos</h1></div>
 		</div>
 		<?php if ($page == "compara"): ?>
 		<div class="row"><div class="circle-letter">A</div></div>
