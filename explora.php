@@ -25,6 +25,7 @@
       <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" media="all"/>
       <link href="css/css" rel="stylesheet" type="text/css">
       <link rel="stylesheet" type="text/css" href="css/plataformacf.css" />
+      <link rel="stylesheet" type="text/css" href="css/tmp.css"/>
       <!--                      script                                       -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
@@ -99,9 +100,9 @@
     <div class="region region-header" style="color:black;">
       <div class="container" style="width:1550px">
         <section id="block-block-3" class="block block-block clearfix">
-          <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-9" style="color:#6A6A6A">
             <div class="header_mx">
-              <h2>Explora</h2>
+              <h1>Explora</h1>
             </div>
           </div>
           <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">

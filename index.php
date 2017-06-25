@@ -13,6 +13,7 @@
   <link rel="stylesheet" type="text/css" href="css/panels.css"/>
   <link rel="stylesheet" type="text/css" href="css/field.css"/>
   <link rel="stylesheet" type="text/css" href="css/flexible.css"/>
+  <link rel="stylesheet" type="text/css" href="css/tmp.css"/>
   <link rel="stylesheet" type="text/css" href="css/64d7d0a3c55866afec0187d45d6e1cfe.css"/>
   <link rel="stylesheet" type="text/css" href="css/jquery.magnific-popup.css"/>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
@@ -114,7 +115,7 @@ foreach ($metadata["results"] as $value) {
             </br>
             </br>
             </br>
-            <h1 style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</h1>
+            <span style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</span>
           </div>
           <div>
             <p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b></p>
@@ -127,18 +128,18 @@ foreach ($metadata["results"] as $value) {
         <row>
           <div class="col-xs-12 col-sm-4">
             <h3> Proyectos totales fondeados:</h3>
-            <h1 style="font-size: 40px;" >23,422</h1>
+            <span style="font-size: 40px;" >23,422</span>
             </br>
             </br>
             </br>
           </div>
           <div class="col-xs-12 col-sm-4">
             <h3>Fondeo total:</h3>
-            <h1 style="font-size: 40px;">$132 MDP</h1>
+            <span style="font-size: 40px;">$132 MDP</span>
           </div>
           <div class="col-xs-12 col-sm-4">
             <h3>Plataformas en linea:</h3>
-            <h1 style="font-size: 40px;">17</h1>
+            <span style="font-size: 40px;">17</span>
           </div>
         </row>
       </section>
@@ -146,9 +147,9 @@ foreach ($metadata["results"] as $value) {
     <div class="region region-header" style="color:black;">
       <div class="container">
         <section id="block-block-2" class="block block-block clearfix">
-          <div class="jumbotron-block col-xs-1 col-sm-12" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-12">
             <div class="header_mx">
-              <h2>Indicadores</h2>
+              <h1>Indicadores</h1>
             </div>
           </div>
           <div class="jumbotron-block col-xs-1 col-sm-12" style="color:#6A6A6A">
@@ -241,10 +242,11 @@ foreach ($metadata["results"] as $value) {
   <div class="region region-header" style="color:black;">
     <div class="container">
       <section id="block-block-3" class="block block-block clearfix">
-        <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
+        <div class="jumbotron-block col-xs-12 col-sm-12">
           <div class="header_mx">
-            <h2>Explora</h2>
+            <h1>Explora</h1>
           </div>
+
         </div>
         <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
           </br>
