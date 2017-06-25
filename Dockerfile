@@ -39,7 +39,7 @@ RUN echo -e '[program:sshd]\ncommand=/usr/sbin/sshd -D\n\n' >> /etc/supervisor/s
 
 # Plataforma
 
-ADD . /var/www/
+ADD plataformacf/* /var/www/
 
 RUN rm /var/www/index.html
 
