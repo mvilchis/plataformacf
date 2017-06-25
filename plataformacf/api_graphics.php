@@ -45,6 +45,7 @@ foreach($metadata_grupos["results"] as $value) {
 
 
 ?>
+<script src="js/leaflet.easyPrint.js"></script>
 
 <script type="text/javascript">
 
@@ -144,6 +145,11 @@ foreach($metadata_grupos["results"] as $value) {
 		detectRetina: true,
 		scrollWheelZoom: false
 	});
+	L.easyPrint({
+		title: 'My awesome print button',
+		elementsToHide: 'footer,.filters,.year-selector,h1,.region-header,.stats,.datatable,.dgm-footer,.objective-selector'
+	}).addTo(map);
+
 	map.addLayer(basemap);
 	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
 		map.dragging.disable();
@@ -689,8 +695,8 @@ foreach($metadata_grupos["results"] as $value) {
 			        x: {
 			            type: 'categorized',
 			            tick: {
-			                format:date_format, 
-                                        rotate: 45, 
+			                format:date_format,
+                                        rotate: 45,
                                         multiline: false
 
 			            }
