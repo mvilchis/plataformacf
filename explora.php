@@ -48,6 +48,17 @@
       <script src="json/nacion.json"></script>
       <script src="json/entidad.json"></script>
       <?=include_once('header.php');?>
+       <style>
+       .fronta h2::after {
+           content: '';
+           width: 40px;
+           position: absolute;
+           bottom: -6px;
+           left: 10px;
+           border-bottom: solid 5px #0c9;
+       }
+
+       </style>
   </head>
   <?php
     include('h_objetivos.php');
