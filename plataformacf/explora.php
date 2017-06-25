@@ -232,8 +232,6 @@
                 </div>
               </div>
           </section>
-          <p class='demo'><a href='svg2pdf/svg2pdf.php' target='_blank' class='demo'>[Demo]</a></p>
-
           <?php include("footer.php"); ?>
           <script src="js/bootstrap.min.js"></script>
     </body>
