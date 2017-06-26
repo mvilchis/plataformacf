@@ -41,6 +41,7 @@
 				</div>
 			</form>
 		</div>
+
 		<div style="margin-top: 30px;margin-bottom: 30px;" class="col-xs-12">
 			<div class="stat-column-header stat-column-header-chart header_mx">
 			<h1>Indicador a nivel estatal</h1>
@@ -52,6 +53,8 @@
 			<div><img style="margin-left: 35px;" width=147 height=25 src='img/promedio.png'/></div>
 			<div onmousedown="exportToPDF('line');" class="btn btn-line-export btn-outline">Exportar gráfica</div>
 		</div>
+		<div style="width:1550px" class="container">
+			<div class="col-xs-12">
 		<div style="margin-top: 80px;" id="stat-tables" class="col-xs-12 col-sm-8">
 			<div class="stat-column-header stat-column-header-top">Top 3 Municipios</div>
 			<div class="top-municipios-group top-municipios-group-0">
@@ -69,5 +72,7 @@
 				<div class="top-municipios-pct">--</div>
 			</div>
 		</div>
+	</div
+	</div>
 	</div>
 </section>
