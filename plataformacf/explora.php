@@ -180,7 +180,7 @@
                       </table>
                     </div>
                   </div>
-                  <div onmousedown="exportToPDF('map');" class="btn btn-map-export btn-outline">Exportar mapa</div>
+                  
                   <div class="filters col-xs-12">
                     <div class="container">
                       <form class="form-inline" role="form">

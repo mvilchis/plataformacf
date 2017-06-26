@@ -146,8 +146,8 @@ foreach($metadata_grupos["results"] as $value) {
 		scrollWheelZoom: false
 	});
 	L.easyPrint({
-		title: 'My awesome print button',
-		elementsToHide: 'footer,.filters,.year-selector,h1,.region-header,.stats,.datatable,.dgm-footer,.objective-selector'
+		title: 'Exporta mapa',
+		elementsToHide: 'footer,.filters,.year-selector,h1,.region-header,.stats,.datatable,.dgm-footer,.objective-selector-caption, .objective-selector'
 	}).addTo(map);
 
 	map.addLayer(basemap);
@@ -463,11 +463,7 @@ foreach($metadata_grupos["results"] as $value) {
 										multiline: false
 		            }
 		        },
-		        y : {
-		            tick: {
-		                format: d3.format(".2s")
-		            }
-		        }
+
 		    },
 		    color: {
 		        pattern: line_colors
@@ -701,11 +697,6 @@ foreach($metadata_grupos["results"] as $value) {
 
 			            }
 			        },
-			        y : {
-			            tick: {
-			                format: d3.format(".2s")
-			            }
-			        }
 			    },
 			    color: {
 			        pattern: ['#00cc99']
