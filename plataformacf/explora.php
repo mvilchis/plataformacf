@@ -100,7 +100,7 @@
     </br>
     </br>
     <div class="region region-header" style="color:black;">
-      <div class="container" style="width:1550px">
+      <div class="container" style=" width: 80%;" >
         <section id="block-block-3" class="block block-block clearfix">
           <div class="jumbotron-block col-xs-12 col-sm-12" style="color:#6A6A6A">
             <div class="header_mx">
@@ -180,7 +180,7 @@
                       </table>
                     </div>
                   </div>
-                  
+
                   <div class="filters col-xs-12">
                     <div class="container">
                       <form class="form-inline" role="form">

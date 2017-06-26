@@ -1,5 +1,5 @@
 <section class="stats">
-	<div style="width:1550px" class="container">
+	<div  class="container" style=" width: 80%;">
 		<div class="col-xs-12">
 			<form style="display: none;" id="form-filter-entidad-mpal" class="form-inline" role="form">
 				<div class="form-group form-entidad-mpal">
@@ -53,7 +53,7 @@
 			<div><img style="margin-left: 35px;" width=147 height=25 src='img/promedio.png'/></div>
 			<div onmousedown="exportToPDF('line');" class="btn btn-line-export btn-outline">Exportar gráfica</div>
 		</div>
-		<div style="width:1550px" class="container">
+		<div class="container" style =" width: 80%;">
 			<div class="col-xs-12">
 		<div style="margin-top: 80px;" id="stat-tables" class="col-xs-12 col-sm-8">
 			<div class="stat-column-header stat-column-header-top">Top 3 Municipios</div>
