@@ -25,9 +25,13 @@ L.easyPrint = function(options) {
 };
 
 function printPage(){
-	if (this.options.elementsToHide){
+        jQuery(document).ready(function($){
+        var currWidth = $("#map").width(); // get current width of mapdiv
+        var currHeight = $("#map").height(); // get current height of map div
+        $('<style>@media print { #map { height: ' + currHeight + 'px; width: ' + currWidth + 'px;} }</style>').appendTo('head'); // add print style with current width and height
+        });
+       if (this.options.elementsToHide){
 		var htmlElementsToHide = document.querySelectorAll(this.options.elementsToHide);
-
 		for (var i = 0; i < htmlElementsToHide.length; i++) {
 			htmlElementsToHide[i].className = htmlElementsToHide[i].className + ' _epHidden';
 		}

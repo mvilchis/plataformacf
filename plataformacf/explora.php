@@ -15,7 +15,7 @@
       <link rel="stylesheet" type="text/css" href="css/panels.css" />
       <link rel="stylesheet" type="text/css" href="css/tmp.css" />
       <style>
-        @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.css');
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css');
         @import url('https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.css');
       </style>
       <link rel="stylesheet" type="text/css" href="css/leaflet-search.min.css" />
@@ -48,6 +48,7 @@
       <script src="js/jquery.matchHeight-min.js"></script>
       <script src="json/nacion.json"></script>
       <script src="json/entidad.json"></script>
+      <script src="js/leaflet.easyPrint.js"></script>
       <?=include_once('header.php');?>
        </style>
   </head>

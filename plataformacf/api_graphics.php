@@ -45,7 +45,6 @@ foreach($metadata_grupos["results"] as $value) {
 
 
 ?>
-<script src="js/leaflet.easyPrint.js"></script>
 
 <script type="text/javascript">
 
