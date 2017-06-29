@@ -119,7 +119,7 @@ foreach ($metadata["results"] as $value) {
           </div>
           <div>
             <p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b></p>
-            <p> <b>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México </b></p>
+            <p><b>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México </b></p>
             </br>
             </br>
             </br>
@@ -157,9 +157,8 @@ foreach ($metadata["results"] as $value) {
             <?php
               $dire = __DIR__ . '/json/partition';
               $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.</p>');
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>');
               ?>
-            <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
           </div>
           <?php
             echo('<div class="jumbotron-block col-sm-12 col-xs-12">');
@@ -253,12 +252,11 @@ foreach ($metadata["results"] as $value) {
           <?php
               $dire = __DIR__ . '/json/partition';
               $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p style="color:black">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México </p>');
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p> ');
               ?>
-          <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
         <section class="col-xs-12 col-sm-2">
-          <button class="btn btn-line-export btn-outline" type="button" onclick="visit_indicador('0','i41')" > Ir a la sección </button>
+          <button class="btn btn-line-export btn-invert" type="button" onclick="visit_indicador('0','i41')" > Ir a la sección </button>
         </section>
       </section>
     </div>
@@ -266,3 +264,4 @@ foreach ($metadata["results"] as $value) {
   <?php include("footer.php"); ?>
 </body>
 </html>
+F
