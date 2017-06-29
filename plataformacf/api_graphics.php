@@ -830,11 +830,11 @@ foreach($metadata_grupos["results"] as $value) {
 		(function ($) {
 			if (active_unit == "N") {
 				$("#form-filter-entidad-mpal").hide();
-				$(".stat-column-header-chart").html("<h1>Indicador a nivel nacional</h1>");
+				$(".stat-column-header-chart").html("<h1><b>Indicador a nivel nacional</b></h1>");
 			}
 			if (active_unit == "E") {
 				$("#form-filter-entidad-mpal").hide();
-				$(".stat-column-header-chart").html("<h1>Indicador a nivel estatal</h1>");
+				$(".stat-column-header-chart").html("<h1><b>Indicador a nivel estatal</b></h1>");
 				$(".stat-column-header-top").html("Top 3 Estados");
 			}
 			if (active_unit == "M") {
