@@ -8,6 +8,11 @@
       </br>
       </br>
       <h4 style="color:#858585;"><b> Con apoyo de: </b></h4>
+      <div style="background-color:#EAEAEA;text-align:center;">
+      <div class="jumbotron-block col-xs-12 col-sm-2" >
+      </div>
+      <div class="jumbotron-block col-xs-12 col-sm-8"style="background-color:#EAEAEA;text-align:center;">
+
       <table class="wsite-multicol-table">
         <tbody class="wsite-multicol-tbody">
           <tr class="wsite-multicol-tr">
@@ -102,6 +107,10 @@
           </tr>
         </tbody>
       </table>
+    </div>
+      <div class="jumbotron-block col-xs-12 col-sm-2"style="background-color:#EAEAEA;text-align:center;">
+      </div>
+      </div>
     </section>
     <div class="main-container">
          <div class="container-fluid new-container">

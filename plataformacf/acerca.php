@@ -17,7 +17,10 @@
       <link rel="stylesheet" type="text/css" href="css/overrides.css" />
       <link rel="stylesheet" type="text/css" href="css/common.css" />
       <link rel="stylesheet" type="text/css" href="css/style.css" />
+      <link rel="stylesheet" type="text/css" href="css/tmp.css"/>
       <link href="css/css" rel="stylesheet" type="text/css"/>
+      <link rel="stylesheet" type="text/css" href="css/plataformacf.css" />
+
       <!--                      script                                       -->
       <script src="js/jquery.min.js"></script>
       <script src="js/jquery.once.js"></script>
@@ -51,16 +54,14 @@
                   <div class="region region-content">
                      <section id="block-system-main" class="block block-system clearfix">
                         <div id="node-5" class="node node-page clearfix" about="/acerca" typeof="foaf:Document">
-                          <div class="jumbotron-block col-xs-12 col-sm-8" style="color:#6A6A6A">
-                            <div class="fronta">
-                              <h2>Acerca</h2>
+                            <div class="header_mx">
+                              <h1><b>Acerca</b></h1>
                             </div>
-                          </div>
                         </div>
                            <div class="content">
                               <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                                  <div class="field-items">
-                                    <div class="field-item even" property="content:encoded">
+                                    <div class="field-item even texto_parrafo" property="content:encoded">
                                        <h4>¿Quién es Crowdfunding México?</h4>
                                        <p>Es una iniciativa del Fondo Multilateral de Inversiones (FOMIN) del Banco Interamericano de Desarrollo (BID) ejecutado por la Universidad Anáhuac a través del Centro IDEARSE con la participación de Nacional Financiera, el Instituto Nacional del Emprendedor, la Oficina de Estrategia Digital de la Presidencia de la República, la Comisión Nacional Bancaria y de Valores y la Asociación de Plataformas de Fondeo Colectivo, para impulsar proyectos vía crowdfunding o de financiamiento/fondeo colectivo, ecosistema que está en una fase inicial en México, y que es considerado un mercado alternativo de fondeo para proyectos innovadores a través de plataformas digitales.</p>
                                        <h4>¿Cómo funciona Crowdfunding México?</h4>

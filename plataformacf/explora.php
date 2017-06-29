@@ -103,14 +103,14 @@
     <div class="region region-header" style="color:black;">
       <div class="container" style=" width: 80%;" >
         <section id="block-block-3" class="block block-block clearfix">
-          <div class="jumbotron-block col-xs-12 col-sm-12" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-12" >
             <div class="header_mx">
               <h1><b>Explora</b></h1>
             </div>
           </div>
-          <div class="jumbotron-block col-xs-12 col-sm-12" style="color:#6A6A6A">
+          <div class="jumbotron-block col-xs-12 col-sm-12 texto_parrafo" >
             </br>
-            <p style="color:black; font-size: 18px" >Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
+            <p >Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
           </div>
         </section>
       </div>

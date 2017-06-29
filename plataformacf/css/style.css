@@ -229,7 +229,7 @@ body.front .header {
 }
 body.front .jumbotron-block {
 	text-align: left;
-	color: #000;
+  color:#424242;
 	cursor: pointer;
 }
 body.front section.main {
@@ -239,9 +239,7 @@ body.front .jumbotron-block h3 {
 	font-size: 36px;
 	font-weight: 700;
 }
-body.front .jumbotron-block p {
-	font-size: 14px;
-}
+
 .jumbotron-selector-header {
 	margin-left: 10px;
 	font-weight: 600;
@@ -308,7 +306,7 @@ body.front .jumbotron-block p {
 	border-top: 1px solid #ccc;
 	margin-right: 10px;
 	line-height: 50px;
-  font-size: 16px;
+  font-size: 18px;
 }
 .indicador-page-row .col-xs-11::before {
 	content: "• ";
@@ -666,7 +664,7 @@ table#legend-colors tr td.legend-breaks {
 	text-transform: uppercase;
 	color: #fff;
 	background-color: #00CC99;
-	border-radius: 0;
+  border-radius: 15px;
 	font-weight: 700;
 }
 .btn-invert:hover {
