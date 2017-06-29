@@ -1140,7 +1140,6 @@ hr {
 }
 footer                       {
 	display: block; /*! padding-top: 20px; */
-	padding-bottom: 30px;
 	background-color: #EAEAEA;
 	box-sizig: border-box;
 	font-family: "Open Sans";

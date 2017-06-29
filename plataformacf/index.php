@@ -272,4 +272,3 @@ foreach ($metadata["results"] as $value) {
   <?php include("footer.php"); ?>
 </body>
 </html>
-F

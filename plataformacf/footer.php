@@ -191,10 +191,5 @@
             </div>
          </div>
       </div>
-      <div class="container-fluid">
-         <div class="row">
-            <div class="col-sm-4">                     <img class="gobmx-footer" src="img/gobmxlogo.svg" width="126" height="70" alt="Página de inicio, Gobierno de México">                 </div>
-         </div>
-      </div>
-   </footer>
+         </footer>
 </html>
