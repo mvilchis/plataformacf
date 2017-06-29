@@ -205,7 +205,7 @@
                   </div>
                 </div>
                 <section class="year-selector">
-                  <h3> Elige el trimestre que deseas visualizar</h3>
+                  <h4> Elige el trimestre que deseas visualizar</h4>
                   <div class="year-select">
                   </div>
                 </section>
