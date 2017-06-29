@@ -118,8 +118,8 @@ foreach ($metadata["results"] as $value) {
             <span style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</span>
           </div>
           <div>
-            <p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b></p>
-            <p> <b>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México </b></p>
+            <br>
+            <p style="font-size: 20px;">El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México<br>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México</p>
             </br>
             </br>
             </br>
@@ -127,18 +127,18 @@ foreach ($metadata["results"] as $value) {
         </div>
         <row>
           <div class="col-xs-12 col-sm-4">
-            <h3> Proyectos totales fondeados:</h3>
+            <h3>PROYECTOS TOTALES<br>FONDEADOS</h3>
             <span style="font-size: 40px;" >23,422</span>
             </br>
             </br>
             </br>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h3>Fondeo total:</h3>
+            <h3>FONDEO<BR>TOTAL</h3>
             <span style="font-size: 40px;">$132 MDP</span>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h3>Plataformas en linea:</h3>
+            <h3>PLATAFORMAS<br>EN LINEA</h3>
             <span style="font-size: 40px;">17</span>
           </div>
         </row>
@@ -149,7 +149,7 @@ foreach ($metadata["results"] as $value) {
         <section id="block-block-2" class="block block-block clearfix">
           <div class="jumbotron-block col-xs-12 col-sm-12">
             <div class="header_mx">
-              <h1>Indicadores</h1>
+              <h1><b>Indicadores</b></h1>
             </div>
           </div>
           <div class="jumbotron-block col-xs-1 col-sm-12" style="color:#6A6A6A">
@@ -157,9 +157,8 @@ foreach ($metadata["results"] as $value) {
             <?php
               $dire = __DIR__ . '/json/partition';
               $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.</p>');
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>');
               ?>
-            <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
           </div>
           <?php
             echo('<div class="jumbotron-block col-sm-12 col-xs-12">');
@@ -179,8 +178,10 @@ foreach ($metadata["results"] as $value) {
               echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
                     <div class="row indicador-row"><div class="col-xs-12">
                     <div class="objetivo-name" style="color:#6A6A6A">
+                    <div style="margin-top:20px; margin-bottom:10px;">
                     <img src="img/'.$objetivo_icons[$key].'.png"/>
-                    <strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong>'.'</div></div>
+                    <span style="margin-left: 10px;"><strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong></span>'.'</div></div>
+                    </div>
                     </div><div style="display: none;" class="row listed-indicadores"><div class="listed-indicadores-title">INDICADORES</div>');
 
               foreach ($objetivo as $indicador) {
@@ -239,12 +240,15 @@ foreach ($metadata["results"] as $value) {
     <div class="container">
     </div>
   </div>
+  <br>
+  <br>
+  <br>
   <div class="region region-header" style="color:black;">
     <div class="container">
       <section id="block-block-3" class="block block-block clearfix">
         <div class="jumbotron-block col-xs-12 col-sm-12">
           <div class="header_mx">
-            <h1>Explora</h1>
+            <h1><b>Explora</b></h1>
           </div>
 
         </div>
@@ -253,12 +257,11 @@ foreach ($metadata["results"] as $value) {
           <?php
               $dire = __DIR__ . '/json/partition';
               $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p style="color:black">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México </p>');
+              echo('<p style="color:black">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p> ');
               ?>
-          <p style="color:black">Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
         <section class="col-xs-12 col-sm-2">
-          <button class="btn btn-line-export btn-outline" type="button" onclick="visit_indicador('0','i41')" > Ir a la sección </button>
+          <button class="btn btn-line-export btn-invert" type="button" onclick="visit_indicador('0','i41')" > Ir a la sección </button>
         </section>
       </section>
     </div>
@@ -266,3 +269,4 @@ foreach ($metadata["results"] as $value) {
   <?php include("footer.php"); ?>
 </body>
 </html>
+F
