@@ -26,7 +26,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="http://www.iadb.org/es/banco-interamericano-de-desarrollo,2837.html" target="_blank">
-                    <img src="img/BID.png" alt="BID" style="width:auto;max-width:75%">
+                    <img src="img/BID.png" alt="BID" style="width:auto;max-width:60%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
