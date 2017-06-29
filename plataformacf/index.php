@@ -177,8 +177,10 @@ foreach ($metadata["results"] as $value) {
               echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
                     <div class="row indicador-row"><div class="col-xs-12">
                     <div class="objetivo-name" style="color:#6A6A6A">
+                    <div style="margin-top:20px; margin-bottom:10px;">
                     <img src="img/'.$objetivo_icons[$key].'.png"/>
                     <strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong>'.'</div></div>
+                    </div>
                     </div><div style="display: none;" class="row listed-indicadores"><div class="listed-indicadores-title">INDICADORES</div>');
 
               foreach ($objetivo as $indicador) {
