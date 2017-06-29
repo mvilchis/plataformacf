@@ -118,8 +118,7 @@ foreach ($metadata["results"] as $value) {
             <span style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</span>
           </div>
           <div>
-            <p><b>El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México</b></p>
-            <p><b>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México </b></p>
+            <p style="font-size: 20px;">El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México<br>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México</p>
             </br>
             </br>
             </br>
@@ -127,18 +126,18 @@ foreach ($metadata["results"] as $value) {
         </div>
         <row>
           <div class="col-xs-12 col-sm-4">
-            <h3> Proyectos totales fondeados:</h3>
+            <h3>PROYECTOS TOTALES<br>FONDEADOS</h3>
             <span style="font-size: 40px;" >23,422</span>
             </br>
             </br>
             </br>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h3>Fondeo total:</h3>
+            <h3>FONDEO<BR>TOTAL</h3>
             <span style="font-size: 40px;">$132 MDP</span>
           </div>
           <div class="col-xs-12 col-sm-4">
-            <h3>Plataformas en linea:</h3>
+            <h3>PLATAFORMAS<br>EN LINEA</h3>
             <span style="font-size: 40px;">17</span>
           </div>
         </row>
