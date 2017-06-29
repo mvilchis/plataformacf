@@ -118,6 +118,7 @@ foreach ($metadata["results"] as $value) {
             <span style="font-size: 45px;">Sistema de monitoreo de fondeo colectivo en México</span>
           </div>
           <div>
+            <br>
             <p style="font-size: 20px;">El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México<br>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México</p>
             </br>
             </br>
@@ -148,7 +149,7 @@ foreach ($metadata["results"] as $value) {
         <section id="block-block-2" class="block block-block clearfix">
           <div class="jumbotron-block col-xs-12 col-sm-12">
             <div class="header_mx">
-              <h1>Indicadores</h1>
+              <h1><b>Indicadores</b></h1>
             </div>
           </div>
           <div class="jumbotron-block col-xs-1 col-sm-12" style="color:#6A6A6A">
@@ -179,7 +180,7 @@ foreach ($metadata["results"] as $value) {
                     <div class="objetivo-name" style="color:#6A6A6A">
                     <div style="margin-top:20px; margin-bottom:10px;">
                     <img src="img/'.$objetivo_icons[$key].'.png"/>
-                    <strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong>'.'</div></div>
+                    <span style="margin-left: 10px;"><strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong></span>'.'</div></div>
                     </div>
                     </div><div style="display: none;" class="row listed-indicadores"><div class="listed-indicadores-title">INDICADORES</div>');
 
@@ -239,12 +240,15 @@ foreach ($metadata["results"] as $value) {
     <div class="container">
     </div>
   </div>
+  <br>
+  <br>
+  <br>
   <div class="region region-header" style="color:black;">
     <div class="container">
       <section id="block-block-3" class="block block-block clearfix">
         <div class="jumbotron-block col-xs-12 col-sm-12">
           <div class="header_mx">
-            <h1>Explora</h1>
+            <h1><b>Explora</b></h1>
           </div>
 
         </div>
