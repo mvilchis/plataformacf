@@ -54,7 +54,67 @@ foreach($metadata_grupos["results"] as $value) {
 	var indicadores_by_desagregacion = <?php echo json_encode($desagregacion); ?>;
 	var indicadores_by_objdes = <?php echo json_encode($desagregacion_by_obj); ?>;
 	var indicadores_grupos = <?php echo json_encode($grupos); ?>;
+  function exportToCsv(){
 
+					(function ($) {
+							var filters = {
+								//Año,Trimestre,Indicador,Categoria,Estado,Valor,Agregacion
+								//'Indicador':i_id,
+								'Categoria':active_group,
+    						'Agregacion':active_unit
+								};
+
+			d3.csv("to_csv/raw_csv/"+i_id+".csv", function(csv) {
+    	csv = csv.filter(function(row) {
+        // run through all the filters, returning a boolean
+        return ['Categoria','Agregacion'].reduce(function(pass, column) {
+            return pass && (
+                // pass if no filter is set
+                !filters[column] ||
+                    // pass if the row's value is equal to the filter
+                    // (i.e. the filter is set to a string)
+                    row[column] === filters[column] ||
+                    // pass if the row's value is in an array of filter values
+                    filters[column].indexOf(row[column]) >= 0
+                );
+        }, true);
+    })
+		var result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion\r\n";
+		var catego = null;
+		var agre = null;
+		if (active_unit == 'N') {
+			agre = 'Nacional';
+		}else {
+			agre = 'Estatal';
+		}
+		var indicador = metadata_groupedbyid[i_id]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[i_id]['Nombre_del_objetivo'];
+		$.each(indicadores_grupos[i_id],function (key,tmp) {
+				if (active_group == tmp['id2']){
+					  catego =tmp['id3'] ;
+				}
+		});
+		$.each(csv,function (key,tmp) {
+			result += tmp['Año']+","+tmp['Trimestre']+","+indicador+","+catego+","+tmp['Valor']+','+agre+'\r'+'\n';
+		});
+		var blob = new Blob([result]);
+if (window.navigator.msSaveOrOpenBlob)  // IE hack; see http://msdn.microsoft.com/en-us/library/ie/hh779016.aspx
+    window.navigator.msSaveBlob(blob, "reporte.csv");
+else
+{
+    var a = window.document.createElement("a");
+    a.href = window.URL.createObjectURL(blob, {type: "text/plain"});
+    a.download = "reporte.csv";
+    document.body.appendChild(a);
+    a.click();  // IE: "Access is denied"; see: https://connect.microsoft.com/IE/feedback/details/797361/ie-10-treats-blob-url-as-cross-origin-and-denies-access
+    document.body.removeChild(a);
+}
+
+		//document.write(result);
+
+    //document.write(csv.join(","));
+});
+  }(jQuery));
+}
 	function exportToPDF(i) {
 		(function ($) {
 			if (i == "map") { svg = $("svg.leaflet-zoom-animated")[0];
@@ -1009,7 +1069,7 @@ foreach($metadata_grupos["results"] as $value) {
 
 				$("table#datos tbody tr").remove();
 				metadatos_a = metadata_groupedbyid[$("select#select-indicador-a option:selected").val()];
-				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>JSON</span></td><td style='min-width:80px;'><center><a href='"+metadatos_a["URL_indicador"]+"'><img width=35 height=36 src='img/icon-circle-arrow-right-gray.png' /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div></td><td></td></tr>");
+				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a target='_blank'><img onmousedown='exportToCsv();' width=35 height=36 src='img/icon-circle-arrow-right-gray.png' /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div></td><td></td></tr>");
 				<?php if ($page == "compara"): ?>
 					$("table#datos-b tbody tr").remove();
 					metadatos_b = metadata_groupedbyid[$("select#select-indicador-b option:selected").val()];
