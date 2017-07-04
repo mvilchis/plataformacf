@@ -452,8 +452,11 @@ else
 
 	function render_line() {
 		var line_columns = [];
+		var graph_width;
 		line_columns_years = ["x"];
 		(function ($) {
+			graph_width = $('.col-xs-8').css('weight');
+			console.log(graph_width);
 			$.each(years, function(key,year) {
 				line_columns_years.push(year);
 			});
@@ -528,7 +531,7 @@ else
 		        pattern: line_colors
 		    },
 		    size: {
-		        width: 1200
+					width: 700
 		    },
 		    legend: {
 		        show: false
@@ -548,7 +551,7 @@ else
 								$( "svg g.c3-chart-line path.c3-line-" +id.replace(/ /g,'-') ).css('stroke','#00cc99');
 				            }
 				            else {
-					            $( "svg g.c3-chart-line g.c3-circles circle" ).css('fill','#ccc');
+								      $( "svg g.c3-chart-line g.c3-circles circle" ).css('fill','#ccc');
 								$( "svg g.c3-chart-line path.c3-line" ).css('stroke','#ccc');
 					            $( "svg g.c3-chart-line g.c3-circles-Promedio-nacional circle" ).css('fill','#f00');
 								$( "svg g.c3-chart-line path.c3-line-Promedio-nacional" ).css('stroke','#f00');
@@ -761,7 +764,7 @@ else
 			        pattern: ['#00cc99']
 			    },
 			    size: {
-			        width: 460,
+			        width: 360,
 			        height: 160
 			    },
 			    legend: {

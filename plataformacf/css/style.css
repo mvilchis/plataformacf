@@ -757,6 +757,9 @@ body.page-node .c3 svg {
 	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 	font-size: 12px;
 	font-weight: 200;
+  margin: auto;
+  display: block;
+  width: 80%;
 }
 body.page-node .infobox .c3 svg {
 	font-size: 8px;
