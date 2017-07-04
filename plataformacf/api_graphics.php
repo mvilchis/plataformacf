@@ -43,7 +43,8 @@ foreach($metadata_grupos["results"] as $value) {
 	array_push($grupos[$value["id"]],$value);
 }
 
-
+$result = file_get_contents("json/estado_cve.json");
+$estados = json_decode($result, true);
 ?>
 
 <script type="text/javascript">
@@ -54,47 +55,50 @@ foreach($metadata_grupos["results"] as $value) {
 	var indicadores_by_desagregacion = <?php echo json_encode($desagregacion); ?>;
 	var indicadores_by_objdes = <?php echo json_encode($desagregacion_by_obj); ?>;
 	var indicadores_grupos = <?php echo json_encode($grupos); ?>;
+	var estados = <?php echo json_encode($estados); ?>;
+
   function exportToCsv(){
-
-					(function ($) {
-							var filters = {
-								//Año,Trimestre,Indicador,Categoria,Estado,Valor,Agregacion
-								//'Indicador':i_id,
-								'Categoria':active_group,
-    						'Agregacion':active_unit
-								};
-
-			d3.csv("to_csv/raw_csv/"+i_id+".csv", function(csv) {
-    	csv = csv.filter(function(row) {
-        // run through all the filters, returning a boolean
-        return ['Categoria','Agregacion'].reduce(function(pass, column) {
-            return pass && (
+			(function ($) {
+				var filters = {
+					'Categoria':active_group,
+    			'Agregacion':active_unit
+				};
+				d3.csv("to_csv/raw_csv/"+i_id+".csv", function(csv) {
+					csv = csv.filter(function(row) {
+        	  // run through all the filters, returning a boolean
+        	  return ['Categoria','Agregacion'].reduce(function(pass, column) {
+              return pass && (
                 // pass if no filter is set
                 !filters[column] ||
-                    // pass if the row's value is equal to the filter
-                    // (i.e. the filter is set to a string)
-                    row[column] === filters[column] ||
-                    // pass if the row's value is in an array of filter values
-                    filters[column].indexOf(row[column]) >= 0
-                );
-        }, true);
-    })
-		var result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion\r\n";
-		var catego = null;
-		var agre = null;
-		if (active_unit == 'N') {
-			agre = 'Nacional';
-		}else {
-			agre = 'Estatal';
-		}
-		var indicador = metadata_groupedbyid[i_id]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[i_id]['Nombre_del_objetivo'];
-		$.each(indicadores_grupos[i_id],function (key,tmp) {
-				if (active_group == tmp['id2']){
-					  catego =tmp['id3'] ;
-				}
-		});
-		$.each(csv,function (key,tmp) {
-			result += tmp['Año']+","+tmp['Trimestre']+","+indicador+","+catego+","+tmp['Valor']+','+agre+'\r'+'\n';
+                  // pass if the row's value is equal to the filter
+                  // (i.e. the filter is set to a string)
+                  row[column] === filters[column] ||
+                  // pass if the row's value is in an array of filter values
+                  filters[column].indexOf(row[column]) >= 0
+              );
+					  }, true);
+          })
+					var result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion\r\n";
+					var categoria = null;
+					var agregacion = null;
+					if (active_unit == 'N') {
+						agregacion = 'Nacional';
+					}else {
+						agregacion = 'Estatal';
+						result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado\r\n";
+					}
+		      var indicador = metadata_groupedbyid[i_id]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[i_id]['Nombre_del_objetivo'];
+		      $.each(indicadores_grupos[i_id],function (key,tmp) {
+				  if (active_group == tmp['id2']){
+					  categoria =tmp['id3'] ; //Buscamos el nombre de la categoria en la lista
+				  }
+		      });
+		      $.each(csv,function (key,tmp) {
+						result += tmp['Año']+","+tmp['Trimestre']+","+indicador+","+categoria+","+tmp['Valor']+','+agregacion;
+						if (active_unit == 'E') {
+							result += ','+estados[tmp['Estado']];
+						}
+						result +='\r'+'\n';
 		});
 		var blob = new Blob([result]);
 if (window.navigator.msSaveOrOpenBlob)  // IE hack; see http://msdn.microsoft.com/en-us/library/ie/hh779016.aspx
