@@ -1,32 +1,32 @@
-{"1":"Aguascalientes"
-,"2":"Baja California"
-,"3":"Baja California Sur"
-,"4":"Campeche"
-,"5":"Coahuila de Zaragoza"
-,"6":"Colima"
-,"7":"Chiapas"
-,"8":"Chihuahua"
-,"9":"Ciudad de México"
-,"10":"Durango"
-,"11":"Guanajuato"
-,"12":"Guerrero"
-,"13":"Hidalgo"
-,"14":"Jalisco"
-,"15":"México"
-,"16":"Michoacán de Ocampo"
-,"17":"Morelos"
-,"18":"Nayarit"
-,"19":"Nuevo León"
-,"20":"Oaxaca"
-,"21":"Puebla"
-,"22":"Querétaro"
-,"23":"Quintana Roo"
-,"24":"San Luis Potosí"
-,"25":"Sinaloa"
-,"26":"Sonora"
-,"27":"Tabasco"
-,"28":"Tamaulipas"
-,"29":"Tlaxcala"
-,"30":"Veracruz de Ignacio de la Llave"
-,"31":"Yucatán"
-,"32":"Zacatecas"}
+{"1":{"nombre":"Aguascalientes", "clave":"01"}
+,"2":{"nombre":"Baja California", "clave":"02"}
+,"3":{"nombre":"Baja California Sur", "clave":"03"}
+,"4":{"nombre":"Campeche", "clave":"04"}
+,"5":{"nombre":"Coahuila de Zaragoza", "clave":"05"}
+,"6":{"nombre":"Colima", "clave":"06"}
+,"7":{"nombre":"Chiapas", "clave":"07"}
+,"8":{"nombre":"Chihuahua", "clave":"08"}
+,"9":{"nombre":"Ciudad de México", "clave":"09"}
+,"10":{"nombre":"Durango", "clave":"10"}
+,"11":{"nombre":"Guanajuato", "clave":"11"}
+,"12":{"nombre":"Guerrero", "clave":"12"}
+,"13":{"nombre":"Hidalgo", "clave":"13"}
+,"14":{"nombre":"Jalisco", "clave":"14"}
+,"15":{"nombre":"México", "clave":"15"}
+,"16":{"nombre":"Michoacán de Ocampo", "clave":"16"}
+,"17":{"nombre":"Morelos", "clave":"17"}
+,"18":{"nombre":"Nayarit", "clave":"18"}
+,"19":{"nombre":"Nuevo León", "clave":"19"}
+,"20":{"nombre":"Oaxaca", "clave":"20"}
+,"21":{"nombre":"Puebla", "clave":"21"}
+,"22":{"nombre":"Querétaro", "clave":"22"}
+,"23":{"nombre":"Quintana Roo", "clave":"23"}
+,"24":{"nombre":"San Luis Potosí", "clave":"24"}
+,"25":{"nombre":"Sinaloa", "clave":"25"}
+,"26":{"nombre":"Sonora", "clave":"26"}
+,"27":{"nombre":"Tabasco", "clave":"27"}
+,"28":{"nombre":"Tamaulipas", "clave":"28"}
+,"29":{"nombre":"Tlaxcala", "clave":"29"}
+,"30":{"nombre":"Veracruz de Ignacio de la Llave", "clave":"30"}
+,"31":{"nombre":"Yucatán", "clave":"31"}
+,"32":{"nombre":"Zacatecas", "clave":"32"}}

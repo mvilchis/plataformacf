@@ -85,7 +85,7 @@ $estados = json_decode($result, true);
 						agregacion = 'Nacional';
 					}else {
 						agregacion = 'Estatal';
-						result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado\r\n";
+						result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado,Clave_inegi\r\n";
 					}
 		      var indicador = metadata_groupedbyid[i_id]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[i_id]['Nombre_del_objetivo'];
 		      $.each(indicadores_grupos[i_id],function (key,tmp) {
@@ -93,10 +93,11 @@ $estados = json_decode($result, true);
 					  categoria =tmp['id3'] ; //Buscamos el nombre de la categoria en la lista
 				  }
 		      });
-		      $.each(csv,function (key,tmp) {
-						result += tmp['Año']+","+tmp['Trimestre']+","+indicador+","+categoria+","+tmp['Valor']+','+agregacion;
+		      $.each(csv,function (key,value) {
+						result += value['Año']+","+value['Trimestre']+","+indicador+","+categoria+","+value['Valor']+','+agregacion;
 						if (active_unit == 'E') {
-							result += ','+estados[tmp['Estado']];
+							result += ','+estados[value['Estado']]['nombre'];
+							result += ','+estados[value['Estado']]['clave'];
 						}
 						result +='\r'+'\n';
 		});
