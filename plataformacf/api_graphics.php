@@ -56,50 +56,50 @@ $estados = json_decode($result, true);
 	var indicadores_by_objdes = <?php echo json_encode($desagregacion_by_obj); ?>;
 	var indicadores_grupos = <?php echo json_encode($grupos); ?>;
 	var estados = <?php echo json_encode($estados); ?>;
-
   function exportToCsv(){
-			(function ($) {
-				var filters = {
-					'Categoria':active_group,
-    			'Agregacion':active_unit
-				};
-				d3.csv("to_csv/raw_csv/"+i_id+".csv", function(csv) {
-					csv = csv.filter(function(row) {
-        	  // run through all the filters, returning a boolean
-        	  return ['Categoria','Agregacion'].reduce(function(pass, column) {
-              return pass && (
-                // pass if no filter is set
-                !filters[column] ||
-                  // pass if the row's value is equal to the filter
-                  // (i.e. the filter is set to a string)
-                  row[column] === filters[column] ||
-                  // pass if the row's value is in an array of filter values
-                  filters[column].indexOf(row[column]) >= 0
-              );
-					  }, true);
-          })
-					var result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion\r\n";
-					var categoria = null;
-					var agregacion = null;
-					if (active_unit == 'N') {
-						agregacion = 'Nacional';
-					}else {
-						agregacion = 'Estatal';
-						result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado,Clave_inegi\r\n";
-					}
-		      var indicador = metadata_groupedbyid[i_id]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[i_id]['Nombre_del_objetivo'];
-		      $.each(indicadores_grupos[i_id],function (key,tmp) {
-				  if (active_group == tmp['id2']){
-					  categoria =tmp['id3'] ; //Buscamos el nombre de la categoria en la lista
-				  }
-		      });
-		      $.each(csv,function (key,value) {
-						result += value['Año']+","+value['Trimestre']+","+indicador+","+categoria+","+value['Valor']+','+agregacion;
-						if (active_unit == 'E') {
-							result += ','+estados[value['Estado']]['nombre'];
-							result += ','+estados[value['Estado']]['clave'];
-						}
-						result +='\r'+'\n';
+		(function ($) {
+			var filters = {
+				'Categoria':active_group,
+    		'Agregacion':active_unit
+			};
+			indicador_selected = $("select#select-indicador-a option:selected").val();
+			d3.csv("to_csv/raw_csv/"+indicador_selected+".csv", function(csv) {
+				csv = csv.filter(function(row) {
+        // run through all the filters, returning a boolean
+        return ['Categoria','Agregacion'].reduce(function(pass, column) {
+          return pass && (
+          // pass if no filter is set
+          !filters[column] ||
+          // pass if the row's value is equal to the filter
+          // (i.e. the filter is set to a string)
+          row[column] === filters[column] ||
+          // pass if the row's value is in an array of filter values
+          filters[column].indexOf(row[column]) >= 0
+          );
+				}, true);
+      })
+			var result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion\r\n";
+			var categoria = null;
+			var agregacion = null;
+			if (active_unit == 'N') {
+				agregacion = 'Nacional';
+			}else {
+				agregacion = 'Estatal';
+				result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado,Clave_inegi\r\n";
+			}
+			var indicador = metadata_groupedbyid[indicador_selected]['Nombre_del_indicador'] +"-"+metadata_groupedbyid[indicador_selected]['Nombre_del_objetivo'];
+		  $.each(indicadores_grupos[indicador_selected],function (key,tmp) {
+			  if (active_group == tmp['id2']){
+				  categoria =tmp['id3'] ; //Buscamos el nombre de la categoria en la lista
+			  }
+		  });
+		  $.each(csv,function (key,value) {
+				result += value['Año']+","+value['Trimestre']+","+indicador+","+categoria+","+value['Valor']+','+agregacion;
+				if (active_unit == 'E') {
+					result += ','+estados[value['Estado']]['nombre'];
+					result += ','+estados[value['Estado']]['clave'];
+				}
+				result +='\r'+'\n';
 		});
 		var blob = new Blob([result]);
 if (window.navigator.msSaveOrOpenBlob)  // IE hack; see http://msdn.microsoft.com/en-us/library/ie/hh779016.aspx
@@ -1077,7 +1077,46 @@ else
 
 				$("table#datos tbody tr").remove();
 				metadatos_a = metadata_groupedbyid[$("select#select-indicador-a option:selected").val()];
-				$("table#datos tbody").append("<tr class='indicador-a datos-indicador'><td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td><td>"+metadatos_a["Dependencia"]+"</td><td>N/A</td><td><span class='fformat'>CSV</span></td><td style='min-width:80px;'><center><a target='_blank'><img onmousedown='exportToCsv();' width=35 height=36 src='img/icon-circle-arrow-right-gray.png' /></a></center></td></tr><tr class='indicador-a metadatos'><td><div class='metadata-header'>Descripción</div><div>"+metadatos_a["Descripcion"]+"</div></td><td><div class='metadata-header'>Desagregación</div><div>"+metadatos_a["Cobertura"]+"</div></td><td><div class='metadata-header'>Desagregación temporal</div><div>"+metadatos_a["Periodicidad"]+"</div></td><td><div class='metadata-header'>Años</div><div>"+metadatos_a["RangoTiempo"]+"</div></td><td></td></tr>");
+				$("table#datos tbody").append(
+					"<tr class='indicador-a datos-indicador'>\
+					  <td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td>\
+						<td>"+metadatos_a["Dependencia"]+"</td>\
+						<td>N/A</td>\
+						<td><span class='fformat'>CSV</span></td>\
+						<td style='min-width:80px;'>\
+							<center>\
+							  <a target='_blank'>\
+									<img onmousedown='exportToCsv()' width=35 height=36 src='img/icon-circle-arrow-right-gray.png' />\
+								</a>\
+							</center>\
+						</td>\
+					</tr>");
+				$("table#datos tbody").append(
+					"<tr class='indicador-a metadatos'>\
+					  <td> <div class='metadata-header'>Descripción</div>\
+					      <div>"+metadatos_a["Descripcion"]+"</div></td>\
+					  <td><div class='metadata-header'>Desagregación</div>\
+						    <div>"+metadatos_a["Cobertura"]+"</div></td>\
+						<td><div class='metadata-header'>Desagregación temporal</div>\
+						    <div>"+metadatos_a["Periodicidad"]+"</div></td>\
+						<td><div class='metadata-header'>Años</div>\
+						    <div>"+metadatos_a["RangoTiempo"]+"</div></td>\
+						<td></td></tr>"	);
+				$("table#datos tbody").append(
+					"<tr class='indicador-a datos-indicador'>\
+						<td class='nombre-ind'>Base de datos completa</td>\
+						<td>AFICO</td>\
+						<td>N/A</td>\
+						<td><span class='fformat'>CSV</span></td>\
+						<td style='min-width:80px;'>\
+						  <center>\
+								<a target='_blank' href='to_csv/raw_csv/all_data.csv'>\
+									<img width=35 height=36 src='img/icon-circle-arrow-right-gray.png' />\
+								</a>\
+							</center>\
+						</td>\
+					</tr>");
+
 				<?php if ($page == "compara"): ?>
 					$("table#datos-b tbody tr").remove();
 					metadatos_b = metadata_groupedbyid[$("select#select-indicador-b option:selected").val()];
