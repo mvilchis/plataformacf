@@ -63,7 +63,7 @@
 
                               $i = 0;
                               foreach($indicadores as $key => $objetivo) {
-                              	echo ('<div class="row indicador-header"><div class="col-xs-1"><img src="img/'.$objetivo_icons[$key].'.png"/></div><div class="col-xs-11"><h4><strong>'.($i+1).'.</strong> '.$objetivo_nombres[$key].'</h4></div></div>');
+                              	echo ('<div class="row indicador-header"><div class="col-xs-1" style="padding-top: 15px;"><img src="img/'.$objetivo_icons[$key].'.png"/></div><div class="col-xs-11"><h4><strong>'.($i+1).'.</strong> '.$objetivo_nombres[$key].'</h4></div></div>');
                               	foreach($objetivo as $indicador) {
                               		echo ( '<div class="row indicador-page-row" onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" ><div class="col-xs-1"></div><div class="col-xs-11">'.$indicador["Nombre_del_indicador"]." : ".$indicador["Descripcion"]."</div></div>" );
                               	}

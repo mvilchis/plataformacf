@@ -20,7 +20,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="http://www.nafin.com/portalnf/content/home/home.html" target="_blank">
-                    <img src="img/nacional-financiera.png" alt="Nacional Financiera" style="width:auto;max-width:100%">
+                    <img src="img/nacional-financiera.png" alt="Nacional Financiera" style="display: inline-block;vertical-align: middle;">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -42,7 +42,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:right">
                   <a href="http://www.fomin.org/es-es/" target="_blank">
-                    <img src="img/fomin.png" alt="FOMIN" style="width:auto;max-width:100%">
+                    <img src="img/fomin.png" alt="FOMIN" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -53,7 +53,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="http://afico.org" target="_blank">
-                    <img src="img/afico.png" alt="AFICO" style="width:auto;max-width:100%">
+                    <img src="img/afico.png" alt="AFICO" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -64,7 +64,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="." target="_blank">
-                    <img src="img/crowdfunding.png" alt="CROWDFUNDING" style="width:auto;max-width:100%">
+                    <img src="img/crowdfunding.png" alt="CROWDFUNDING" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -75,7 +75,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="https://www.inadem.gob.mx" target="_blank">
-                    <img src="img/se_inadem.png" alt="INADEM" style="width:auto;max-width:100%">
+                    <img src="img/se_inadem.png" alt="INADEM" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -86,7 +86,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:20px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="http://pegaso.anahuac.mx/idearse" target="_blank">
-                    <img src="img/idear.png" alt="Idearse" style="width:auto;max-width:100%">
+                    <img src="img/idear.png" alt="Idearse" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
@@ -97,7 +97,7 @@
               <div>
                 <div class="wsite-image wsite-image-border-none " style="padding-top:10px;padding-bottom:10px;margin-left:0px;margin-right:0px;text-align:center">
                   <a href="." target="_blank">
-                    <img src="img/mx_d-logos1.png" alt="MX_D" style="width:auto;max-width:100%">
+                    <img src="img/mx_d-logos1.png" alt="MX_D" style="display: inline-block;vertical-align: middle;%">
                   </a>
                   <div style="display:block;font-size:90%">
                   </div>
