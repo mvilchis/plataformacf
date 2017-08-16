@@ -264,7 +264,7 @@ foreach ($metadata["results"] as $value) {
               ?>
         </div>
         <section class="col-xs-12 col-sm-3">
-          <button class="btn btn-line-export btn-invert" type="button" onclick="visit_indicador('0','i41')" > Ir a la sección </button>
+          <button class="btn btn-line-export btn-invert" type="button" onclick="visit_indicador('0','i41')" style="border-radius:0;"> Ir a la sección </button>
         </section>
       </section>
     </div>
