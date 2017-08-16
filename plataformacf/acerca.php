@@ -58,7 +58,7 @@
                               <h1><b>Acerca</b></h1>
                             </div>
                         </div>
-                           <div class="content">
+                           <div class="content" style="color: #424242">
                               <div class="field field-name-body field-type-text-with-summary field-label-hidden">
                                  <div class="field-items">
                                     <div class="field-item even texto_parrafo" property="content:encoded">
