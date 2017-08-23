@@ -139,6 +139,8 @@ strong                                          { font-weight: 600; }
                                                     right:  24px;
                                                     font-size: 40px;
                                                   }
+.indicador-page-row                               {cursor: pointer;}
+.indicador-page-row:hover                         {color: #000;}
 
 
 .header_mx h2:after {
