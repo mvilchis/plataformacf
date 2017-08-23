@@ -1,274 +1,197 @@
 <!DOCTYPE html>
-<html lang="es" class="no-js js gr__localhost">
-<head profile="http://www.w3.org/1999/xhtml/vocab">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+<head>
+  <meta charset="utf-8">
   <title>Inicio | Sistema de monitoreo de fondeo colectivo en México</title>
-  <!--                          Style                                    -->
-  <link rel="stylesheet" type="text/css" href="css/system.base.css"/>
-  <link rel="stylesheet" type="text/css" href="css/field.css"/>
-  <link rel="stylesheet" type="text/css" href="css/views.css"/>
-  <link rel="stylesheet" type="text/css" href="css/ctools.css"/>
-  <link rel="stylesheet" type="text/css" href="css/panels.css"/>
-  <link rel="stylesheet" type="text/css" href="css/field.css"/>
-  <link rel="stylesheet" type="text/css" href="css/flexible.css"/>
-  <link rel="stylesheet" type="text/css" href="css/tmp.css"/>
-  <link rel="stylesheet" type="text/css" href="css/64d7d0a3c55866afec0187d45d6e1cfe.css"/>
-  <link rel="stylesheet" type="text/css" href="css/jquery.magnific-popup.css"/>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
-  <link rel="stylesheet" type="text/css" href="css/overrides.css"/>
-  <link rel="stylesheet" type="text/css" href="css/common.css"/>
-  <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <link rel="stylesheet" type="text/css" href="css/css">
-  <link rel="stylesheet" type="text/css" href="css/critical.css" />
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+  <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/plataformacf.css" />
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans:400"/>
-  <!--                      script                                       -->
-  <script src="js/jquery.min.js"></script>
-  <script src="js/jquery.once.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/jquery.matchHeight-min.js"></script>
-</head>
-<?php
-include('h_objetivos.php');
-$result = file_get_contents("json/cf_metadata.json");
-$metadata = json_decode($result, true);
-$indicadores_id = array();
-foreach ($metadata["results"] as $value) {
-    if (array_key_exists($value["Nombre_del_objetivo"], $indicadores)) {
-        array_push($indicadores[$value["Nombre_del_objetivo"]], $value);
-    }
-    $indicadores_id[$value["Clave"]] = $value;
-}
-?>
-<body class="html front not-logged-in no-sidebars page-inicio navbar-is-fixed-top bootstrap-anchors-processed" data-gr-c-s-loaded="true">
-  <header id="dgm-navbar">
-    <nav class="navbar navbar-inverse navbar-fixed-top gob-mx-navbar" role="navigation" style="width: 100%; margin: 0; max-width: 100%;">
-      <div class="container-fluid">
-        <div class="navbar-header">
-          <button type="button" id="navbarMain" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarMainCollapse">
-            <span class="sr-only">Interruptor de Navegación</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" title="Ir a la página de inicio de datos.gob.mx" href="http://datos.gob.mx/">
-            <img src="img/ic-dgm-logo.png" alt="datos.gob.mx" style="padding: 4px;">
-          </a>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarMainCollapse">
-          <ul class="nav navbar-nav navbar-right social-navigation" role="navigation" aria-label="Navegación social">
-            <li class="item-facebook"><a href="http://facebook.com/datosgobmx" target="_blank">Facebook</a></li>
-            <li class="item-twitter"><a href="http://twitter.com/datosgobmx" target="_blank">Twitter</a></li>
-            <li class="item-github"><a href="http://github.com/mxabierto" target="_blank">Github</a></li>
-          </ul>
-          <ul class="nav navbar-nav">
-            <li>
-              <a aria-label="Ir al catalogo de datos" title="Ir al catalogo de datos" href="http://datos.gob.mx/busca">Datos</a>
-            </li>
-            <li>
-              <a aria-label="Conoce los Datos Abiertos más buscados" target="_self" title="Conoce los Datos Abiertos más buscados" href="http://datos.gob.mx/visualizacion">Visualización</a>
-            </li>
-            <li>
-              <a aria-label="Conoce las herramientas con datos" title="Conoce las herramientas con datos" href="http://datos.gob.mx/herramientas">Herramientas</a>
-            </li>
-            <li>
-              <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="http://datos.gob.mx/blog">Blog</a>
-            </li>
-            <li>
-              <a aria-label="Conoce más sobre este sitio" title="Conoce más sobre este sitio" href="/acerca">Acerca</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <nav class="navbar navbar-default navbar-fixed-top" style="background-color:#00CC99;">
-      <div class="container-fluid">
-        <div class="navbar-header" style="padding-top: 15px;padding-bottom: 15px;">
-          <span style="font-size: 18px;font-weight: 700;color: white;"> Crowdfunding Mx </span>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSecondCollapse">
-          <ul class="nav navbar-nav navbar-right " role="navigation">
-            <li>
-              <a aria-label="Ir al catalogo de datos" title="Ir al catalogo de datos" href="/explora"  style="font-size:16px;">Explora</a>
-            </li>
-            <li>
-              <a aria-label="Conoce el impacto de los datos" title="Conoce el impacto de los datos" href="/indicadores"  style="font-size:16px;">Indicadores</a>
-            </li>
-            <li>
-              <a aria-label="Conoce los Datos Abiertos más buscados" target="_self" title="Conoce los Datos Abiertos más buscados" href="/acerca"  style="font-size:16px;">Acerca</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <header class="header" style="color:white;">
-    <div style="background:white;">
-    <!-- Banner -->
-    <div class="region region-header image_background" >
-      <section id="block-block-1" class="block block-block clearfix">
-        <div class="block block-block clearfix inner ">
-          <div>
-            </br>
-            </br>
-            </br>
-            <span style="font-size: 36px;font-weight: 200;">Sistema de monitoreo de fondeo colectivo en México</span>
-          </div>
-          <div>
-            <br>
-            </br>
-            <p style="font-size: 16px;">El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México<br>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México</p>
-            </br>
-            </br>
-            </br>
-          </div>
-        </div>
-        <row>
-          <div class="col-xs-12 col-sm-4">
-            <h3 style="font-weight: 600">PROYECTOS TOTALES<br>FONDEADOS</h3>
-            <span style="font-size: 40px;" >23,422</span>
-            </br>
-            </br>
-            </br>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h3 style="font-weight: 600">FONDEO<BR>TOTAL</h3>
-            <span style="font-size: 40px;">$132 MDP</span>
-          </div>
-          <div class="col-xs-12 col-sm-4">
-            <h3 style="font-weight: 600">PLATAFORMAS<br>EN LINEA</h3>
-            <span style="font-size: 40px;">17</span>
-          </div>
-        </row>
-      </section>
-    </div>
-    </br>
-    </br>
-    <div class="region region-header">
-      <div class="container">
-        <section id="block-block-2" class="block block-block clearfix">
-          <div class="jumbotron-block col-xs-12 col-sm-12">
-            <div class="header_mx">
-              <h1><b>Indicadores</b></h1>
-            </div>
-          </div>
-          <div class="jumbotron-block col-xs-1 col-sm-12 texto_parrafo" >
-            </br>
-            <?php
-              $dire = __DIR__ . '/json/partition';
-              $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p>Consulta datos de más de ' . $fi . ' indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>');
-              ?>
-          </div>
-          <?php
-            echo('<div class="jumbotron-block col-sm-12 col-xs-12">');
-            $i = 0;
-            foreach ($indicadores as $key => $objetivo) {
-              if ($i == 9) {
-                echo("</div>");
-                echo('<div class="jumbotron-block col-sm-12 col-xs-12">');
-              }
-              if (count($objetivo) < 1) {
-                $empty_class = " ind-empty";
-                $tt = ' data-toggle="tooltip" data-placement="right" title="Próximamente" ';
-              } else {
-                $empty_class = "";
-                $tt = "";
-              }
-              echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
-                    <div class="row indicador-row"><div class="col-xs-12">
-                    <div class="objetivo-name texto_parrafo" >
-                    <div style="margin-top:20px; margin-bottom:10px;">
-                    <img src="img/'.$objetivo_icons[$key].'.png"/>
-                    <span style="margin-left: 10px;"><strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong></span>'.'</div></div>
-                    </div>
-                    </div><div style="display: none;" class="row listed-indicadores"><div class="listed-indicadores-title">INDICADORES</div>');
+  <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-              foreach ($objetivo as $indicador) {
-                echo('<div onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" class="listed-indicador">
-                      <div class="col-xs-12">'.$indicador["Nombre_del_indicador"]."</div></div>");
-              }
-              echo('</div></div>');
-              $i++;
-            }
-          ?>
+  <link rel="import" href="bower_components/polymer/polymer.html">
+  <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
+  <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html">
+  <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+</head>
+<body>
+  <!-- Crowdfunding bar  -->
+  <nav class=" navbar-crowdfunding navbar2 navbar-default navbar-fixed-top ">
+    <div class="container container-title">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.php">
+          <span>Crowdfunding Mx</span>
+        </a>
+      </div>
+      <div class="collapse navbar-collapse" id="crowdfunding-navbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="">Explora</a></li>
+          <li><a href="">Indicadores</a></li>
+          <li><a href="">Acerca</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- /Crowdfunding end bar -->
+  <!-- Crowdfunding banner -->
+  <div id="site-banner">
+    <div >
+      <div class="row">
+        <div class="col-md-12 title-banner">
+          <span >Sistema de monitoreo de fondeo colectivo en México</span>
         </div>
-        <script type="text/javascript">
-          (function ($) {
-            $(document).ready(function() {
-              $('.popup-youtube').magnificPopup({
-                disableOn: 640,
-                type: 'iframe',
-                mainClass: 'mfp-fade',
-                removalDelay: 160,
-                preloader: false,
-                fixedContentPos: false
-              });
-              $('[data-toggle="tooltip"]').tooltip();
-            });
-          }(jQuery));
-        </script>
-        <script type="text/javascript">
-          (function ($) {
-            $(".indicador-group:not(.ind-empty) .indicador-row").mousedown(function() {
-              if ($(this).parents('.indicador-group').find(".listed-indicadores").is(":visible")) {
-                $(".listed-indicadores").slideUp();
-              }
-              else {
-                $(".listed-indicadores").slideUp();
-                $(this).parents('.indicador-group').find(".listed-indicadores").slideToggle();
-              }
-            });
-          }(jQuery));
-          function visit_objetivo(n,i) {
-            window.location.href='explora?o='+i;
-          }
-          function visit_indicador(o,i) {
-            window.location.href='explora?o='+o+'&i='+i;
-          }
-        </script>
-        </section> <!-- /.block -->
+        <div class="col-md-12 subtitle-banner">
+          <span> El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México </span>
+        </br>
+          <span>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México
+          </span>
+        </div>
+        <div class="col-md-12 data-title-banner">
+          <div class="col-md-4">
+            <span>PROYECTOS TOTALES</span>
+            <br>
+            <span>FONDEADOS</span>
+          </div>
+          <div class="col-md-4">
+            <span>FONDEO</span>
+            <span>TOTAL</span>
+          </div>
+          <div class="col-md-4">
+            <span>PLATAFORMAS</span>
+            <span>EN LINEA</span>
+          </div>
+        </div>
+        <div class="col-md-12 data-banner">
+          <div class="col-md-4">
+            <span>23,422</span>
+          </div>
+          <div class="col-md-4">
+            <span>$132 MDP</span>
+          </div>
+          <div class="col-md-4">
+            <span> 17</span>
+          </div>
+        </div>
       </div>
-    </div>
-    </div>
-    <div class="header-bottom">
-      <div class="container">
-      </div>
-    </div>
-  </header>
-  <div class="header-bottom">
-    <div class="container">
     </div>
   </div>
-  <br>
-  <br>
-  <br>
-  <div class="region region-header">
+  <!-- /Crowdfunding banner end-->
+  <!-- Indicadores section -->
+  <div>
+    <div class="container" style="padding-top:12px;">
+      <div class="col-sm-12">
+        <div>
+          <h2><b>Indicadores</b></h2>
+        </div>
+      </div>
+      <div class="col-sm-12 texto_parrafo" >
+        <!--CAMBIAR DINAMICAMENTE #indicadores -->
+        <p>
+          Consulta datos de más de 11 indicadores sobre la evolución del financiamiento colectivo en México.</p>
+        <p>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
+      </div>
+      <?php
+        // Read indicadores
+        include('h_objetivos.php');
+        $result = file_get_contents("json/cf_metadata.json");
+        $metadata = json_decode($result, true);
+        $indicadores_id = array();
+        foreach ($metadata["results"] as $value) {
+          if (array_key_exists($value["Nombre_del_objetivo"], $indicadores)) {
+            array_push($indicadores[$value["Nombre_del_objetivo"]], $value);
+          }
+          $indicadores_id[$value["Clave"]] = $value;
+        }
+        //Write indicadores
+        echo('<div class="col-sm-12">');
+        $i = 0;
+        foreach ($indicadores as $key => $objetivo) {
+          if ($i == 9) { //CAMBIAR DINAMICAMENTE #indicadores
+            echo("</div>");
+            echo('<div class="col-sm-12">');
+          }
+          if (count($objetivo) < 1) {
+            $empty_class = " ind-empty";
+            $tt = ' data-toggle="tooltip" data-placement="right" title="Próximamente" ';
+          } else {
+            $empty_class = "";
+            $tt = "";
+          }
+          echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
+                  <div class="row indicador-row">
+                    <div class="col-xs-12">
+                      <div class="objetivo-name texto_parrafo" >
+                        <div class="objetivo-padding">
+                          <img src="img/'.$objetivo_icons[$key].'.png"/>
+                          <span style="margin-left: 10px;"><strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong></span>'.
+                        '<span class="end-indicador">&#8250;</span></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div style="display: none;" class="row listed-indicadores">
+                    <div class="listed-indicadores-title">INDICADORES
+                  </div>');
+              foreach ($objetivo as $indicador) {
+              echo('<div onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" class="listed-indicador">
+                      <div class="col-xs-12">'.$indicador["Nombre_del_indicador"].
+                      "</div>
+                    </div>");
+            }
+            echo('</div></div>');
+            $i++;
+          }
+        ?>
+      </div>
+    </div>
+  </div>
+  <!-- Indicadores section End -->
+  <!-- Expora section -->
+  <div>
     <div class="container">
-      <section id="block-block-3" class="block block-block clearfix">
-        <div class="jumbotron-block col-xs-12 col-sm-12">
-          <div class="header_mx">
-            <h1><b>Explora</b></h1>
-          </div>
-
+      <section>
+        <div class="col-sm-12">
+          <h2><b>Explora</b></h2>
         </div>
-        <div class="jumbotron-block col-xs-12 col-sm-9 texto_parrafo">
+        <div class="col-sm-9 texto_parrafo" style="padding-bottom: 20px;">
           </br>
-          <?php
-              $dire = __DIR__ . '/json/partition';
-              $fi = iterator_count(new FilesystemIterator($dire, FilesystemIterator::SKIP_DOTS));
-              echo('<p style="padding-bottom: 20px;">Consulta datos de más de ' . $fi . '  indicadores sobre la evolución del financiamiento colectivo en México.<br>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p> ');
-              ?>
+          <p >Consulta datos de más de 11  indicadores sobre la evolución del financiamiento colectivo en México.</p>
+          <p>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
-        <section class="col-xs-12 col-sm-3">
-          <button class="btn btn-line-export btn-invert" type="button" onclick="visit_indicador('0','i41')" style="border-radius:0;"> Ir a la sección </button>
+        <section class="col-sm-3">
+          <button class="btn btn-primary mxbutton" type="button" onclick="visit_indicador('0','i41')"> Ir a la sección </button>
         </section>
       </section>
     </div>
   </div>
-  <?php include("footer.php"); ?>
+  <!-- Expora section end -->
+  <script src="bower_components/jquery/dist/jquery.js"></script>
+  <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
+  <script src="bower_components/underscore/underscore-min.js"></script>
+  <script src="bower_components/bootstrap-year-calendar/js/bootstrap-year-calendar.min.js"></script>
+  <script src="bower_components/moment/min/moment.min.js"></script>
+  <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+  <script type="text/javascript">
+    (function ($) {
+      $(".indicador-group:not(.ind-empty) .indicador-row").mousedown(function() {
+        if ($(this).parents('.indicador-group').find(".listed-indicadores").is(":visible")) {
+          $(".listed-indicadores").slideUp();
+        }
+        else {
+          $(".listed-indicadores").slideUp();
+          $(this).parents('.indicador-group').find(".listed-indicadores").slideToggle();
+        }
+      });
+    }(jQuery));
+    function visit_objetivo(n,i) {
+      window.location.href='explora?o='+i;
+    }
+    function visit_indicador(o,i) {
+      window.location.href='explora?o='+o+'&i='+i;
+    }
+  </script>
+  <?php  include('acknowledgment.php');?>
+
 </body>
 </html>
