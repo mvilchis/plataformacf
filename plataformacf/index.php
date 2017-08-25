@@ -27,9 +27,9 @@
       </div>
       <div class="collapse navbar-collapse" id="crowdfunding-navbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="">Explora</a></li>
-          <li><a href="">Indicadores</a></li>
-          <li><a href="">Acerca</a></li>
+          <li><a href="explora.php">Explora</a></li>
+          <li><a href="indicadores.php">Indicadores</a></li>
+          <li><a href="acerca.php">Acerca</a></li>
         </ul>
       </div>
     </div>
