@@ -55,7 +55,7 @@
 				</div>
 				<div class="col-xs-12 col-sm-2">
 					<div style="padding-bottom: 200px;"><img  width=147 height=25 src='img/promedio.png'/></div>
-					<button type="button" onmousedown="exportToPDF('line');" style="margin: 0px;"class="btn btn-line-export btn-invert">Exportar gráfica</button>
+					<button type="button" onmousedown="exportToImage('line');" style="margin: 0px;"class="btn btn-line-export btn-invert">Exportar gráfica</button>
 				</div>
 		  </div>
 		</div>
