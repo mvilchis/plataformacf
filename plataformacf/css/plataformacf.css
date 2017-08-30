@@ -1,0 +1,437 @@
+@import url( https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic );
+@import url( https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic );
+
+/**********************************
+    General Styles
+**********************************/
+.container-fluid                                { max-width: 1100px;
+                                                  margin: 0 auto; }
+body                                            { padding-top: 93px;
+                                                  font-family: "Roboto";
+                                                  font-size: 18px;
+                                                  font-weight: 300;
+                                                  line-height: 1.5em;
+                                                  color: #000; }
+gobmx-navbar                                    { width: 100%;
+                                                  position: fixed;
+                                                  top: 0;
+                                                  z-index: 9999; }
+img                                             { max-width: 100%; }
+#site-banner                                    { padding: 90px 0;
+                                                  background: url(../img/2b.png) repeat scroll 0 0 transparent;
+                                                  text-align: center;
+                                                  background-position: center; }
+#site-banner img                                { margin-bottom: 20px; }
+.title-banner                                   { font-size: 45px;
+                                                  font-weight: 200;
+                                                  color:white;
+                                                  font-weight: bold;
+                                                  padding-bottom: 20px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
+.subtitle-banner                                { font-size: 20px;
+                                                  color: white;
+                                                  padding-bottom: 75px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
+.data-title-banner                              { font-size: 21px;
+                                                  color:white;
+                                                  font-weight: 600;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
+.data-banner                                    { font-size: 40px;
+                                                  color:white;
+                                                  padding-top: 20px;
+                                                  padding-bottom: 20px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
+.container-title                                { padding-left: 0px !important;
+                                                  padding-bottom: 5px;
+                                                  padding-top: 10px;
+                                                  vertical-align: middle;
+                                                }
+/**********************************
+    Navbar Styles
+**********************************/
+.navbar2.navbar-fixed-top                       { background-color: #fff; top: 46px; }
+.navbar-default                                 { margin-bottom: 0;
+                                                  background-color: transparent;
+                                                  border-bottom: 1px solid #000;
+                                                  border-radius: 0; }
+.navbar-default .navbar-nav > li > a            { font-family: "Roboto";
+                                                  font-size: 16px;
+                                                  font-weight: 500;
+                                                  color: #fff !important; }
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a       { background-color: #000000 !important;
+                                                  color:white !important; }
+.navbar-default .navbar-brand                   { font-size: 18px;
+                                                  font-weight: 700;
+                                                  color: white !important;}
+.navbar-crowdfunding                            { background-color:#00CC99 !important;}
+/**********************************
+    Font Styles
+**********************************/
+h2                                              { margin-bottom: 40px !important;
+                                                  padding-bottom: 20px;
+                                                  border-bottom: 1px solid #d8d8d8;
+                                                  position: relative;
+                                                  font-size: 24px !important;
+                                                  font-weight: 600 !important;
+                                                  color: #545454 !important;
+                                                }
+h2:after                                        { display: block;
+                                                  content: ' ';
+                                                  width: 30px;
+                                                  height: 3px;
+                                                  background-color: #0c9;
+                                                  position: absolute;
+                                                  left: 0;
+                                                  bottom: -4px; }
+
+p                                               { margin-bottom: 20px; }
+strong                                          { font-weight: 600; }
+.highlight                                      { color: #0c9; }
+
+@media (min-width: 761px)                       {
+    #tryit-section label span                   { margin-right: 50px; }
+    .navbar-default .crowdfunding-navbar        { padding: 0 55px;}
+    .navbar-default .crowdfunding-navbar .navbar-brand   { margin-left: -30px !important; }
+    ul.half-width                               { overflow: hidden; }
+    ul.half-width > li                          { width: 50%;
+                                                  margin-bottom: 10px;
+                                                  float: left; }
+}
+
+/****************************
+    Buttons
+****************************/
+.mxbutton                                        { padding-top: 10px !important;
+                                                  padding-bottom: 10px !important;
+                                                  border-radius: 4px !important;
+                                                  cursor: pointer !important;
+                                                  display: block !important;
+                                                  text-decoration: none !important;
+                                                  background-color: #0c9 !important;
+                                                  font-weight: 700 !important;
+                                                  box-shadow: none!important;
+                                                }
+
+/****************************
+    Indicadores
+****************************/
+.indicador-row .objetivo-name:hover               { background-color: rgba(160,160,160,0.4);}
+.indicador-row .objetivo-name                     { border-top: 1px solid #ccc;
+                                                    margin-right: 10px;
+                                                    line-height: 50px;
+                                                    font-size: 18px;
+                                                    }
+.indicador-row .objetivo-name .objetivo-padding   { margin-top:20px;
+                                                    margin-bottom:10px;}
+.indicador-row img                                { width: 100px;
+                                                    height: 100px;}
+.listed-indicadores-title                         { margin-bottom: 15px;
+                                                    text-transform: uppercase;
+                                                  }
+.listed-indicadores                               { background-color: #fff;
+                                                    padding: 20px;
+                                                    font-size: 12px;
+                                                    margin-right: 0;
+                                                    color: #000;
+                                                  }
+.listed-indicador .col-xs-12:hover                { background-color: #444;
+                                                    color: #fff;
+                                                   }
+.listed-indicador .col-xs-12::before              { /*content: "â€¢ ";*/}
+.end-indicador                                    { position: absolute;
+                                                    right:  24px;
+                                                    font-size: 40px;
+                                                  }
+.indicador-page-row                               {cursor: pointer;}
+.indicador-page-row:hover                         {color: #000;}
+
+
+/***************** Explora styles *****************************************/
+select                                            {	border: none;
+                                                    background-color: #ddd;
+                                                    padding: 5px 10px;
+                                                    margin: 0;
+                                                    -webkit-border-radius:0px;
+                                                    -moz-border-radius:0px;
+                                                    -webkit-appearance: none;
+                                                    border-radius:0px;
+                                                    color: #888;
+                                                  }
+
+.objective-selector select                        { width: 100%; }
+.objective-selector-caption                       { margin-bottom: 10px;
+                                                    font-size: 12px;
+                                                  }
+.vcenter                                          { font-size: 16px;
+                                                    line-height: 82px;
+                                                    font-weight: 700;
+                                                  }
+/****           MAP styles           ***/
+#map                                              { position: relative;
+ 	                                                  width: 100%;
+ 	                                                  height: 575px;
+                                                  }
+#map .leaflet-control-search ul.search-tooltip    { max-height: 365px;
+ 	                                                  height: 365px;
+                                                  }
+
+table#legend-colors .tooltip                      { display: inline-block; }
+path.highlighted                                  { fill:yellow !important;
+ 	                                                  stroke:'#444' !important
+                                                  }
+.infobox                                          { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+ 	                                                  z-index: 100;
+ 	                                                  position: absolute;
+ 	                                                  top: 60px;
+ 	                                                  right: 10px;
+ 	                                                  padding: 10px;
+ 	                                                  background-color: rgba(255,255,255,1);
+                                                    border: 5px solid rgb(0, 204, 153);
+                                                  }
+.infobox .unit-name                               { font-weight: 700;
+ 	                                                  font-size: 20px;
+ 	                                                  margin-bottom: 5px;
+                                                    color:#17416D;
+                                                  }
+.infobox .edo-name                                { font-weight: 700;
+ 	                                                  font-size: 12px;
+ 	                                                  margin-bottom: 5px;
+ 	                                                  color: #aaa;
+                                                  }
+.infobox .edo-image                               { width: 40px;
+ 	                                                  height: 40px;
+                                                  }
+.infobox table#legend-colors                      { width: 100%; }
+table#legend-colors tr td.legend-color            { height: 12px;
+                                                    opacity: 0.7;
+ 	                                                  cursor: pointer;
+                                                  }
+table#legend-colors tr td.legend-color:hover      { background-color: yellow !important; }
+table#legend-colors tr td.legend-breaks           { text-align: center;
+                                                   	font-size: 10px;
+ 	                                                  padding-top: 5px;
+                                                  }
+.indicador-nombre                                 { font-weight: 300;
+ 	                                                  margin-bottom: 10px;
+ 	                                                  font-size: 20px;
+                                                  }
+.indicador-valor                                  { font-size: 28px;
+	                                                  font-weight: 700;
+	                                                  color: #00cc99;
+	                                                  text-align: center;
+                                                  }
+
+
+table.datos                                       { border-collapse: collapse;
+                                                    font-size: 12px}
+table.datos td                                    { margin-bottom: 10px; }
+table.datos thead th                              { padding-bottom: 10px;
+                                                  	padding: 10px 20px;
+                                                  }
+tr.datos-indicador td                             { background-color: rgb(238,238,238);
+	                                                  padding: 20px;
+	                                                  vertical-align: top;
+                                                  }
+tr.datos-indicador td.nombre-ind                  { dont-weight: 600; }
+.fformat                                          { padding: 2px 4px;
+	                                                  background-color: #222;
+	                                                  color: #fff;
+	                                                  font-weight: 700;
+                                                  }
+tr.datos-indicador-descarga td:last-child         { background-color: rgb(215,215,215);
+	                                                  vertical-align: middle;
+                                                  }
+tr.metadatos .metadata-header                     { font-weight: 700; }
+tr.metadatos td                                   { background-color: rgb(250,250,250);
+	                                                  padding: 20px;
+	                                                  font-size: 12px ! important;
+                                                  }
+/****     top municipio       ****/
+.top-municipios-group                             { border-top: 1px solid #ccc;
+	                                                  position: relative;
+	                                                  height: 90px;
+                                                  }
+.top-municipios-number                            { color: #00CC99;
+	                                                  top: 26px;
+	                                                  position: absolute;
+	                                                  font-size: 24px;
+                                                  }
+.top-municipios-name                              {	position: absolute;
+	                                                  top: 26px;
+	                                                  left: 40px;
+	                                                  font-size: 24px;
+                                                  }
+.top-municipios-pct                               { position: absolute;
+	                                                  top: 15px;
+	                                                  right: 20px;
+                                                    text-align: right;
+	                                                  font-size: 40px;
+	                                                  font-weight: 600;
+                                                  }
+#loading_wrap                                     { background-color: rgba(0,0,0,0.65);
+	                                                  color: #fff;
+	                                                  line-height: 300px;
+	                                                  font-weight: 700;
+	                                                  z-index: 5000;
+	                                                  text-align: right;
+	                                                  font-size: 32px;
+                                                  }
+/* Line charts */
+
+body.page-node .c3 svg                            { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+	                                                  font-size: 12px;
+	                                                  font-weight: 200;
+                                                    margin: auto;
+                                                    display: block;
+                                                    width: 80%;
+                                                  }
+.infobox .c3 svg                                  { font-size: 8px; }
+.c3 svg text                                      { fill: #aaa; }
+.c3 svg g.tick line                               { stroke: #fff;
+	                                                  stroke-opacity: 0;
+                                                  }
+.c3 svg g.c3-ygrids line                          {	stroke: #fff;
+	                                                  stroke-dasharray: 1;
+	                                                  stroke-opacity: 1;
+                                                  }
+#chart svg g.c3-lines path.c3-line:hover          { stroke: #00cc99; }
+#chart svg g.c3-lines path.c3-line                {	fill-opacity: 0; }
+.c3 svg .c3-axis path                             { stroke: #fff;
+                                                    stroke-opacity: 0;
+                                                  }
+.c3 svg .c3-zoom-rect                             {	fill: rgb(238,238,238);
+	                                                  opacity: 1 !important;
+                                                  }
+.filters                                          { z-index: 100;
+	                                                  background-color: #BDBDBD;
+	                                                  padding: 10px;
+                                                  }
+.filters .form-group                              { margin-right: 20px; }
+.filter-header                                    { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+	                                                  font-size: 14px;
+	                                                  font-weight: 500;
+	                                                  margin-right: 10px;
+	                                                  margin-bottom: 5px;
+                                                  }
+.filter-item                                      { font-size: 12px;
+	                                                  margin-bottom: 3px;
+                                                  }
+.filter-item:hover                                {	color: #00D2A9; }
+.filter-groupo               {  background: #fff!important;
+                                                    min-width: 30px;
+                                                  }
+.header_mx h2:after {
+  content: '';
+  width: 40px;
+  position: absolute;
+  bottom: -6px;
+  left: 10px;
+  border-bottom: solid 5px #0c9;
+}
+
+.header_mx h1{
+  color:#545454;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin: 0, 0;
+}
+ *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.image_background {
+  background: url("../img/2b.jpg") repeat scroll 0 0 transparent;
+  border-radius: 4px 4px 4px 4px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  background-size: 100% ;
+  background-position: center;
+  height: 520px;
+}
+
+.texto_parrafo p {
+  color:#424242;
+  font-size: 16px;
+}
+
+/* year bar */
+.ui-widget-header {
+    background: #69D8CF url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x !important;
+    height: 7px !important;
+    position: absolute !important;
+    top: 20% !important;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.check-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #94b093;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.check-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .check-slider {
+  background-color: #4FD9B2;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+}
+
+input:focus + .check-slider {
+  background-color: #4FD9B2;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+}
+
+input:checked + .check-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.check-slider.round {
+  border-radius: 34px;
+}
+
+.check-slider.round:before {
+  border-radius: 50%;
+}
