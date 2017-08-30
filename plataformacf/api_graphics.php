@@ -64,13 +64,35 @@
 <!--                javascript auxiliar functions               -->
 
 <script type="text/javascript">
+  //Global variables:
+  var firstrun = true,
+      data_grouped = null,
+      data_grouped_b = null,
+      years = null,
+      subids = null,
+      years_b = null,
+      choro_layer = null,
+      active_geom = null,
+      map_locked = false;
+      //Variables de control
+    var active_unit = null, //Estatal o Nacional
+      active_year = null,  // Current year
+      active_group = null, // Grupo
+      is_acumulado = null,//Acumulado o trimestral
+      NULL_UNIT = "NN",
+      NULL_YEAR = "NN",
+      NULL_FEATURE="NN",
+      TOTAL_GROUP = "a",
+      active_feature="NN",
+      indicador_selected = null; //Proyecto, monto acumulado, etc
+
   //Add comma each three decimal numbers
   function commaSeparateNumber(x){
     var parts=x.toString().split(".");
     parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
     return parts.join(".");
   }
-  var indicador_selected;
+
   // From indicator, export to csv file
   function exportToCsv(){
       (function ($) {
@@ -174,7 +196,7 @@
         $(".indicador-valor").html(commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10));
       else
       $(".indicador-valor").html("N/A");
-      $(".indicador-nombre").html($("select#select-indicador-a option:selected").text() + " ("+ active_year+")");
+      $(".indicador-nombre").html("<span style='min-width: 75px;'>"+$("select#select-indicador-a option:selected").text() + " ("+ active_year+")</span>");
     }(jQuery));
     var line_columns = [];
       line_columns_years = ["x"];
@@ -211,7 +233,7 @@
   }
 
   //Render year bar
-  function renderYearBar(years) {
+  function renderYearBar(years,default_year) {
   	(function($) {
 		  var extensionMethods = {
         pips: function( settings ) {
@@ -241,10 +263,20 @@
   		};
   		$.extend(true, $['ui']['slider'].prototype, extensionMethods);
   	})(jQuery);
+    if (default_year == NULL_YEAR){
+      var this_year = years.length-1;
+    } else {
+      for (i = 0; i < years.length; i++){
+        if (years[i] == default_year){
+          var this_year = i;
+          break;
+        }
+      }
+    }
     $('.slider').slider({ min:0,
                           max:years.length-1,
                           animate:true,
-                          value:years.length-1,
+                          value:this_year,
                           range: "min",
                           slide: function(event, ui) {
                             change_active_year(years[ui.value]);
@@ -253,7 +285,9 @@
                             change_active_year(years[ui.value]);
                           }
                       });
+
     $('.slider').slider('pips');
+
 
   }
 </script>
@@ -268,20 +302,6 @@
   var indicadores_by_objdes = <?php echo json_encode($desagregacion_by_obj); ?>;
   var indicadores_grupos = <?php echo json_encode($grupos); ?>;
   var estados = <?php echo json_encode($estados); ?>;
-
-  var firstrun = true,
-      active_year = null;
-      active_unit = 'E',
-      active_group = null,
-      active_geom = null,
-      data_grouped = null,
-      data_grouped_b = null,
-      years = null,
-      subids = null,
-      years_b = null,
-      choro_layer = null,
-      map_locked = false;
-
   var geom_grouped = { "N": nacion,
                      "E": entidad,
                       };
@@ -449,6 +469,7 @@
       if (!L.Browser.ie && !L.Browser.opera) {
         layer.bringToFront();
       }
+      active_feature = feature;
       initInfobox(feature);
     }
 
@@ -465,6 +486,7 @@
         };
       },
       onEachFeature: function(feature, layer) {
+
         if (active_unit == "E")
           feature.properties.name = feature.properties.nom_ent + " (" + commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10) + ")";
         layer.on({
@@ -489,9 +511,14 @@
     });
     map.addLayer(choro_layer);
     (function ($) {
-      var first_key = Object.keys(choro_layer["_layers"])[0],
-          feature = choro_layer["_layers"][first_key]["feature"];
-          initInfobox(feature);
+      if (active_feature == NULL_FEATURE) {
+        var first_key = Object.keys(choro_layer["_layers"])[0],
+        feature = choro_layer["_layers"][first_key]["feature"];
+        initInfobox(feature);
+      }else{
+        initInfobox(active_feature);
+      }
+
     }(jQuery));
     if (searchControl != null)
       map.removeControl(searchControl);
@@ -577,7 +604,7 @@
 
   }
 
-  function change_variable(select_Data) {
+  function change_active_indicator(select_Data, default_group, default_unit, default_year) {
     cont = true;
     (function ($) {
       if ($('select#select-indicador-a option').length == 0) {
@@ -591,15 +618,12 @@
       alert("Para uno or más de los objetivos seleccionados, ningún indicador coincide con la desagregación geográfica y objetivo que ha seleccionado. Por favor, seleccione un objetivo diferente.");
       return 0;
     }
-    active_group = 'a';
-    active_unit_b = null;
+    active_group = default_group;
     data_grouped = {};
     data_grouped_b = {};
     subids = [];
     years = [];
-    years_b = [];
     units = [];
-    units_b = [];
     (function ($) {
       params = { id: select_Data, pageSize: 999999 };
       $.getJSON('json/partition/'+select_Data+'.json', {}, function (data) {
@@ -646,6 +670,10 @@
           $(".stat-column-header-chart").html("Indicador a nivel estatal");
           $(".stat-column-header-top").html("Top 3 Estados");
           active_unit = "E";
+        }
+        //Check if we have active_unit to conserve
+        if (default_unit != NULL_UNIT) {
+          active_unit = default_unit;
         }
         $('select.filter-geo option[value='+ active_unit +']').attr('selected', 'selected');
         change_active_unit(active_unit);
@@ -706,13 +734,56 @@
             <td>  <div>"+metadatos_a["RangoTiempo"]+new Date().getFullYear()+"</div></td>\
             <td></td> \
           </tr>" );
-        renderYearBar(years);
+        renderYearBar(years,default_year);
+        if (is_acumulado) {
+          var year_bar_tmp = document.getElementsByClassName("ui-widget-header")[0];
+          year_bar_tmp.style.background="#69D8CF";
+          var year_button_tmp = document.getElementsByClassName("ui-slider-handle")[0];
+          year_button_tmp.style.background="#DDDDDD";
+          var tmp_indicator =indicador_selected+"1";
+
+        }else {
+          var year_bar_tmp = document.getElementsByClassName("ui-widget-header")[0];
+          year_bar_tmp.style.background="white";
+          var year_button_tmp = document.getElementsByClassName("ui-slider-handle")[0];
+          year_button_tmp.style.background="#69D8CF";
+        }
 
       });
     }(jQuery));
 
   }
-
+  function change_acumulate(tmp_indicator){
+    (function ($) {
+      if($("#trim_to_ac").is(':checked')){
+        $.ajax({
+          async: false,
+          type: 'GET',
+          url: 'json/partition/'+tmp_indicator+'.json',
+          success: function(data) {
+            // exists code
+            indicador_selected = tmp_indicator;
+            is_acumulado = true;
+          },
+          error: function(data){
+            // not exists code
+            var checkbox = document.getElementById("trim_to_ac");
+            checkbox.checked = false;
+            $('#notAcumulado .modal-body p').text('').append('' +
+                                '<span><center>Lo sentimos</center></span></br>' +
+                                '<span><center>No existe sección acumulada para este indicador.</center></span>');
+            $('#notAcumulado').modal('show');
+            $('#closeNotAcumulado').on('click', function() {
+              $('#notAcumulado').modal('hide');
+            });
+          }
+        });
+      } else{
+        is_acumulado = false;
+        indicador_selected = $("select#select-indicador-a option:selected").val();
+      }
+    }(jQuery));
+  }
   function populate_indicador_a() {
     (function ($) {
       $("select#select-indicador-a").empty();
@@ -744,7 +815,10 @@
         }
         firstrun = false;
       }
-      change_variable($("select#select-indicador-a option:selected").val());
+      //First time, default_group = a
+      indicador_selected = $("select#select-indicador-a option:selected").val();
+      active_feature = NULL_FEATURE;
+      change_active_indicator(indicador_selected,TOTAL_GROUP, NULL_UNIT,NULL_YEAR);
     }(jQuery));
   }
 
@@ -760,9 +834,9 @@
         $("select#select-objetivo-a").append("<option value='"+objetivo+"'>"+objetivo+"</option>");
       });
       $("select#select-objetivo-a").change(function() {
-        (function ($) { $("#loading_wrap").fadeIn(); }(jQuery));
-        populate_indicador_a();
-      });
+       (function ($) { $("#loading_wrap").fadeIn(); }(jQuery));
+       populate_indicador_a();
+     });
       if (firstrun == true) {
         $('select#select-objetivo-a option[value="Poner fin a la pobreza en todas sus formas en todo el mundo"]').attr('selected', 'selected');
       } else {
@@ -772,18 +846,20 @@
           $("select#select-objetivo-a option:first").attr('selected','selected');
       }
       populate_indicador_a();
-      change_variable($("select#select-indicador-a option:selected").val());
     }(jQuery));
 
   }
 
   (function ($) {
-    pop_all();
     indicador_selected = $("select#select-indicador-a option:selected").val();
+    pop_all();
 
     $("select#select-indicador-a").change(function() {
       (function ($) { $("#loading_wrap").fadeIn(); }(jQuery));
-      change_variable($("select#select-indicador-a option:selected").val());
+      indicador_selected = $("select#select-indicador-a option:selected").val();
+      var tmp_indicator =indicador_selected+"1";
+      change_acumulate(tmp_indicator);
+      change_active_indicator(indicador_selected,active_group,active_unit,active_year);
     });
     $("select#filter-grupo").change(function() {
       change_active_group($("select#filter-grupo option:selected").val());
@@ -796,23 +872,20 @@
 
     });
     $("#trim_to_ac").change(function() {
-      if($("#trim_to_ac").is(':checked')){
-        indicador_selected = $("select#select-indicador-a option:selected").val()+"1";
-        change_variable($("select#select-indicador-a option:selected").val()+"1");
-      } else{
-        indicador_selected = $("select#select-indicador-a option:selected").val();
-        change_variable($("select#select-indicador-a option:selected").val());
-      }
+
+        var tmp_indicator =indicador_selected+"1";
+        change_acumulate(tmp_indicator);
+        change_active_indicator(indicador_selected,active_group,active_unit,active_year);
 
     });
     $("ul.menu li.leaf:nth-child(2) a").mousedown(function() {
       o=$("select#select-objetivo-a option:selected").index();
-      i=$("select#select-indicador-a option:selected").val();
+      i=indicador_selected;
       $("ul.menu li.leaf:nth-child(2) a").attr("href","/explora?o="+o+"&i="+i);
     });
     $("ul.menu li.leaf:nth-child(3) a").mousedown(function() {
       o=$("select#select-objetivo-a option:selected").index();
-      i=$("select#select-indicador-a option:selected").val();
+      i=indicador_selected;
       $("ul.menu li.leaf:nth-child(3) a").attr("href","/compara?o="+o+"&i="+i);
     })
 

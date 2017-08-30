@@ -116,15 +116,23 @@
       </div>
       <div class="col-sm-12 texto_parrafo" >
         <p >Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
-        <p>
-          (Nota: El total Nacional puede no coincidir con la suma de los estados, ya que existen proyectos no categorizados geográficamente)
-        </p>
+
       </div>
     </div>
   </div>
   <!-- < End header text-->
 
     <div class="region region-content-noncontainer">
+      <div class="modal fade" id="notAcumulado" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <p>Mensaje aqui</p>
+                        <button class="btn btn-primary mxbutton btn-modal" id="closeNotAcumulado">Aceptar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
       <section id="block-block-5" class="block block-block clearfix">
         <div id='loading_wrap' style='position:fixed; height:100%; width:100%; overflow:hidden; top:0; left:0;'>
           <div style="margin-right: 50px;">Cargando datos...
@@ -176,8 +184,8 @@
               <div class="row values-row" style="display: block;">
                 <table>
                   <tr>
-                  <td class="col-xs-4 indicador-valor">--</td>
-                          <td class="col-xs-8 indicador-nombre">--</td>
+                  <td class="col-xs-3 indicador-valor">--</td>
+                          <td class="col-xs-9 indicador-nombre">--</td>
                         </tr>
                       </table>
                     </div>
@@ -204,41 +212,50 @@
 
                   <div class="filters col-xs-12">
                     <div class="container">
+                      <div class="col-xs-1">
+                      <label style="font-size: 14px;font-weight: 500;">Filtrar por:</label>
+                    </div>
                       <form class="form-inline" role="form">
-                        <label class="filter-header">Filtrar por</label>
-                        <div style="display: none;" class="form-group form-group-grupo">
-                          <label class="filter-header">GRUPO</label>
-                          <select id="filter-grupo" class="filter-group filter-grupo">
-                            <option class="filter-item" value="">-- Todos --</option>
-                          </select>
+                        <div class="col-xs-4">
+                          <div style="display: none;" class="form-group form-group-grupo">
+                            <label class="filter-header">GRUPO</label>
+                            <select id="filter-grupo" class="filter-group filter-grupo">
+                              <option class="filter-item" value="">-- Todos --</option>
+                            </select>
+                          </div>
                         </div>
-                        <div class="form-group">
+                        <div class="col-xs-3">
+                          <div class="form-group">
                           <label class="filter-header">DESAGREGACIÓN</label>
                           <select id="filter-geo" class="filter-group filter-geo">
                                <option class="filter-item">Nacional</option>
                                <option class="filter-item">Estatal</option>
                                <option class="filter-item">Municipal</option>
                           </select>
-                        </div>
+                          </div>
+                      </div>
+                      <div class="col-xs-4">
                         <div class="form-group">
                           <label class="filter-header">Ver por:</label>
                           <label class="filter-header">Trimestral</label>
                           <div class="form-group form-group-grupo">
-
                           <label class="switch">
                             <input type="checkbox" id="trim_to_ac">
                             <span class="check-slider round"></span>
                           </label>
                         </div>
                         <label class="filter-header">Acumulado</label>
-
+                        </div>
                       </div>
-
-                      </form>
-                    </div>
+                    </form>
                   </div>
                 </div>
-
+              </div>
+              <div class="container" style="padding-top:20px">
+                <p>(Nota: El total Nacional puede no coincidir con la suma de los estados, ya que existen proyectos no categorizados geográficamente)
+                </p>
+              </div>
+              </div>
                 <?php include('section_stats.php'); ?>
                 <?php include('section_datatable.php'); ?>
               </page>

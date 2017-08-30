@@ -54,6 +54,19 @@ img                                             { max-width: 100%; }
                                                   padding-top: 10px;
                                                   vertical-align: middle;
                                                 }
+
+.image_background                               {background: url("../img/2b.jpg") repeat scroll 0 0 transparent;
+                                                  border-radius: 4px 4px 4px 4px;
+                                                  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                                                  background-size: 100% ;
+                                                  background-position: center;
+                                                  height: 520px;
+                                                }
+.texto_parrafo p                                { color:#424242;
+                                                  font-size: 16px;
+                                                }
+
+
 /**********************************
     Navbar Styles
 **********************************/
@@ -192,7 +205,7 @@ path.highlighted                                  { fill:yellow !important;
 .infobox                                          { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
  	                                                  z-index: 100;
  	                                                  position: absolute;
- 	                                                  top: 60px;
+ 	                                                  top: 70px;
  	                                                  right: 10px;
  	                                                  padding: 10px;
  	                                                  background-color: rgba(255,255,255,1);
@@ -322,116 +335,74 @@ body.page-node .c3 svg                            { font-family: 'Open Sans', 'H
 	                                                  font-weight: 500;
 	                                                  margin-right: 10px;
 	                                                  margin-bottom: 5px;
+                                                    padding-top: 12px;
                                                   }
 .filter-item                                      { font-size: 12px;
 	                                                  margin-bottom: 3px;
                                                   }
 .filter-item:hover                                {	color: #00D2A9; }
-.filter-groupo               {  background: #fff!important;
+.filter-groupo                                    {  background: #fff!important;
                                                     min-width: 30px;
                                                   }
-.header_mx h2:after {
-  content: '';
-  width: 40px;
-  position: absolute;
-  bottom: -6px;
-  left: 10px;
-  border-bottom: solid 5px #0c9;
-}
 
-.header_mx h1{
-  color:#545454;
-  font-size: 2.5rem;
-  font-weight: 500;
-  margin: 0, 0;
-}
- *:after {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
-.image_background {
-  background: url("../img/2b.jpg") repeat scroll 0 0 transparent;
-  border-radius: 4px 4px 4px 4px;
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-  background-size: 100% ;
-  background-position: center;
-  height: 520px;
-}
-
-.texto_parrafo p {
-  color:#424242;
-  font-size: 16px;
-}
 
 /* year bar */
-.ui-widget-header {
-    background: #69D8CF url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x !important;
-    height: 7px !important;
-    position: absolute !important;
-    top: 20% !important;
-}
+.ui-widget-header                                 { height: 7px !important;
+                                                    position: absolute !important;
+                                                    top: 20% !important;
+                                                  }
 
 
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
+.switch                                           { position: relative;
+                                                    display: inline-block;
+                                                    width: 60px;
+                                                    height: 34px;
+                                                  }
 
-.switch input {display:none;}
-
-.check-slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #94b093;
-  color: #fff;
-  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.check-slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .check-slider {
-  background-color: #4FD9B2;
-  color: #fff;
-  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
-
-}
-
-input:focus + .check-slider {
-  background-color: #4FD9B2;
-  color: #fff;
-  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
-
-}
-
-input:checked + .check-slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
+.switch input                                     { display:none; }
 
 /* Rounded sliders */
-.check-slider.round {
-  border-radius: 34px;
-}
+.check-slider                                     { position: absolute;
+                                                    cursor: pointer;
+                                                    top: 0;
+                                                    left: 0;
+                                                    right: 0;
+                                                    bottom: 0;
+                                                    background-color: #a3a3a3;
+                                                    color: #fff;
+                                                    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+                                                    -webkit-transition: .4s;
+                                                    transition: .4s;
+                                                  }
 
-.check-slider.round:before {
-  border-radius: 50%;
-}
+.check-slider:before                              { position: absolute;
+                                                    content: "";
+                                                    height: 26px;
+                                                    width: 26px;
+                                                    left: 4px;
+                                                    bottom: 4px;
+                                                    background-color: white;
+                                                    -webkit-transition: .4s;
+                                                    transition: .4s;
+                                                  }
+
+input:checked + .check-slider                     { background-color: #4FD9B2;
+                                                    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+                                                  }
+
+input:focus + .check-slider                       { background-color: #4FD9B2;
+                                                    color: #fff;
+                                                    background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+                                                  }
+
+input:checked + .check-slider:before              { -webkit-transform: translateX(26px);
+                                                    -ms-transform: translateX(26px);
+                                                    transform: translateX(26px);
+                                                  }
+.check-slider.round                               { border-radius: 34px; }
+.check-slider.round:before                        { border-radius: 50%; }
+
+/* Modal  */
+.btn-modal                                         { margin-left: 35%}

@@ -137,12 +137,14 @@
                     <div class="listed-indicadores-title">INDICADORES
                   </div>');
               foreach ($objetivo as $indicador) {
-              echo('<div onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" class="listed-indicador">
+                if (strlen($indicador["Clave"]) == 3) {
+                  echo('<div onmousedown="visit_indicador(\''.$i.'\',\''.$indicador["Clave"].'\')" class="listed-indicador">
                       <div class="col-xs-12">'.$indicador["Nombre_del_indicador"].
                       "</div>
                     </div>");
-            }
-            echo('</div></div>');
+                  }
+                }
+                echo('</div></div>');
             $i++;
           }
         ?>
