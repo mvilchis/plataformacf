@@ -1,3 +1,12 @@
+<!-- include the jQuery and jQuery UI scripts -->
+<script src="https://code.jquery.com/jquery-2.1.1.js"></script>
+<script src="https://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+<script src="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.js"></script>
+<link href="bower_components/jQuery-ui-Slider-Pips/dist/jquery-ui-slider-pips.css" rel="stylesheet">
+
+<!-- plus a jQuery UI theme, here I use "flick" -->
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css"
+
 <!--                  READ DATA                             -->
 <?php
   include('h_objetivos.php');
@@ -53,6 +62,7 @@
 <!--                END  READ DATA                            -->
 
 <!--                javascript auxiliar functions               -->
+
 <script type="text/javascript">
   //Add comma each three decimal numbers
   function commaSeparateNumber(x){
@@ -60,12 +70,12 @@
     parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
     return parts.join(".");
   }
+  var indicador_selected;
   // From indicator, export to csv file
   function exportToCsv(){
       (function ($) {
         var filters = {'Categoria':active_group,
                       'Agregacion':active_unit};
-        var indicador_selected = $("select#select-indicador-a option:selected").val();
         d3.csv("to_csv/raw_csv/"+indicador_selected+".csv", function(csv) {
           csv = csv.filter(function(row) {
                   return ['Categoria','Agregacion'].reduce(
@@ -122,7 +132,7 @@
 
   //From graph to image:
   function exportToImage(i) {
-  (function ($) {
+    (function ($) {
       $('#chart svg .c3-axis path').css('fill-opacity',0);
       $('#chart svg .c3-axis path').css('stroke','#ccc');
       $('#chart svg g.c3-lines path.c3-line').css('fill-opacity',0);
@@ -131,19 +141,19 @@
       $('#chart svg g.c3-lines path.c3-line').css('opacity','1');
       $('#chart svg g.tick line').css('stroke','#efefef');
     var svg = $("#chart svg")[0];
-  var serializer = new XMLSerializer();
-  var str = serializer.serializeToString(svg);
-  $.post("svg2pdf/svg2pdf", str)
-  .done(function(data) {
-  window.open(data);
-  if (i == "line") {
-  render_line();
-  }
-  if (i == "gm") {
-  gm();
-  }
-  });
-  }(jQuery));
+    var serializer = new XMLSerializer();
+    var str = serializer.serializeToString(svg);
+    $.post("svg2pdf/svg2pdf", str)
+      .done(function(data) {
+        window.open(data);
+        if (i == "line") {
+          render_line();
+        }
+        if (i == "gm") {
+          gm();
+        }
+      });
+    }(jQuery));
   }
 
   //Init infobox
@@ -164,7 +174,7 @@
         $(".indicador-valor").html(commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10));
       else
       $(".indicador-valor").html("N/A");
-      $(".indicador-nombre").html($("select#select-indicador-a option:selected").text());
+      $(".indicador-nombre").html($("select#select-indicador-a option:selected").text() + " ("+ active_year+")");
     }(jQuery));
     var line_columns = [];
       line_columns_years = ["x"];
@@ -198,6 +208,53 @@
       legend:             { show: false},
       grid:               { x: { show: false }, y: { show: true}}
     });
+  }
+
+  //Render year bar
+  function renderYearBar(years) {
+  	(function($) {
+		  var extensionMethods = {
+        pips: function( settings ) {
+          options = {
+            first: 	"number",
+            last: 	"number",
+            rest: 	"pip"
+  				};
+  				$.extend( options, settings );
+          // get rid of all pips that might already exist.
+  				this.element.addClass('ui-slider-pips').find( '.ui-slider-pip' ).remove();
+          // we need teh amount of pips to create.
+  				var pips = this.options.max - this.options.min;
+          // for every stop in the slider, we create a pip.
+  				for( i=0; i<=pips; i++ ) {
+            // hold a span element for the pip
+            if (years[i][5]=="1"){ //only year
+              var s = $('<span class="ui-slider-pip"><span class="ui-slider-line"></span><span class="ui-slider-number">'+years[i].slice(0,4) +'</span></span>');
+            }else { //only number
+              var s = $('<span class="ui-slider-pip"><span class="ui-slider-line"></span><span class="ui-slider-number">'+years[i].slice(5,6) +'</span></span>');
+            }
+  					s.css({ left: '' + (100/pips)*i + '%'  });
+  						// append the span to the slider.
+  						this.element.append( s );
+  					}
+  			}
+  		};
+  		$.extend(true, $['ui']['slider'].prototype, extensionMethods);
+  	})(jQuery);
+    $('.slider').slider({ min:0,
+                          max:years.length-1,
+                          animate:true,
+                          value:years.length-1,
+                          range: "min",
+                          slide: function(event, ui) {
+                            change_active_year(years[ui.value]);
+                          },
+                          change: function(event, ui) {
+                            change_active_year(years[ui.value]);
+                          }
+                      });
+    $('.slider').slider('pips');
+
   }
 </script>
 
@@ -243,7 +300,7 @@
 
   // Export map to image
   L.easyPrint({title: 'Exporta mapa',
-             elementsToHide: 'footer,.filters,.year-selector,h1,\
+             elementsToHide: 'footer,.filters,,h1,\
                                 .region-header,.stats,.datatable,.dgm-footer,\
                                 .objective-selector-caption, .objective-selector'
               }).addTo(map);
@@ -338,19 +395,36 @@
     }(jQuery));
   }
 
-  function render_map() {
-    if (active_unit != "N") {
-      nb_breaks = turf.jenks(active_geom, (active_year), 4);
-      (function ($) {
-        $("td.legend-breaks-0").html(commaSeparateNumber(Math.round(nb_breaks[0]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[1]*10)/10));
-        $("td.legend-breaks-1").html(commaSeparateNumber(Math.round(nb_breaks[1]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[2]*10)/10));
-        $("td.legend-breaks-2").html(commaSeparateNumber(Math.round(nb_breaks[2]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[3]*10)/10));
-        $("td.legend-breaks-3").html(commaSeparateNumber(Math.round(nb_breaks[3]*10)/10) + " - " + commaSeparateNumber(Math.round(nb_breaks[4]*10)/10));
-      }(jQuery));
+  function render_map(features) {
+    var re = new RegExp("^([0-9]{4,})");
+    (function ($) {
+      min_value=9999999999;
+      max_value= -1;
+      $.each(features,function (key,value) {
+        $.each(value["properties"], function(key,value) {
+          if (re.test(key)) {
+            if (value > max_value)
+              max_value = value;
+            if (value < min_value)
+              min_value = value;
+          }
+        });
+      });
+    }(jQuery));
+    nb_breaks = [0];
+    for (i = 1; i <= 4; i++) {
+      nb_breaks.push(((max_value-min_value)/4)*i);
     }
+     //nb_breaks= turf.jenks(active_geom, (active_year), 4);
+      (function ($) {
+        $("td.legend-breaks-0").html(commaSeparateNumber(Math.round(nb_breaks[0])) + " - " + commaSeparateNumber(Math.round(nb_breaks[1])));
+        $("td.legend-breaks-1").html(commaSeparateNumber(Math.round(nb_breaks[1])) + " - " + commaSeparateNumber(Math.round(nb_breaks[2])));
+        $("td.legend-breaks-2").html(commaSeparateNumber(Math.round(nb_breaks[2])) + " - " + commaSeparateNumber(Math.round(nb_breaks[3])));
+        $("td.legend-breaks-3").html(commaSeparateNumber(Math.round(nb_breaks[3])) + " - " + commaSeparateNumber(Math.round(nb_breaks[4])));
+      }(jQuery));
+
     function fill_color(v) {
-      if (active_unit == "N") return "#00cc99";
-      else if (v == null) return "#ccc";
+      if (v == null) return "#ccc";
       else if (v >= nb_breaks[3]) return '#086';
       else if (v >= nb_breaks[2]) return '#00cc99';
       else if (v >= nb_breaks[1]) return '#7fd';
@@ -441,27 +515,19 @@
 
   function change_active_year(y) {
     active_year = y;
-    (function ($) {
-      $("section.year-selector .year-select .year-selected").removeClass('year-selected');
-      $("section.year-selector .year-select .filtro-year-"+y).addClass('year-selected');
-    }(jQuery));
-    asc = false;
-    prop = y;
-    active_geom.features = active_geom.features.sort(function(a, b) {
-          if (asc)
-            return (a.properties[prop] > b.properties[prop]) ? 1 : ((a.properties[prop] < b.properties[prop]) ? -1 : 0);
-          else
-            return (b.properties[prop] > a.properties[prop]) ? 1 : ((b.properties[prop] < a.properties[prop]) ? -1 : 0);
-    });
-    for (i = 0; i < 3; i++) {
-      (function ($) {
-        if (active_unit == "E")
-          $(".top-municipios-group-"+i+" .top-municipios-name").html(active_geom.features[i].properties.nom_ent);
-        if (active_unit != "N")
-          $(".top-municipios-group-"+i+" .top-municipios-pct").html(commaSeparateNumber(Math.round(active_geom.features[i].properties[active_year]*10)/10));
-      }(jQuery));
-    }
-    render_map();
+		asc = false;
+		prop = y;
+		active_geom.features = active_geom.features.sort(function(a, b) {
+	        if (asc) return (a.properties[prop] > b.properties[prop]) ? 1 : ((a.properties[prop] < b.properties[prop]) ? -1 : 0);
+	        else return (b.properties[prop] > a.properties[prop]) ? 1 : ((b.properties[prop] < a.properties[prop]) ? -1 : 0);
+	    });
+		for (i = 0; i < 3; i++) {
+			(function ($) {
+				if (active_unit == "E") $(".top-municipios-group-"+i+" .top-municipios-name").html(active_geom.features[i].properties.nom_ent);
+				if (active_unit != "N") $(".top-municipios-group-"+i+" .top-municipios-pct").html(commaSeparateNumber(Math.round(active_geom.features[i].properties[active_year]*10)/10));
+			}(jQuery));
+		}
+    render_map(active_geom.features);
   }
 
   function change_active_group(g) {
@@ -475,11 +541,11 @@
     (function ($) {
       if (active_unit == "N") {
         $("#form-filter-entidad-mpal").hide();
-        $(".stat-column-header-chart").html("<h1><b>Indicador a nivel nacional</b></h1>");
+        $(".stat-column-header-chart").html("<h2>Indicador a nivel nacional</h2>");
       }
       if (active_unit == "E") {
         $("#form-filter-entidad-mpal").hide();
-        $(".stat-column-header-chart").html("<h1><b>Indicador a nivel estatal</b></h1>");
+        $(".stat-column-header-chart").html("<h2>Indicador a nivel estatal</h2>");
         $(".stat-column-header-top").html("Top 3 Estados");
       }
       if (active_unit == "N")
@@ -508,9 +574,10 @@
       });
     }(jQuery));
     change_active_year(active_year);
+
   }
 
-  function change_variable() {
+  function change_variable(select_Data) {
     cont = true;
     (function ($) {
       if ($('select#select-indicador-a option').length == 0) {
@@ -534,8 +601,7 @@
     units = [];
     units_b = [];
     (function ($) {
-      params = { id: $("select#select-indicador-a option:selected").val(), pageSize: 999999 };
-      var select_Data = $("select#select-indicador-a option:selected").val();
+      params = { id: select_Data, pageSize: 999999 };
       $.getJSON('json/partition/'+select_Data+'.json', {}, function (data) {
         $.each(data, function(key, valor) {
           if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
@@ -567,17 +633,7 @@
         });
         // Organize years
         years.sort();
-        $("section.year-selector .year-select").empty();
         active_year = years[years.length-1];
-        $.each(years, function(key, year) {
-          $("section.year-selector .year-select").append("<div onmousedown='change_active_year(\""+
-                                                        year+"\")' style='width: "+
-                                                        Math.floor(100/years.length)+
-                                                        "%' class='year filtro-year-"+
-                                                        year+"'>"
-                                                        +year+"</div>")
-        });
-        $("section.year-selector .year-select").append('<div style="clear:both;"></div>');
         // Organize units
         $(".filter-geo").html('');
         if (units.indexOf("N") != -1) {
@@ -594,9 +650,9 @@
         $('select.filter-geo option[value='+ active_unit +']').attr('selected', 'selected');
         change_active_unit(active_unit);
         // Create filters (if applicable)
-        if ($("select#select-indicador-a option:selected").val() in indicadores_grupos) {
+        if (select_Data in indicadores_grupos) {
           $("select.filter-grupo").empty();
-          $.each(indicadores_grupos[$("select#select-indicador-a option:selected").val()], function(k, v) {
+          $.each(indicadores_grupos[select_Data], function(k, v) {
             if (subids[active_unit].indexOf(v.id2) != -1)
               $("select.filter-grupo").append('<option value="'+v.id2+'">'+v.id3+'</option>');
           })
@@ -610,12 +666,14 @@
         $('select#filter-grupo option[value="'+ active_group +'"]').attr('selected', 'selected');
         // Add to Datos table
         $("table#datos tbody tr").remove();
-        metadatos_a = metadata_groupedbyid[$("select#select-indicador-a option:selected").val()];
+        $("table#description tbody tr").remove();
+
+        metadatos_a = metadata_groupedbyid[select_Data];
         $("table#datos tbody").append(
-          "<tr class='indicador-a datos-indicador'>\
+          "<tr class='indicador-a datos-indicador datos-indicador-descarga'>\
             <td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td>\
             <td>"+metadatos_a["Dependencia"]+"</td>\
-            <td>N/A</td>\
+            <td>"+metadatos_a["Nombre_del_objetivo"]+"</td>\
             <td><span class='fformat'>CSV</span></td>\
             <td style='min-width:80px;'>\
             <center>\
@@ -625,33 +683,34 @@
             </center>\
             </td>\
           </tr>");
-        $("table#datos tbody").append(
-          "<tr class='indicador-a metadatos'>\
-            <td> <div class='metadata-header'>Descripción</div>\
-              <div>"+metadatos_a["Descripcion"]+"</div></td>\
-            <td><div class='metadata-header'>Desagregación</div>\
-              <div>"+metadatos_a["Cobertura"]+"</div></td>\
-            <td><div class='metadata-header'>Desagregación temporal</div>\
-              <div>"+metadatos_a["Periodicidad"]+"</div></td>\
-            <td><div class='metadata-header'>Años</div>\
-              <div>"+metadatos_a["RangoTiempo"]+"</div></td>\
-          <td></td></tr>"  );
-        $("table#datos tbody").append(
+          $("table#datos tbody").append(
+            "<tr class='indicador-a datos-indicador datos-indicador-descarga'>\
+              <td class='nombre-ind'>Base de datos completa</td>\
+              <td>"+metadatos_a["Dependencia"]+"</td>\
+              <td>Todos</td>\
+              <td><span class='fformat'>CSV</span></td>\
+              <td style='min-width:80px;'>\
+              <center>\
+                <a target='_blank' href='to_csv/raw_csv/all_data.csv'>\
+                  <img width=35 height=36 src='img/icon-circle-arrow-right-gray.png' />\
+                </a>\
+              </center>\
+              </td>\
+              </tr>");
+
+        $("table#description tbody").append(
           "<tr class='indicador-a datos-indicador'>\
-            <td class='nombre-ind'>Base de datos completa</td>\
-            <td>AFICO</td>\
-            <td>N/A</td>\
-            <td><span class='fformat'>CSV</span></td>\
-            <td style='min-width:80px;'>\
-            <center>\
-              <a target='_blank' href='to_csv/raw_csv/all_data.csv'>\
-                <img width=35 height=36 src='img/icon-circle-arrow-right-gray.png' />\
-              </a>\
-            </center>\
-            </td>\
-            </tr>");
+            <td>  <div>"+metadatos_a["Descripcion"]+"</div></td>\
+            <td>  <div>"+metadatos_a["Cobertura"]+"</div></td>\
+            <td>  <div>"+metadatos_a["Periodicidad"]+"</div></td>\
+            <td>  <div>"+metadatos_a["RangoTiempo"]+new Date().getFullYear()+"</div></td>\
+            <td></td> \
+          </tr>" );
+        renderYearBar(years);
+
       });
     }(jQuery));
+
   }
 
   function populate_indicador_a() {
@@ -659,6 +718,7 @@
       $("select#select-indicador-a").empty();
       if (firstrun == true) {
         o_id = '<?php echo $o_id; ?>';
+
         if (o_id != "") {
           $('select#select-objetivo-a option:nth-child('+(parseInt(o_id)+1)+')').attr('selected', 'selected');
         }else {
@@ -666,7 +726,9 @@
         }
       }
       $.each(metadata_grouped[$("select#select-objetivo-a option:selected").val()], function(key, indicador) {
-        $("select#select-indicador-a").append("<option value='"+indicador.Clave+"'>"+indicador.Nombre_del_indicador+"</option>");
+        if (indicador.Clave.length ==3 ){
+          $("select#select-indicador-a").append("<option value='"+indicador.Clave+"'>"+indicador.Nombre_del_indicador+"</option>");
+        }
       });
       if (firstrun == true) {
         o_id  = '<?php echo $o_id; ?>';
@@ -682,7 +744,7 @@
         }
         firstrun = false;
       }
-      change_variable();
+      change_variable($("select#select-indicador-a option:selected").val());
     }(jQuery));
   }
 
@@ -693,7 +755,7 @@
       if (firstrun == false) {
         current_obj_a = $("select#select-objetivo-a option:selected").val();
       }
-      //$("select#select-objetivo-a").empty();
+      $("select#select-objetivo-a").empty();
       $.each(metadata_grouped, function(objetivo, indicadores) {
         $("select#select-objetivo-a").append("<option value='"+objetivo+"'>"+objetivo+"</option>");
       });
@@ -710,15 +772,18 @@
           $("select#select-objetivo-a option:first").attr('selected','selected');
       }
       populate_indicador_a();
-      change_variable();
+      change_variable($("select#select-indicador-a option:selected").val());
     }(jQuery));
+
   }
 
   (function ($) {
     pop_all();
+    indicador_selected = $("select#select-indicador-a option:selected").val();
+
     $("select#select-indicador-a").change(function() {
       (function ($) { $("#loading_wrap").fadeIn(); }(jQuery));
-      change_variable();
+      change_variable($("select#select-indicador-a option:selected").val());
     });
     $("select#filter-grupo").change(function() {
       change_active_group($("select#filter-grupo option:selected").val());
@@ -728,6 +793,17 @@
     });
     $("select#filter-geo").change(function() {
       change_active_unit($("select#filter-geo option:selected").val());
+
+    });
+    $("#trim_to_ac").change(function() {
+      if($("#trim_to_ac").is(':checked')){
+        indicador_selected = $("select#select-indicador-a option:selected").val()+"1";
+        change_variable($("select#select-indicador-a option:selected").val()+"1");
+      } else{
+        indicador_selected = $("select#select-indicador-a option:selected").val();
+        change_variable($("select#select-indicador-a option:selected").val());
+      }
+
     });
     $("ul.menu li.leaf:nth-child(2) a").mousedown(function() {
       o=$("select#select-objetivo-a option:selected").index();
@@ -739,7 +815,9 @@
       i=$("select#select-indicador-a option:selected").val();
       $("ul.menu li.leaf:nth-child(3) a").attr("href","/compara?o="+o+"&i="+i);
     })
+
   }(jQuery));
+
   // END API FUNCTIONS
 
 </script>

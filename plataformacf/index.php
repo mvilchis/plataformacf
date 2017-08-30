@@ -15,6 +15,8 @@
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html">
   <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+  <script src="json/data_explanation.json"></script>
+
 </head>
 <body>
   <!-- Crowdfunding bar  -->
@@ -22,7 +24,7 @@
     <div class="container container-title">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.php">
-          <span>Crowdfunding Mx</span>
+          <span>Fondeo Colectivo</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="crowdfunding-navbar">
@@ -36,11 +38,12 @@
   </nav>
   <!-- /Crowdfunding end bar -->
   <!-- Crowdfunding banner -->
+
   <div id="site-banner">
-    <div >
+    <div style="display: table;">
       <div class="row">
-        <div class="col-md-12 title-banner">
-          <span >Sistema de monitoreo de fondeo colectivo en México</span>
+        <div class="col-md-12 title-banner" >
+          <span >Sistema de monitoreo de Fondeo Colectivo</span>
         </div>
         <div class="col-md-12 subtitle-banner">
           <span> El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México </span>
@@ -63,15 +66,15 @@
             <span>EN LINEA</span>
           </div>
         </div>
-        <div class="col-md-12 data-banner">
+        <div class="col-md-12 data-banner" >
           <div class="col-md-4">
-            <span>23,422</span>
+            <span id="total_proyect">23,422</span>
           </div>
           <div class="col-md-4">
-            <span>$132 MDP</span>
+            <span id="total_amount">$132 MDP</span>
           </div>
           <div class="col-md-4">
-            <span> 17</span>
+            <span id="total_plataforms"> 17</span>
           </div>
         </div>
       </div>
@@ -154,12 +157,12 @@
         <div class="col-sm-12">
           <h2><b>Explora</b></h2>
         </div>
-        <div class="col-sm-9 texto_parrafo" style="padding-bottom: 20px;">
+        <div class="col-sm-9 texto_parrafo" style="padding-bottom: 30px;">
           </br>
           <p >Consulta datos de más de 11  indicadores sobre la evolución del financiamiento colectivo en México.</p>
           <p>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
-        <section class="col-sm-3">
+        <section class="col-sm-3" style="padding-top:30px">
           <button class="btn btn-primary mxbutton" type="button" onclick="visit_indicador('0','i41')"> Ir a la sección </button>
         </section>
       </section>
@@ -173,6 +176,11 @@
   <script src="bower_components/moment/min/moment.min.js"></script>
   <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script type="text/javascript">
+  function commaSeparateNumber(x){
+    var parts=x.toString().split(".");
+    parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
+    return parts.join(".");
+  }
     (function ($) {
       $(".indicador-group:not(.ind-empty) .indicador-row").mousedown(function() {
         if ($(this).parents('.indicador-group').find(".listed-indicadores").is(":visible")) {
@@ -183,13 +191,21 @@
           $(this).parents('.indicador-group').find(".listed-indicadores").slideToggle();
         }
       });
+      //$(#total_amount).text();
+      //
     }(jQuery));
+    $("#total_proyect").html(commaSeparateNumber(data_explanation["total_proyect"]));
+    $("#total_amount").html("$"+commaSeparateNumber(data_explanation["total_amount"])+" MDP");
+    $("#total_plataforms").html(commaSeparateNumber(data_explanation["total_plataforms"]));
+
     function visit_objetivo(n,i) {
       window.location.href='explora?o='+i;
     }
     function visit_indicador(o,i) {
       window.location.href='explora?o='+o+'&i='+i;
     }
+
+
   </script>
   <?php  include('acknowledgment.php');?>
 

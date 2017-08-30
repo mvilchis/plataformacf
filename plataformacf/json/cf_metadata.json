@@ -4,8 +4,8 @@
          "_id":"580908b391b343010035a3ae",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Proyectos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i11.json",
@@ -27,14 +27,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3af",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Proyectos exitosos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i12.json",
@@ -56,14 +56,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b0",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Monto fondeado",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i13.json",
@@ -85,14 +85,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b1",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Monto fondeado por proyecto",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i14.json",
@@ -114,14 +114,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio por proyecto, en pesos mexicanos, que ha sido contribuido por fondeadores",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b2",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Tasa de exito  (%)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i15.json",
@@ -143,14 +143,14 @@
          "Descripcion_del_indicador":"Describe el porcentaje de exito de los proyectos (es decir la proporción de proyectos que llegaron a su meta de fondeo)",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b3",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Tasa de interes ",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i16.json",
@@ -172,14 +172,14 @@
          "Descripcion_del_indicador":"Describe la tasa de interes promedio, en porcentaje, de los proyectos en las plataformas",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b4",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Fondeo por usuario",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i17.json",
@@ -201,14 +201,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio fondeado por usuario, en pesos mexicanos.",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b5",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Fondeadores",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i18.json",
@@ -230,14 +230,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b6",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Proyectos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i21.json",
@@ -259,14 +259,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b7",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Proyectos exitosos  (%)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i22.json",
@@ -288,14 +288,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b8",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Monto fondeado",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i23.json",
@@ -317,14 +317,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3b9",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Monto fondeado por proyecto",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i24.json",
@@ -346,14 +346,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio por proyecto, en pesos mexicanos, que ha sido contribuido por fondeadores",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3ba",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Tasa de exito  (%)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i25.json",
@@ -375,14 +375,14 @@
          "Descripcion_del_indicador":"Describe el porcentaje de exito de los proyectos (es decir la proporción de proyectos que llegaron a su meta de fondeo)",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3bb",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Fondeadores",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i26.json",
@@ -404,14 +404,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3bc",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Duración de campaña",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i27.json",
@@ -433,14 +433,14 @@
          "Descripcion_del_indicador":"Describe el promedio, en número dias, para que un proyecto llegue a su meta",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3bd",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Proyectos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i31.json",
@@ -462,14 +462,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3be",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Proyectos exitosos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i32.json",
@@ -491,14 +491,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3bf",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Monto fondeado",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i33.json",
@@ -520,14 +520,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c0",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Tasa de exito  (%)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i34.json",
@@ -549,14 +549,14 @@
          "Descripcion_del_indicador":"Describe el porcentaje de exito de los proyectos (es decir la proporción de proyectos que llegaron a su meta de fondeo)",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c1",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Fondeadores",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i35.json",
@@ -578,14 +578,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c2",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Fondeo por usuario",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i36.json",
@@ -607,14 +607,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio fondeado por usuario, en pesos mexicanos.",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c3",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Proyectos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i41.json",
@@ -636,14 +636,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c4",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Proyectos exitosos",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i42.json",
@@ -665,14 +665,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c5",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Monto fondeado",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i43.json",
@@ -694,14 +694,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c6",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Monto fondeado por proyecto",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i44.json",
@@ -723,14 +723,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio por proyecto, en pesos mexicanos, que ha sido contribuido por fondeadores",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c7",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Tasa de exito  (%)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i45.json",
@@ -752,14 +752,14 @@
          "Descripcion_del_indicador":"Describe el porcentaje de exito de los proyectos (es decir la proporción de proyectos que llegaron a su meta de fondeo)",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c8",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Fondeadores",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i46.json",
@@ -781,14 +781,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3c9",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Fondeo por usuario",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i47.json",
@@ -810,14 +810,14 @@
          "Descripcion_del_indicador":"Describe el monto promedio fondeado por usuario, en pesos mexicanos.",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3ca",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Proyectos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i111.json",
@@ -839,14 +839,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3cb",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Proyectos exitosos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i121.json",
@@ -868,14 +868,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3cc",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Monto fondeado (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i131.json",
@@ -897,14 +897,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3cd",
          "Nombre_del_objetivo":"Deuda",
          "Nombre_del_indicador":"Fondeadores (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i181.json",
@@ -926,14 +926,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3ce",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Proyectos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i211.json",
@@ -955,14 +955,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3cf",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Proyectos exitosos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i221.json",
@@ -984,14 +984,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d0",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Monto fondeado (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i231.json",
@@ -1013,14 +1013,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d1",
          "Nombre_del_objetivo":"Recompensas",
          "Nombre_del_indicador":"Fondeadores (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i261.json",
@@ -1042,14 +1042,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional y por Entidad Federativa",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d2",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Proyectos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i311.json",
@@ -1071,14 +1071,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d3",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Proyectos exitosos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i321.json",
@@ -1100,14 +1100,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d4",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Monto fondeado (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i331.json",
@@ -1129,14 +1129,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d5",
          "Nombre_del_objetivo":"Donaciones",
          "Nombre_del_indicador":"Fondeadores (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i351.json",
@@ -1158,14 +1158,14 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d6",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Proyectos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i411.json",
@@ -1187,14 +1187,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d7",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Proyectos exitosos (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i421.json",
@@ -1216,14 +1216,14 @@
          "Descripcion_del_indicador":"Describe el número total de proyectos en las plataforma que llegaron a su meta de fondeo ",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d8",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Monto fondeado (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i431.json",
@@ -1245,14 +1245,14 @@
          "Descripcion_del_indicador":"Describe el monto total, en pesos mexicanos, que ha sido contribuido por fondeadoresa los proyectos",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       },
       {
          "_id":"580908b391b343010035a3d9",
          "Nombre_del_objetivo":"Capital",
          "Nombre_del_indicador":"Fondeadores (Acumulado)",
-         "Dependencia":"AFICO",
-         "Periodicidad":"Mensual",
+         "Dependencia":"Plataformas de fondeo colectivo - AFICO",
+         "Periodicidad":"Trimestral",
          "Cobertura":"Nacional; Estatal",
          "URL_metadato":"NA",
          "URL_indicador":"/json/partition/i461.json",
@@ -1274,7 +1274,7 @@
          "Descripcion_del_indicador":"Describe el número total de usuarios que fondearon proyectos en el periodo",
          "DesagregagionGeo2":"Nacional",
          "DesagregacionTemporal2":"Mensual",
-         "RangoTiempo":"2014-2016"
+         "RangoTiempo":"2014-"
       }
    ],
    "pagination":{

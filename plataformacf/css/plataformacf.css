@@ -18,27 +18,41 @@ gobmx-navbar                                    { width: 100%;
                                                   z-index: 9999; }
 img                                             { max-width: 100%; }
 #site-banner                                    { padding: 90px 0;
-                                                  background: url(../img/2b.jpg) repeat scroll 0 0 transparent;
+                                                  background: url(../img/2b.png) repeat scroll 0 0 transparent;
                                                   text-align: center;
                                                   background-position: center; }
 #site-banner img                                { margin-bottom: 20px; }
 .title-banner                                   { font-size: 45px;
                                                   font-weight: 200;
                                                   color:white;
-                                                  padding-bottom: 20px; }
+                                                  font-weight: bold;
+                                                  padding-bottom: 20px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
 .subtitle-banner                                { font-size: 20px;
                                                   color: white;
-                                                  padding-bottom: 75px; }
+                                                  padding-bottom: 75px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
 .data-title-banner                              { font-size: 21px;
                                                   color:white;
-                                                  font-weight: 600; }
+                                                  font-weight: 600;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
 .data-banner                                    { font-size: 40px;
                                                   color:white;
                                                   padding-top: 20px;
-                                                  padding-bottom: 20px;}
+                                                  padding-bottom: 20px;
+                                                  display: table-cell;
+                                                  vertical-align: middle;
+                                                }
 .container-title                                { padding-left: 0px !important;
                                                   padding-bottom: 5px;
                                                   padding-top: 10px;
+                                                  vertical-align: middle;
                                                 }
 /**********************************
     Navbar Styles
@@ -102,7 +116,6 @@ strong                                          { font-weight: 600; }
                                                   border-radius: 4px !important;
                                                   cursor: pointer !important;
                                                   display: block !important;
-                                                  width: 100%;
                                                   text-decoration: none !important;
                                                   background-color: #0c9 !important;
                                                   font-weight: 700 !important;
@@ -144,164 +157,179 @@ strong                                          { font-weight: 600; }
 
 
 /***************** Explora styles *****************************************/
-select {
-	border: none;
-	background-color: #ddd;
-	padding: 5px 10px;
-	margin: 0;
-	-webkit-border-radius:0px;
-	-moz-border-radius:0px;
-	-webkit-appearance: none;
-	border-radius:0px;
-	color: #888;
-}
+select                                            {	border: none;
+                                                    background-color: #ddd;
+                                                    padding: 5px 10px;
+                                                    margin: 0;
+                                                    -webkit-border-radius:0px;
+                                                    -moz-border-radius:0px;
+                                                    -webkit-appearance: none;
+                                                    border-radius:0px;
+                                                    color: #888;
+                                                  }
 
-.objective-selector select {
-	width: 100%;
-}
-.objective-selector-caption {
-	margin-bottom: 10px;
-	font-size: 12px;
-}
+.objective-selector select                        { width: 100%; }
+.objective-selector-caption                       { margin-bottom: 10px;
+                                                    font-size: 12px;
+                                                  }
+.vcenter                                          { font-size: 16px;
+                                                    line-height: 82px;
+                                                    font-weight: 700;
+                                                  }
+/****           MAP styles           ***/
+#map                                              { position: relative;
+ 	                                                  width: 100%;
+ 	                                                  height: 575px;
+                                                  }
+#map .leaflet-control-search ul.search-tooltip    { max-height: 365px;
+ 	                                                  height: 365px;
+                                                  }
 
-.vcenter {
-	font-size: 16px;
-    line-height: 82px;
- }
+table#legend-colors .tooltip                      { display: inline-block; }
+path.highlighted                                  { fill:yellow !important;
+ 	                                                  stroke:'#444' !important
+                                                  }
+.infobox                                          { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+ 	                                                  z-index: 100;
+ 	                                                  position: absolute;
+ 	                                                  top: 60px;
+ 	                                                  right: 10px;
+ 	                                                  padding: 10px;
+ 	                                                  background-color: rgba(255,255,255,1);
+                                                    border: 5px solid rgb(0, 204, 153);
+                                                  }
+.infobox .unit-name                               { font-weight: 700;
+ 	                                                  font-size: 20px;
+ 	                                                  margin-bottom: 5px;
+                                                    color:#17416D;
+                                                  }
+.infobox .edo-name                                { font-weight: 700;
+ 	                                                  font-size: 12px;
+ 	                                                  margin-bottom: 5px;
+ 	                                                  color: #aaa;
+                                                  }
+.infobox .edo-image                               { width: 40px;
+ 	                                                  height: 40px;
+                                                  }
+.infobox table#legend-colors                      { width: 100%; }
+table#legend-colors tr td.legend-color            { height: 12px;
+                                                    opacity: 0.7;
+ 	                                                  cursor: pointer;
+                                                  }
+table#legend-colors tr td.legend-color:hover      { background-color: yellow !important; }
+table#legend-colors tr td.legend-breaks           { text-align: center;
+                                                   	font-size: 10px;
+ 	                                                  padding-top: 5px;
+                                                  }
+.indicador-nombre                                 { font-weight: 300;
+ 	                                                  margin-bottom: 10px;
+ 	                                                  font-size: 20px;
+                                                  }
+.indicador-valor                                  { font-size: 28px;
+	                                                  font-weight: 700;
+	                                                  color: #00cc99;
+	                                                  text-align: center;
+                                                  }
 
 
- #map {
- 	position: relative;
- 	width: 100%;
- 	height: 575px;
- }
- #map .leaflet-control-search ul.search-tooltip {
- 	max-height: 365px;
- 	height: 365px;
- }
- table#legend-colors .tooltip {
- 	display: inline-block;
- }
- path.highlighted{
- 	fill:yellow !important;
- 	stroke:'#444' !important
- }
- .infobox {
- 	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
- 	z-index: 100;
- 	position: absolute;
- 	top: 60px;
- 	right: 10px;
- 	padding: 10px;
- 	background-color: rgba(255,255,255,1);
-  border: 5px solid rgb(0, 204, 153);
- }
- .infobox .unit-name {
- 	font-weight: 700;
- 	font-size: 20px;
- 	margin-bottom: 5px;
-   color:#17416D;
- }
- .infobox .edo-name {
- 	font-weight: 700;
- 	font-size: 12px;
- 	margin-bottom: 5px;
- 	color: #aaa;
- }
- .infobox .edo-image {
- 	width: 40px;
- 	height: 40px;
- }
- .infobox table#legend-colors {
- 	width: 100%;
- }
- table#legend-colors tr td.legend-color {
- 	height: 12px;
- 	opacity: 0.7;
- 	cursor: pointer;
- }
- table#legend-colors tr td.legend-color:hover {
- 	background-color: yellow !important;
- }
- table#legend-colors tr td.legend-breaks {
- 	text-align: center;
- 	font-size: 10px;
- 	padding-top: 5px;
- }
- .indicador-nombre {
- 	 font-weight: 300;
- 	 margin-bottom: 10px;
- 	 font-size: 20px;
-}
-
-.indicador-valor {
-	font-size: 28px;
-	font-weight: 700;
-	color: #00cc99;
-	text-align: center;
-}
-
+table.datos                                       { border-collapse: collapse;
+                                                    font-size: 12px}
+table.datos td                                    { margin-bottom: 10px; }
+table.datos thead th                              { padding-bottom: 10px;
+                                                  	padding: 10px 20px;
+                                                  }
+tr.datos-indicador td                             { background-color: rgb(238,238,238);
+	                                                  padding: 20px;
+	                                                  vertical-align: top;
+                                                  }
+tr.datos-indicador td.nombre-ind                  { dont-weight: 600; }
+.fformat                                          { padding: 2px 4px;
+	                                                  background-color: #222;
+	                                                  color: #fff;
+	                                                  font-weight: 700;
+                                                  }
+tr.datos-indicador-descarga td:last-child         { background-color: rgb(215,215,215);
+	                                                  vertical-align: middle;
+                                                  }
+tr.metadatos .metadata-header                     { font-weight: 700; }
+tr.metadatos td                                   { background-color: rgb(250,250,250);
+	                                                  padding: 20px;
+	                                                  font-size: 12px ! important;
+                                                  }
+/****     top municipio       ****/
+.top-municipios-group                             { border-top: 1px solid #ccc;
+	                                                  position: relative;
+	                                                  height: 90px;
+                                                  }
+.top-municipios-number                            { color: #00CC99;
+	                                                  top: 26px;
+	                                                  position: absolute;
+	                                                  font-size: 24px;
+                                                  }
+.top-municipios-name                              {	position: absolute;
+	                                                  top: 26px;
+	                                                  left: 40px;
+	                                                  font-size: 24px;
+                                                  }
+.top-municipios-pct                               { position: absolute;
+	                                                  top: 15px;
+	                                                  right: 20px;
+                                                    text-align: right;
+	                                                  font-size: 40px;
+	                                                  font-weight: 600;
+                                                  }
+#loading_wrap                                     { background-color: rgba(0,0,0,0.65);
+	                                                  color: #fff;
+	                                                  line-height: 300px;
+	                                                  font-weight: 700;
+	                                                  z-index: 5000;
+	                                                  text-align: right;
+	                                                  font-size: 32px;
+                                                  }
 /* Line charts */
-body.page-node .c3 svg {
-	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 12px;
-	font-weight: 200;
-  margin: auto;
-  display: block;
-  width: 80%;
-}
-.infobox .c3 svg {
-	font-size: 8px;
-}
-.c3 svg text {
-	fill: #aaa;
-}
-.c3 svg g.tick line {
-	stroke: #fff;
-	stroke-opacity: 0;
-}
-.c3 svg g.c3-ygrids line {
-	stroke: #fff;
-	stroke-dasharray: 1;
-	stroke-opacity: 1;
-}
-#chart svg g.c3-lines path.c3-line:hover {
-	stroke: #00cc99;
-}
-#chart svg g.c3-lines path.c3-line {
-	fill-opacity: 0;
-}
-.c3 svg .c3-axis path {
-	stroke: #fff;
-	stroke-opacity: 0;
-}
-.c3 svg .c3-zoom-rect {
-	fill: rgb(238,238,238);
-	opacity: 1 !important;
-}
-.filters {
-	z-index: 100;
-	background-color: #BDBDBD;
-	padding: 10px;
-}
-.filters .form-group {
-	margin-right: 20px;
-}
-.filter-header {
-	font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
-	font-size: 12px;
-	font-weight: 300;
-	margin-right: 10px;
-	margin-bottom: 5px;
-}
-.filter-item {
-	font-size: 12px;
-	margin-bottom: 3px;
-}
-.filter-item:hover {
-	color: #00D2A9;
-}
 
+body.page-node .c3 svg                            { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+	                                                  font-size: 12px;
+	                                                  font-weight: 200;
+                                                    margin: auto;
+                                                    display: block;
+                                                    width: 80%;
+                                                  }
+.infobox .c3 svg                                  { font-size: 8px; }
+.c3 svg text                                      { fill: #aaa; }
+.c3 svg g.tick line                               { stroke: #fff;
+	                                                  stroke-opacity: 0;
+                                                  }
+.c3 svg g.c3-ygrids line                          {	stroke: #fff;
+	                                                  stroke-dasharray: 1;
+	                                                  stroke-opacity: 1;
+                                                  }
+#chart svg g.c3-lines path.c3-line:hover          { stroke: #00cc99; }
+#chart svg g.c3-lines path.c3-line                {	fill-opacity: 0; }
+.c3 svg .c3-axis path                             { stroke: #fff;
+                                                    stroke-opacity: 0;
+                                                  }
+.c3 svg .c3-zoom-rect                             {	fill: rgb(238,238,238);
+	                                                  opacity: 1 !important;
+                                                  }
+.filters                                          { z-index: 100;
+	                                                  background-color: #BDBDBD;
+	                                                  padding: 10px;
+                                                  }
+.filters .form-group                              { margin-right: 20px; }
+.filter-header                                    { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
+	                                                  font-size: 14px;
+	                                                  font-weight: 500;
+	                                                  margin-right: 10px;
+	                                                  margin-bottom: 5px;
+                                                  }
+.filter-item                                      { font-size: 12px;
+	                                                  margin-bottom: 3px;
+                                                  }
+.filter-item:hover                                {	color: #00D2A9; }
+.filter-groupo               {  background: #fff!important;
+                                                    min-width: 30px;
+                                                  }
 .header_mx h2:after {
   content: '';
   width: 40px;
@@ -333,4 +361,77 @@ body.page-node .c3 svg {
 .texto_parrafo p {
   color:#424242;
   font-size: 16px;
+}
+
+/* year bar */
+.ui-widget-header {
+    background: #69D8CF url(images/ui-bg_highlight-soft_50_dddddd_1x100.png) 50% 50% repeat-x !important;
+    height: 7px !important;
+    position: absolute !important;
+    top: 20% !important;
+}
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.check-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #94b093;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.check-slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .check-slider {
+  background-color: #4FD9B2;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+}
+
+input:focus + .check-slider {
+  background-color: #4FD9B2;
+  color: #fff;
+  background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
+
+}
+
+input:checked + .check-slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.check-slider.round {
+  border-radius: 34px;
+}
+
+.check-slider.round:before {
+  border-radius: 50%;
 }

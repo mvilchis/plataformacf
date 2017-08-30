@@ -43,19 +43,17 @@
 		</div>
 
 		<div style="margin-top: 30px;margin-bottom: 30px;" class="col-xs-12">
-			<div class="stat-column-header stat-column-header-chart header_mx">
-			<h1>Indicador a nivel estatal</h1>
+			<div class="stat-column-header stat-column-header-chart">
+			<h2>Indicador a nivel estatal</h2>
 		</div>
 		</div>
 			<div >
-				<div class="col-xs-12 col-sm-2">
-				</div>
-				<div class="col-xs-12 col-sm-8">
+				<div class="col-xs-12 col-sm-10">
 			  <div id="chart"></div>
 				</div>
 				<div class="col-xs-12 col-sm-2">
 					<div style="padding-bottom: 200px;"><img  width=147 height=25 src='img/promedio.png'/></div>
-					<button type="button" onmousedown="exportToImage('line');" style="margin: 0px;"class="btn btn-line-export btn-invert">Exportar gráfica</button>
+					<button type="button" class="btn btn-primary mxbutton" type="button" onmousedown="exportToImage('line');" style="margin: 0px;">Exportar gráfica</button>
 				</div>
 		  </div>
 		</div>

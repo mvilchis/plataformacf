@@ -10,7 +10,6 @@
   <link rel="shortcut icon" href="https://framework-gb.cdn.gob.mx/favicon.ico">
   <link rel="stylesheet" type="text/css" href="css/plataformacf.css" />
   <link href="https://framework-gb.cdn.gob.mx/assets/styles/main.css" rel="stylesheet">
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
   <link rel="import" href="bower_components/polymer/polymer.html">
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
@@ -38,7 +37,7 @@
     <div class="container container-title">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.php">
-          <span>Crowdfunding Mx</span>
+          <span>Fondeo Colectivo</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="crowdfunding-navbar">
@@ -117,6 +116,9 @@
       </div>
       <div class="col-sm-12 texto_parrafo" >
         <p >Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
+        <p>
+          (Nota: El total Nacional puede no coincidir con la suma de los estados, ya que existen proyectos no categorizados geográficamente)
+        </p>
       </div>
     </div>
   </div>
@@ -140,7 +142,7 @@
                   Selecciona un tipo de indicador
                 </div>
                 <select id="select-objetivo-a">
-                  <option>6 Erradicar pobreza</option>
+                  <option>--</option>
                 </select>
               </div>
               <div class="col-xs-12 col-sm-1 vcenter">
@@ -151,11 +153,17 @@
                   Selecciona un indicador
                 </div>
                 <select id="select-indicador-a">
-                  <option>Proporción de población en pobreza</option>
+                  <option>--</option>
                 </select>
               </div>
             </div>
           </section>
+          <div class="container" style="padding-bottom:30px;">
+            <div class="vcenter">
+              Selecciona un trimestre:
+            </div>
+            <div class="slider" id="year_slider"></div>
+          </div>
           <div id="map">
             <div class="infobox" style="display: none;">
               <div class="row">
@@ -212,18 +220,29 @@
                                <option class="filter-item">Municipal</option>
                           </select>
                         </div>
+                        <div class="form-group">
+                          <label class="filter-header">Ver por:</label>
+                          <label class="filter-header">Trimestral</label>
+                          <div class="form-group form-group-grupo">
+
+                          <label class="switch">
+                            <input type="checkbox" id="trim_to_ac">
+                            <span class="check-slider round"></span>
+                          </label>
+                        </div>
+                        <label class="filter-header">Acumulado</label>
+
+                      </div>
+
                       </form>
                     </div>
                   </div>
                 </div>
-                <section class="year-selector">
-                  <h4> Elige el trimestre que deseas visualizar</h4>
-                  <div class="year-select">
-                  </div>
-                </section>
+
                 <?php include('section_stats.php'); ?>
                 <?php include('section_datatable.php'); ?>
               </page>
+
               <?php include('api_graphics.php');  ?>
             </section>
             <!-- /.block -->
@@ -251,13 +270,12 @@
     </body>
 
 
-    <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
     <script src="bower_components/underscore/underscore-min.js"></script>
     <script src="bower_components/bootstrap-year-calendar/js/bootstrap-year-calendar.min.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
-    <?php  include('acknowledgment.php');?>
 
+    <?php  include('acknowledgment.php');?>
     </body>
     </html>

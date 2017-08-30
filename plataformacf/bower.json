@@ -1,18 +1,19 @@
 {
-    "name"              : "Crowdfunding",
-    "version"           : "1.0.0",
-    "description"       : "Crowdfunding site",
-    "dependencies"      : {
-        "bootstrap"                 : "3.3.7",
-        "bootstrap-year-calendar"   : "latest",
-        "gobmx-footer"              : "mxabierto/gobmx-footer#latest",
-        "gobmx-navbar"              : "mxabierto/gobmx-navbar#latest",
-        "underscore"                : "latest",
-        "eonasdan-bootstrap-datetimepicker"     : "latest"
-    },
-    "overrides"     : {
-        "webcomponentsjs"       : {
-            "main"  : "webcomponents-lite.min.js"
-        }
+  "name": "Crowdfunding",
+  "version": "1.0.0",
+  "description": "Crowdfunding site",
+  "dependencies": {
+    "bootstrap": "3.3.7",
+    "bootstrap-year-calendar": "latest",
+    "gobmx-footer": "mxabierto/gobmx-footer#latest",
+    "gobmx-navbar": "mxabierto/gobmx-navbar#latest",
+    "underscore": "latest",
+    "eonasdan-bootstrap-datetimepicker": "latest",
+    "jQuery-ui-Slider-Pips": "jquery-ui-slider-pips#^1.11.4"
+  },
+  "overrides": {
+    "webcomponentsjs": {
+      "main": "webcomponents-lite.min.js"
     }
+  }
 }

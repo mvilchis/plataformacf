@@ -22,7 +22,7 @@
     <div class="container container-title">
       <div class="navbar-header">
         <a class="navbar-brand" href="index.php">
-          <span>Crowdfunding Mx</span>
+          <span>Fondeo Colectivo</span>
         </a>
       </div>
       <div class="collapse navbar-collapse" id="crowdfunding-navbar">

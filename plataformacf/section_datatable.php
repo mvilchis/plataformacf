@@ -3,37 +3,31 @@
 		<div class="col-xs-12 col-sm-12">
 			<br>
 			<br>
-			<div class="stat-column-header header_mx"><h1><b>Datos</b></h1></div>
+			<div class="stat-column-header"><h2>Datos</h2></div>
 		</div>
-		<?php if ($page == "compara"): ?>
-		<div class="row"><div class="circle-letter">A</div></div>
-		<?php endif; ?>
 		<div class="col-xs-12">
 			<table id="datos" class="datos" style="width: 100%;">
 				<thead>
 					<th>Nombre</th>
-					<th>Tipo de Financiamiento</th>
-					<th>Tipo de Financiamiento</th>
+					<th>Fuente</th>
+					<th>Tipo de Financiamiento </th>
 					<th>Formato</th>
+					<th>Descarga</th>
 					<th></th>
 				</thead>
 				<tbody></tbody>
 			</table>
-		</div>
-		<?php if ($page == "compara"): ?>
-		<div style='margin-top:30px;' class="row"><div class="circle-letter">B</div></div>
-		<div class="col-xs-12">
-			<table id="datos-b" class="datos" style="width: 100%;">
+			<div class="stat-column-heade"><h2>Descripción de los datos</h2></div>
+			<table id="description" class="datos" style="width: 100%;">
 				<thead>
-					<th>Nombre</th>
-					<th>Tipo de Financiamiento</th>
-					<th>Tipo de Financiamiento</th>
-					<th>Formato</th>
+					<th>Descripción</th>
+					<th>Desagregación</th>
+					<th>Desagregación Temporal </th>
+					<th>Años</th>
 					<th></th>
 				</thead>
 				<tbody></tbody>
 			</table>
 		</div>
-		<?php endif; ?>
 	</div>
 </section>
