@@ -92,9 +92,16 @@ var jQuery_2_1_1 = $.noConflict(true);
 
   //Add comma each three decimal numbers
   function commaSeparateNumber(x){
+    if (x >1000000){
+      y = Math.floor(x/1000000);
+      var parts=y.toString().split(".");
+      parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
+      return parts.join(".")+"MM";
+    }else {
     var parts=x.toString().split(".");
     parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,",");
     return parts.join(".");
+  }
   }
 
   // From indicator, export to csv file
