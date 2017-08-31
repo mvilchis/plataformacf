@@ -324,9 +324,11 @@ var jQuery_2_1_1 = $.noConflict(true);
 
   // Export map to image
   L.easyPrint({title: 'Exporta mapa',
-             elementsToHide: 'footer,.filters,,h1,\
-                                .region-header,.stats,.datatable,.dgm-footer,\
-                                .objective-selector-caption, .objective-selector'
+             elementsToHide: 'footer,.filters,h2,.texto_parrafo,.region-header,.datatable,.dgm-footer,.objective-selector-caption,\
+             .objective-selector-caption,.vcenter,#select-objetivo-a,#select-indicador-a,.navbar-crowdfunding,#acknowledgment,.infobox,#f_1',
+             sizeModes: ['A4Landscape'],
+             customWindowTitle:"Hola mundo"
+
               }).addTo(map);
 
   map.addLayer(basemap);

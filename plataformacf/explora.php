@@ -33,6 +33,7 @@
 
 </head>
 <body>
+  <div id="texto-texto" style="display:None"> </div>
   <!-- Crowdfunding bar  -->
   <nav class=" navbar-crowdfunding navbar2 navbar-default navbar-fixed-top ">
     <div class="container container-title">
@@ -122,7 +123,6 @@
     </div>
   </div>
   <!-- < End header text-->
-
     <div class="region region-content-noncontainer">
       <div class="modal fade" id="notAcumulado" tabindex="-1" role="dialog" aria-labelledby="messageModalLabel">
             <div class="modal-dialog" role="document">
@@ -187,9 +187,9 @@
                 <div class="edo-image col-xs-3">--</div>
               </div>
               <div class="row values-row" style="display: block;">
-                <table>
+                <table style="width:100%">
                   <tr>
-                  <td class="col-xs-3 indicador-valor">--</td>
+                  <td class="col-xs-3 indicador-valor" style="float:left;">--</td>
                           <td class="col-xs-9 indicador-nombre">--</td>
                         </tr>
                       </table>

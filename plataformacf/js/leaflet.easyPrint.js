@@ -28,7 +28,14 @@ function printPage(){
         jQuery(document).ready(function($){
         var currWidth = $("#map").width(); // get current width of mapdiv
         var currHeight = $("#map").height(); // get current height of map div
-        $('<style>@media print { #map { height: ' + currHeight + 'px; width: ' + currWidth + 'px;} }</style>').appendTo('head'); // add print style with current width and height
+        $('<style>@media print { #map { height: ' + currHeight + 'px; width: ' + currWidth + 'px;} }</style>').appendTo('head'); // add print style
+				var tmp_to_print = document.getElementById("texto-texto");
+				tmp_to_print.innerHTML = "";
+				tmp_to_print.style.display="block";
+				tmp_to_print.innerHTML ="<span>Mapa generado para el indicador:  "+metadata_groupedbyid[indicador_selected]['Nombre_del_objetivo']+"</span></br>";
+				tmp_to_print.innerHTML+="<span> Con el tipo: "+ metadata_groupedbyid[indicador_selected]['Nombre_del_indicador']+". </span></br>";
+				tmp_to_print.innerHTML +="<span> Agregación a nivel "+((active_unit == "E")? "Estatal": "Nacional")+"</span></br>";
+				tmp_to_print.innerHTML+="<span> "+((is_acumulado )? "En versión acumulada": "")+"</span>";
         });
        if (this.options.elementsToHide){
 		var htmlElementsToHide = document.querySelectorAll(this.options.elementsToHide);
@@ -45,6 +52,7 @@ function printPage(){
 			htmlElementsToHide[i].className = htmlElementsToHide[i].className.replace(' _epHidden','');
 		}
 	}
+	document.getElementById("texto-texto").style.display="none";
 }
 
 function addCSS() {

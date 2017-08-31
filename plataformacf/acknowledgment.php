@@ -1,4 +1,4 @@
-<section style="background-color:#EAEAEA;text-align:center;">
+<section style="background-color:#EAEAEA;text-align:center;" id="acknowledgment">
   <h4 style="color:#858585; padding-top:40px;margin-bottom: 0px;"><b> Con apoyo de: </b></h4>
   <div class="col-sm-12" style="background-color:#EAEAEA;text-align:center;padding-left: 100px;padding-right: 100px;">
   <table class="wsite-multicol-table">

@@ -51,7 +51,7 @@
 				<div class="col-xs-9" style="left:-30px;">
 			  <div id="chart"></div>
 				</div>
-				<div class="col-xs-3">
+				<div class="col-xs-3" id="f_1">
 					<div style="padding-bottom: 200px;float:right;"><img  width=147 height=25 src='img/promedio.png'/></div>
 					<div>
 					<button type="button" class="btn btn-primary mxbutton" type="button" onmousedown="exportToImage('line');" style="margin: 0px;bottom: 0;position: absolute;right: 0;">Exportar gráfica</button>
