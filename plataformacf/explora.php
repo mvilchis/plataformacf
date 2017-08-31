@@ -30,6 +30,7 @@
   <script src="js/leaflet.easyPrint.js"></script>
   <script src="json/nacion.json"></script>
   <script src="json/entidad.json"></script>
+
 </head>
 <body>
   <!-- Crowdfunding bar  -->
@@ -114,7 +115,7 @@
           <h2><b>Explora</b></h2>
         </div>
       </div>
-      <div class="col-sm-12 texto_parrafo" >
+      <div class="col-sm-12 texto_parrafo " >
         <p >Esta sección permite visualizar los indicadores de los cuales se dispone información para los 4 tipos de financiamiento/fondeo colectivo que existen en México. Igualmente ofrece la posibilidad de filtrar la información por tipo de desagregación y unidades territoriales menores, en el caso de que ésta se encuentre disponible, y exportarla para su manipulación al igual que los materiales gráficos que se generen por el usuario. </p>
 
       </div>
@@ -166,12 +167,16 @@
               </div>
             </div>
           </section>
+          <section class="objective-selector">
           <div class="container" style="padding-bottom:30px;">
-            <div class="vcenter">
+            <div class="col-xs-12 vcenter">
               Selecciona un trimestre:
             </div>
+            <div class="col-xs-12 vcenter">
             <div class="slider" id="year_slider"></div>
           </div>
+          </div>
+        </section>
           <div id="map">
             <div class="infobox" style="display: none;">
               <div class="row">
@@ -251,9 +256,11 @@
                   </div>
                 </div>
               </div>
-              <div class="container" style="padding-top:20px">
+              <div class="container texto_parrafo" style="padding-top:20px; width:80%">
+                <div class="col-sm-12">
                 <p>(Nota: El total Nacional puede no coincidir con la suma de los estados, ya que existen proyectos no categorizados geográficamente)
                 </p>
+              </div>
               </div>
               </div>
                 <?php include('section_stats.php'); ?>
@@ -283,15 +290,11 @@
               </div>
           </section>
           <?php include("footer.php"); ?>
-          <script src="js/bootstrap.min.js"></script>
     </body>
 
 
     <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
-    <script src="bower_components/underscore/underscore-min.js"></script>
-    <script src="bower_components/bootstrap-year-calendar/js/bootstrap-year-calendar.min.js"></script>
-    <script src="bower_components/moment/min/moment.min.js"></script>
-    <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+
 
     <?php  include('acknowledgment.php');?>
     </body>

@@ -53,9 +53,7 @@
         </div>
         <div class="col-md-12 data-title-banner">
           <div class="col-md-4">
-            <span>PROYECTOS TOTALES</span>
-            <br>
-            <span>FONDEADOS</span>
+            <span>PROYECTOS FONDEADOS</span>
           </div>
           <div class="col-md-4">
             <span>FONDEO</span>
@@ -89,11 +87,10 @@
           <h2><b>Indicadores</b></h2>
         </div>
       </div>
-      <div class="col-sm-12 texto_parrafo" >
+      <div class="col-sm-12 texto_parrafo " >
         <!--CAMBIAR DINAMICAMENTE #indicadores -->
-        <p>
-          Consulta datos de más de 11 indicadores sobre la evolución del financiamiento colectivo en México.</p>
-        <p>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
+        <p>Consulta datos de más de 11 indicadores sobre la evolución del financiamiento colectivo en México.</br>
+        Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
       </div>
       <?php
         // Read indicadores
@@ -153,18 +150,17 @@
   </div>
   <!-- Indicadores section End -->
   <!-- Expora section -->
-  <div>
+  <div style="padding-top:20px;">
     <div class="container">
       <section>
         <div class="col-sm-12">
           <h2><b>Explora</b></h2>
         </div>
-        <div class="col-sm-9 texto_parrafo" style="padding-bottom: 30px;">
-          </br>
-          <p >Consulta datos de más de 11  indicadores sobre la evolución del financiamiento colectivo en México.</p>
-          <p>Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
+        <div class="col-sm-9 texto_parrafo " style="padding-bottom: 30px;">
+          <p >Consulta datos de más de 11  indicadores sobre la evolución del financiamiento colectivo en México.</br>
+          Primero selecciona un tipo de financiamiento colectivo, y posteriormente elige un indicador:</p>
         </div>
-        <section class="col-sm-3" style="padding-top:30px">
+        <section class="col-sm-3">
           <button class="btn btn-primary mxbutton" type="button" onclick="visit_indicador('0','i41')"> Ir a la sección </button>
         </section>
       </section>

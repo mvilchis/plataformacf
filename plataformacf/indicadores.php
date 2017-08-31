@@ -42,7 +42,7 @@
           <h2><b>Indicadores</b></h2>
         </div>
       </div>
-      <div class="col-sm-12 texto_parrafo" >
+      <div class="col-sm-12 texto_parrafo " >
     <?php
     include('h_objetivos.php');
     $result = file_get_contents("json/cf_metadata.json");

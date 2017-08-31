@@ -20,7 +20,9 @@ img                                             { max-width: 100%; }
 #site-banner                                    { padding: 90px 0;
                                                   background: url(../img/2b.png) repeat scroll 0 0 transparent;
                                                   text-align: center;
-                                                  background-position: center; }
+                                                  background-position: center;
+                                                  background-size: cover;
+                                                 }
 #site-banner img                                { margin-bottom: 20px; }
 .title-banner                                   { font-size: 45px;
                                                   font-weight: 200;
@@ -45,13 +47,10 @@ img                                             { max-width: 100%; }
 .data-banner                                    { font-size: 40px;
                                                   color:white;
                                                   padding-top: 20px;
-                                                  padding-bottom: 20px;
                                                   display: table-cell;
                                                   vertical-align: middle;
                                                 }
 .container-title                                { padding-left: 0px !important;
-                                                  padding-bottom: 5px;
-                                                  padding-top: 10px;
                                                   vertical-align: middle;
                                                 }
 
@@ -62,10 +61,10 @@ img                                             { max-width: 100%; }
                                                   background-position: center;
                                                   height: 520px;
                                                 }
-.texto_parrafo p                                { color:#424242;
-                                                  font-size: 16px;
+.texto_parrafo p                                { color:#545454;
+                                                  font-size: 14px;
+                                                  line-height: 1.6;
                                                 }
-
 
 /**********************************
     Navbar Styles
@@ -77,20 +76,21 @@ img                                             { max-width: 100%; }
                                                   border-radius: 0; }
 .navbar-default .navbar-nav > li > a            { font-family: "Roboto";
                                                   font-size: 16px;
-                                                  font-weight: 500;
+                                                  font-weight: 350;
                                                   color: #fff !important; }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > .active > a:hover,
-.navbar-default .navbar-nav > .active > a       { background-color: #000000 !important;
+.navbar-default .navbar-nav > .active > a       { background-color: #04aa7b !important;
                                                   color:white !important; }
 .navbar-default .navbar-brand                   { font-size: 18px;
                                                   font-weight: 700;
                                                   color: white !important;}
-.navbar-crowdfunding                            { background-color:#00CC99 !important;}
+.navbar-crowdfunding                            { background-color:#00CC99 !important;
+                                                  border-color: #00CC99 !important;}
 /**********************************
     Font Styles
 **********************************/
-h2                                              { margin-bottom: 40px !important;
+h2                                              { margin-bottom: 20px !important;
                                                   padding-bottom: 20px;
                                                   border-bottom: 1px solid #d8d8d8;
                                                   position: relative;
@@ -139,15 +139,15 @@ strong                                          { font-weight: 600; }
     Indicadores
 ****************************/
 .indicador-row .objetivo-name:hover               { background-color: rgba(160,160,160,0.4);}
-.indicador-row .objetivo-name                     { border-top: 1px solid #ccc;
+.indicador-row .objetivo-name                     { 
                                                     margin-right: 10px;
                                                     line-height: 50px;
                                                     font-size: 18px;
                                                     }
 .indicador-row .objetivo-name .objetivo-padding   { margin-top:20px;
                                                     margin-bottom:10px;}
-.indicador-row img                                { width: 100px;
-                                                    height: 100px;}
+.indicador-row img                                { width: 85px;
+                                                    height: 85px;}
 .listed-indicadores-title                         { margin-bottom: 15px;
                                                     text-transform: uppercase;
                                                   }
@@ -368,7 +368,7 @@ body.page-node .c3 svg                            { font-family: 'Open Sans', 'H
                                                     left: 0;
                                                     right: 0;
                                                     bottom: 0;
-                                                    background-color: #a3a3a3;
+                                                    background-color: #4FD9B2;
                                                     color: #fff;
                                                     background-image: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 50%, rgba(255,255,255,0.5) 51%);
                                                     -webkit-transition: .4s;
