@@ -269,7 +269,7 @@ var jQuery_2_1_1 = $.noConflict(true);
 
     if (default_year == NULL_YEAR){
       var this_year = years.length-1;
-      active_year = this_year;
+      active_year = years[this_year];
     } else {
       for (i = 0; i < years.length; i++){
         if (years[i] == default_year){
@@ -548,6 +548,9 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
 
   function change_active_year(y) {
+    if (!(y in years)){
+      y = years[years.length-1]
+    }
     active_year = y;
 		asc = false;
 		prop = y;
