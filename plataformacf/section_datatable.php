@@ -13,7 +13,6 @@
 					<th>Tipo de Financiamiento </th>
 					<th>Formato</th>
 					<th>Descarga</th>
-					<th></th>
 				</thead>
 				<tbody></tbody>
 			</table>

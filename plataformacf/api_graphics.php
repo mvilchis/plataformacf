@@ -269,6 +269,7 @@ var jQuery_2_1_1 = $.noConflict(true);
 
     if (default_year == NULL_YEAR){
       var this_year = years.length-1;
+      active_year = this_year;
     } else {
       for (i = 0; i < years.length; i++){
         if (years[i] == default_year){
@@ -867,6 +868,7 @@ var jQuery_2_1_1 = $.noConflict(true);
       });
       $("select#select-objetivo-a").change(function() {
        (function ($) { $("#loading_wrap").fadeIn(); }(jQuery_2_1_1));
+       pop_all();
        populate_indicador_a();
      });
       if (firstrun == true) {
@@ -904,7 +906,6 @@ var jQuery_2_1_1 = $.noConflict(true);
 
     });
     $("#trim_to_ac").change(function() {
-
         var tmp_indicator =indicador_selected+"1";
         change_acumulate(tmp_indicator);
         change_active_indicator(indicador_selected,active_group,active_unit,active_year);
