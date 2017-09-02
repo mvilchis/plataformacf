@@ -274,7 +274,7 @@
           <section class="main">
              <div class="container">
                 <div class="row">
-                   <section class="main-col col-md-12">
+                   <section class="main-col col-xs-12">
                       <div class="region region-content">
                          <section id="block-system-main" class="block block-system clearfix">
                             <div id="node-1" class="node node-page clearfix" about="/explora" typeof="foaf:Document">

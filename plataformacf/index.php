@@ -42,36 +42,36 @@
   <div id="site-banner">
     <div style="display: table;">
       <div class="row">
-        <div class="col-md-12 title-banner" >
+        <div class="col-xs-12 title-banner" >
           <span >Sistema de monitoreo de Fondeo Colectivo</span>
         </div>
-        <div class="col-md-12 subtitle-banner">
+        <div class="col-xs-12 subtitle-banner">
           <span> El sistema de monitoreo de plataformas de fondeo colectivo en México es una iniciativa del proyecto Crowdfunding México </span>
         </br>
           <span>que te permitirá visualizar información en tiempo real sobre la evolución del fondeo colectivo en México
           </span>
         </div>
-        <div class="col-md-12 data-title-banner">
-          <div class="col-md-4">
+        <div class="col-xs-12 data-title-banner">
+          <div class="col-xs-4">
             <span>PROYECTOS FONDEADOS</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-xs-4">
             <span>FONDEO</span>
             <span>TOTAL</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-xs-4">
             <span>PLATAFORMAS</span>
             <span>EN LINEA</span>
           </div>
         </div>
-        <div class="col-md-12 data-banner" >
-          <div class="col-md-4">
+        <div class="col-xs-12 data-banner" >
+          <div class="col-xs-4">
             <span id="total_proyect">23,422</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-xs-4">
             <span id="total_amount">$132 MDP</span>
           </div>
-          <div class="col-md-4">
+          <div class="col-xs-4">
             <span id="total_plataforms"> 17</span>
           </div>
         </div>
@@ -170,9 +170,7 @@
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="https://framework-gb.cdn.gob.mx/gobmx.js"></script>
   <script src="bower_components/underscore/underscore-min.js"></script>
-  <script src="bower_components/bootstrap-year-calendar/js/bootstrap-year-calendar.min.js"></script>
   <script src="bower_components/moment/min/moment.min.js"></script>
-  <script src="bower_components/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
   <script type="text/javascript">
   function commaSeparateNumber(x){
     var parts=x.toString().split(".");

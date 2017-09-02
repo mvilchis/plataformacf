@@ -18,7 +18,7 @@ gobmx-navbar                                    { width: 100%;
                                                   z-index: 9999; }
 img                                             { max-width: 100%; }
 #site-banner                                    { padding: 90px 0;
-                                                  background: url(../img/2b.png) repeat scroll 0 0 transparent;
+                                                  background: url(../img/FondoHeader.png) repeat scroll 0 0 transparent;
                                                   text-align: center;
                                                   background-position: center;
                                                   background-size: cover;
@@ -54,7 +54,7 @@ img                                             { max-width: 100%; }
                                                   vertical-align: middle;
                                                 }
 
-.image_background                               {background: url("../img/2b.jpg") repeat scroll 0 0 transparent;
+.image_background                               {background: url("../img/FondoHeader.jpg") repeat scroll 0 0 transparent;
                                                   border-radius: 4px 4px 4px 4px;
                                                   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
                                                   background-size: 100% ;
@@ -87,6 +87,31 @@ img                                             { max-width: 100%; }
                                                   color: white !important;}
 .navbar-crowdfunding                            { background-color:#00CC99 !important;
                                                   border-color: #00CC99 !important;}
+/**********************************
+            Acknowledgment
+**********************************/
+
+.acknowledgment                                 { background-color:#EAEAEA;
+                                                  text-align:center;}
+.acknowledgment h4                              { color:#858585;
+                                                  padding-top:40px;margin-bottom: 0px;}
+.acknowledgment .items                          {  background-color:#EAEAEA;
+                                                  text-align:center;
+                                                  text-align:center;
+                                                  padding-left: 100px;
+                                                  padding-right: 100px;}
+.acknowledgment td                              { width:11.11111111111111%;
+                                                  padding:0 15px;
+                                                }
+.acknowledgment .item                           { padding-top:10px;
+                                                  padding-bottom:10px;
+                                                  margin-left:0px;
+                                                  margin-right:0px;
+                                                  text-align:center
+                                                }
+.acknowledgment .item img                       { display: inline-block;
+                                                  vertical-align: middle;}
+
 /**********************************
     Font Styles
 **********************************/
