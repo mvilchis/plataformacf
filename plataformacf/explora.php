@@ -143,27 +143,33 @@
         <page class="explora">
           <section class="objective-selector">
             <div class="container" style="padding-bottom:20px;padding-top:20px;">
-              <div class="col-xs-12 col-sm-1 vcenter">
-                Tipo
-              </div>
-              <div class="col-xs-12 col-sm-5">
-                <div class="objective-selector-caption">
-                  Selecciona un tipo de indicador
+              <div class="col-xs-12">
+                <div class="col-xs-1 vcenter">
+                <span style="float:right;">
+                  Tipo
+                </span>
                 </div>
-                <select id="select-objetivo-a">
-                  <option>--</option>
-                </select>
-              </div>
-              <div class="col-xs-12 col-sm-1 vcenter">
-                Indicador
-              </div>
-              <div class="col-xs-12 col-sm-5">
-                <div class="objective-selector-caption">
-                  Selecciona un indicador
+                <div class="col-xs-5">
+                  <div class="objective-selector-caption">
+                    Selecciona un tipo de indicador
+                  </div>
+                  <select id="select-objetivo-a">
+                    <option>--</option>
+                  </select>
                 </div>
-                <select id="select-indicador-a">
-                  <option>--</option>
-                </select>
+                <div class="col-xs-1 vcenter">
+                  <span style="float:right;">
+                  Indicador
+                </span>
+                </div>
+                <div class="col-xs-5">
+                  <div class="objective-selector-caption">
+                    Selecciona un indicador
+                  </div>
+                  <select id="select-indicador-a">
+                    <option>--</option>
+                  </select>
+                </div>
               </div>
             </div>
           </section>
@@ -218,10 +224,10 @@
                   <div class="filters col-xs-12">
                     <div class="container">
                       <div class="col-xs-1">
-                      <label style="font-size: 14px;font-weight: 500;">Filtrar por:</label>
+                      <label class="filter-header"style="font-size: 13px;margin-right=0px">Filtrar por:</label>
                     </div>
-                      <form class="form-inline" role="form">
-                        <div class="col-xs-4">
+                      <div class="col-xs-11">
+                        <div class="col-xs-3">
                           <div style="display: none;" class="form-group form-group-grupo">
                             <label class="filter-header">GRUPO</label>
                             <select id="filter-grupo" class="filter-group filter-grupo">
@@ -239,20 +245,18 @@
                           </select>
                           </div>
                       </div>
-                      <div class="col-xs-4">
-                        <div class="form-group">
+                      <div class="col-xs-3">
+                        <div class="">
                           <label class="filter-header">Ver por:</label>
-                          <label class="filter-header">Trimestral</label>
-                          <div class="form-group form-group-grupo">
+                          <span style="padding-right:5px">Trimestral</span>
                           <label class="switch">
                             <input type="checkbox" id="trim_to_ac">
                             <span class="check-slider round"></span>
                           </label>
-                        </div>
-                        <label class="filter-header">Acumulado</label>
+                          <span style="padding-left:65px">Acumulado</span>
                         </div>
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
               </div>

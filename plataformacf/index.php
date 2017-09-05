@@ -121,9 +121,13 @@
           }
           echo('<div class="noselect indicador-group'.$empty_class.'" value="'.$i.'"'.$tt.'>
                   <div class="row indicador-row">
-                    <div class="col-xs-12">
-                      <div class="objetivo-name texto_parrafo" >
-                        <div class="objetivo-padding">
+                    <div class="col-xs-12">');
+          if ($i==0){
+              echo('<div class="objetivo-name texto_parrafo" >');
+          }else {
+              echo('<div class="objetivo-name texto_parrafo objetivo-name-bar" >');
+          }
+          echo(        '<div class="objetivo-padding">
                           <img src="img/'.$objetivo_icons[$key].'.png"/>
                           <span style="margin-left: 10px;"><strong>'.($i+1).'. '.$objetivo_nombres[$key].'</strong></span>'.
                         '<span class="end-indicador">&#8250;</span></div>

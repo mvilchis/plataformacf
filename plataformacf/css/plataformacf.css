@@ -64,6 +64,7 @@ img                                             { max-width: 100%; }
 .texto_parrafo p                                { color:#545454;
                                                   font-size: 14px;
                                                   line-height: 1.6;
+                                                  padding-top:20px;
                                                 }
 
 /**********************************
@@ -164,6 +165,7 @@ strong                                          { font-weight: 600; }
     Indicadores
 ****************************/
 .indicador-row .objetivo-name:hover               { background-color: rgba(160,160,160,0.4);}
+.indicador-row .objetivo-name-bar                     { border-top: 1px solid #ccc;}
 .indicador-row .objetivo-name                     {
                                                     margin-right: 10px;
                                                     line-height: 50px;
@@ -182,6 +184,7 @@ strong                                          { font-weight: 600; }
                                                     margin-right: 0;
                                                     color: #000;
                                                   }
+
 .listed-indicador .col-xs-12:hover                { background-color: #444;
                                                     color: #fff;
                                                    }
@@ -352,15 +355,15 @@ body.page-node .c3 svg                            { font-family: 'Open Sans', 'H
                                                   }
 .filters                                          { z-index: 100;
 	                                                  background-color: #BDBDBD;
-	                                                  padding: 10px;
                                                   }
-.filters .form-group                              { margin-right: 20px; }
+.filters .form-group                              { margin-right: 5px;
+                                                    margin-bottom: 5px; }
 .filter-header                                    { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
 	                                                  font-size: 14px;
 	                                                  font-weight: 500;
 	                                                  margin-right: 10px;
 	                                                  margin-bottom: 5px;
-                                                    padding-top: 12px;
+                                                    padding-top: 5px;
                                                   }
 .filter-item                                      { font-size: 12px;
 	                                                  margin-bottom: 3px;
@@ -378,7 +381,7 @@ body.page-node .c3 svg                            { font-family: 'Open Sans', 'H
                                                   }
 
 
-.switch                                           { position: relative;
+.switch                                           { position: absolute;
                                                     display: inline-block;
                                                     width: 60px;
                                                     height: 34px;
