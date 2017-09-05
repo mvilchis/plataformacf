@@ -34,7 +34,7 @@
         </td>
         <td>
           <div class="item">
-            <a href="." target="_blank">
+            <a href="http://www.crowdfundingmexico.mx/" target="_blank">
               <img src="img/acknowledgment/Crowdfunding.png" alt="CROWDFUNDING">
             </a>
           </div>
@@ -55,7 +55,7 @@
         </td>
         <td>
           <div class="item">
-              <a href="." target="_blank">
+              <a href="http://mxabierto.org/" target="_blank">
                 <img src="img/acknowledgment/MxAbierto.png" alt="MX_D">
               </a>
           </div>

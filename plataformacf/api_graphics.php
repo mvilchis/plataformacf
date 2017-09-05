@@ -78,17 +78,24 @@ var jQuery_2_1_1 = $.noConflict(true);
       choro_layer = null,
       active_geom = null,
       map_locked = false;
-      //Variables de control
-    var active_unit = null, //Estatal o Nacional
+  //Variables de control
+  var active_unit = null, //Estatal o Nacional
       active_year = null,  // Current year
       active_group = null, // Grupo
       is_acumulado = null,//Acumulado o trimestral
-      NULL_UNIT = "NN",
-      NULL_YEAR = "NN",
-      NULL_FEATURE="NN",
-      TOTAL_GROUP = "a",
-      active_feature="NN",
-      indicador_selected = null; //Proyecto, monto acumulado, etc
+      active_feature= null, //Estado actual, o nacional
+      active_indicador = null; //Proyecto, monto acumulado, etc
+  //Constantes
+  var NULL_CONSTANT = "NN";
+
+  //Init all variables to null value
+  function init_all_values(){
+    active_year        = NULL_CONSTANT;
+    active_group       = NULL_CONSTANT;
+    active_feature     = NULL_CONSTANT;
+    active_unit        = NULL_CONSTANT;
+    active_indicador   = NULL_CONSTANT;
+  }
 
   //Add comma each three decimal numbers
   function commaSeparateNumber(x){
@@ -104,12 +111,60 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
   }
 
+  //Set global variables
+  function set_active_year(value){
+      active_year = value;
+  }
+  function set_active_group(value){
+    active_group = value;
+  }
+  function set_active_feature(value){
+    active_feature = value;
+  }
+  function set_active_unit(value) {
+    active_unit = value;
+  }
+  function set_active_indicador(value) {
+    active_indicador = value;
+  }
+  //Leaflet customize
+  function highlightFromLegend(i) {
+    (function ($) {
+      $("svg path.class-"+i).addClass("highlighted");
+    }(jQuery_2_1_1));
+  }
+
+  function clearHighlight() {
+    (function ($) {
+      $("path").removeClass("highlighted");
+    }(jQuery_2_1_1));
+  }
+
+  function on_mouseover(e,feature) {
+    var layer = e.target;
+    layer.setStyle({
+      weight: 2,
+      color: '#666',
+      dashArray: '',
+      fillOpacity: 0.7
+    });
+    if (!L.Browser.ie && !L.Browser.opera) {
+      layer.bringToFront();
+    }
+    set_active_feature(feature);
+    initInfobox(feature);
+  }
+
+
+
   // From indicator, export to csv file
+  // Use global variables: active_group, active_unit, active_indicador
+  //                       active_unit
   function exportToCsv(){
       (function ($) {
         var filters = {'Categoria':active_group,
                       'Agregacion':active_unit};
-        d3.csv("to_csv/raw_csv/"+indicador_selected+".csv", function(csv) {
+        d3.csv("to_csv/raw_csv/"+active_indicador+".csv", function(csv) {
           csv = csv.filter(function(row) {
                   return ['Categoria','Agregacion'].reduce(
                           function(pass, column) {
@@ -130,9 +185,9 @@ var jQuery_2_1_1 = $.noConflict(true);
           agregacion = 'Estatal';
           result = "Año,Trimestre,Indicador,Categoria,Valor,Agregacion,Estado,Clave_inegi\r\n";
         }
-        var indicador = metadata_groupedbyid[indicador_selected]['Nombre_del_indicador'];
-        indicador    += "-"+metadata_groupedbyid[indicador_selected]['Nombre_del_objetivo'];
-        $.each(indicadores_grupos[indicador_selected],function (key,tmp) {
+        var indicador = metadata_groupedbyid[active_indicador]['Nombre_del_indicador'];
+        indicador    += "-"+metadata_groupedbyid[active_indicador]['Nombre_del_objetivo'];
+        $.each(indicadores_grupos[active_indicador],function (key,tmp) {
           if (active_group == tmp['id2']){
             categoria =tmp['id3'] ; //Buscamos el nombre de la categoria en la lista
           }
@@ -164,6 +219,7 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
 
   //From graph to image:
+  // Use global variables: 0
   function exportToImage(i) {
     (function ($) {
       $('#chart svg .c3-axis path').css('fill-opacity',0);
@@ -190,7 +246,11 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
 
   //Init infobox
+  // Use global variables: active_unit, active_year
   function initInfobox(feature) {
+    var stack = new Error().stack;
+    console.log("PRINTING CALL STACK");
+    console.log( stack );
     (function ($) {
       $(".infobox").show();
       if (active_unit == "N") {
@@ -208,42 +268,38 @@ var jQuery_2_1_1 = $.noConflict(true);
       else
       $(".indicador-valor").html("N/A");
       $(".indicador-nombre").html("<span style='min-width: 75px;'>"+$("select#select-indicador-a option:selected").text() + " ("+ active_year+")</span>");
-    }(jQuery_2_1_1));
-    var line_columns = [];
-      line_columns_years = ["x"];
-    (function ($) {
+      var line_columns = [];
+        line_columns_years = ["x"];
+      row = [feature.properties.nom_ent];
       $.each(years, function(key,year) {
         line_columns_years.push(year);
-      });
-      line_columns.push(line_columns_years);
-      row = [feature.properties.nom_ent];
-      $.each(years, function(ykey,year) {
         if (typeof feature.properties[year] != 'undefined')
           row.push(Math.round(feature.properties[year]*10)/10);
         else row.push(null);
       });
+      line_columns.push(line_columns_years);
       line_columns.push(row);
+      if (years[0].indexOf("-") != -1)
+        date_format = '%Y-%m';
+      else date_format = '%Y';
+      var chart = c3.generate({
+        bindto   : '#infobox-line-chart',
+        padding  : { top: 10,  left: 30, right: 10},
+        data     : { x: 'x', xFormat: date_format, columns: line_columns },
+        axis     : {x: { type: 'categorized',
+                         tick: { format:date_format,  rotate: 45, multiline: false }
+                       },
+                    },
+        color     : { pattern: ['#00cc99']},
+        size      : { width: 500, height: 160 },
+        legend    : { show: false},
+        grid      : { x: { show: false }, y: { show: true}}
+      });
     }(jQuery_2_1_1));
-    if (years[0].indexOf("-") != -1)
-      date_format = '%Y-%m';
-    else date_format = '%Y';
-    var chart = c3.generate({
-      bindto:            '#infobox-line-chart',
-      padding:           { top: 10,  left: 30, right: 10},
-      data:            { x: 'x', xFormat: date_format, columns: line_columns },
-      axis:            {
-                          x: { type: 'categorized', tick:
-                                                { format:date_format,  rotate: 45, multiline: false }
-                              },
-                          },
-      color:              { pattern: ['#00cc99']},
-      size:               { width: 500, height: 160 },
-      legend:             { show: false},
-      grid:               { x: { show: false }, y: { show: true}}
-    });
   }
 
   //Render year bar
+  // Use global variables: 0
   function renderYearBar(years,default_year) {
   	(function($) {
 		  var extensionMethods = {
@@ -274,7 +330,7 @@ var jQuery_2_1_1 = $.noConflict(true);
   		};
   		$.extend(true, $['ui']['slider'].prototype, extensionMethods);
 
-    if (default_year == NULL_YEAR){
+    if (default_year == NULL_CONSTANT){
       var this_year = years.length-1;
       active_year = years[this_year];
     } else {
@@ -291,9 +347,6 @@ var jQuery_2_1_1 = $.noConflict(true);
                           value:this_year,
                           range: "min",
                           slide: function(event, ui) {
-                            change_active_year(years[ui.value]);
-                          },
-                          change: function(event, ui) {
                             change_active_year(years[ui.value]);
                           }
                       });
@@ -335,16 +388,73 @@ var jQuery_2_1_1 = $.noConflict(true);
              elementsToHide: 'footer,.filters,h2,.texto_parrafo,.region-header,.datatable,.dgm-footer,.objective-selector-caption,\
              .objective-selector-caption,.vcenter,#select-objetivo-a,#select-indicador-a,.navbar-crowdfunding,#acknowledgment,.infobox,#f_1',
              sizeModes: ['A4Landscape'],
-             customWindowTitle:"Hola mundo"
-
               }).addTo(map);
-
   map.addLayer(basemap);
   if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
-  map.dragging.disable();
+    map.dragging.disable();
   }
 
+  //change_acumulate
+  //global: is_acumulado, active_indicador
+  function change_acumulate(tmp_indicator){
+      (function ($) {
+        if($("#trim_to_ac").is(':checked')){
+          $.ajax({
+            async: false,
+            type: 'GET',
+            url: 'json/partition/'+tmp_indicator+'.json',
+            success: function(data) {
+              // exists code
+              set_active_indicador(tmp_indicator);
+              is_acumulado = true;
+              var tmp = document.getElementsByClassName("check-slider")[0];
+              tmp.style.backgroundColor= "#4FD9B2";
+              var year_bar_tmp = document.getElementsByClassName("ui-widget-header")[0];
+              year_bar_tmp.style.background="#69D8CF";
+              var year_button_tmp = document.getElementsByClassName("ui-slider-handle")[0];
+              year_button_tmp.style.background="#DDDDDD";
+            },
+            error: function(data){
+              // not exists code
+              is_acumulado = false;
+              var checkbox = document.getElementById("trim_to_ac");
+              checkbox.checked = false;
+              //block check slider
+              var tmp = document.getElementsByClassName("check-slider")[0];
+              tmp.style.backgroundColor= "#a3a3a3";
+              $('#notAcumulado .modal-body p').text('').append('' +
+                                  '<span><center>Lo sentimos</center></span></br>' +
+                                  '<span><center>No existen datos acumulados para el indicador seleccionado.</center></span>');
+              $('#notAcumulado').modal('show');
+              $('#closeNotAcumulado').on('click', function() {
+                $('#notAcumulado').modal('hide');
+              });
+            }
+          });
+        } else{
+          is_acumulado = false;
+          set_active_indicador($("select#select-indicador-a option:selected").val());
+          //Check if acumulado exist
+          $.ajax({
+            async: false,
+            type: 'GET',
+            url: 'json/partition/'+active_indicador+'1.json',
+            error: function(data){
+              var tmp = document.getElementsByClassName("check-slider")[0];
+              tmp.style.backgroundColor= "#a3a3a3";
+            },
+            success: function(data) {
+              var tmp = document.getElementsByClassName("check-slider")[0];
+              tmp.style.backgroundColor= "#4FD9B2";
+            }
+            });
+        }
+      }(jQuery_2_1_1));
+    }
+
   // ##### Begin api functions
+  //Render graph
+  // Global variables: years, active_geom
   function render_line() {
     var line_columns = [];
     var graph_width;
@@ -417,22 +527,14 @@ var jQuery_2_1_1 = $.noConflict(true);
     });
   }
 
-  function highlightFromLegend(i) {
-    (function ($) {
-      $("svg path.class-"+i).addClass("highlighted");
-    }(jQuery_2_1_1));
-  }
-
-  function clearHighlight() {
-    (function ($) {
-      $("path").removeClass("highlighted");
-    }(jQuery_2_1_1));
-  }
-
+  //Render map
+  // Global variables:active_geom, active_year, active_feature
+  // Set variables: active_feature
+  // Call initInfobox, render_line()
   function render_map(features) {
     var re = new RegExp("^([0-9]{4,})");
     (function ($) {
-      min_value=9999999999;
+      min_value= 100000000000;
       max_value= -1;
       $.each(features,function (key,value) {
         $.each(value["properties"], function(key,value) {
@@ -444,17 +546,14 @@ var jQuery_2_1_1 = $.noConflict(true);
           }
         });
       });
-    }(jQuery_2_1_1));
-    nb_breaks = [0];
-    for (i = 1; i <= 4; i++) {
-      nb_breaks.push(((max_value-min_value)/4)*i);
-    }
-     //nb_breaks= turf.jenks(active_geom, (active_year), 4);
-      (function ($) {
-        $("td.legend-breaks-0").html(commaSeparateNumber(Math.round(nb_breaks[0])) + " - " + commaSeparateNumber(Math.round(nb_breaks[1])));
-        $("td.legend-breaks-1").html(commaSeparateNumber(Math.round(nb_breaks[1])) + " - " + commaSeparateNumber(Math.round(nb_breaks[2])));
-        $("td.legend-breaks-2").html(commaSeparateNumber(Math.round(nb_breaks[2])) + " - " + commaSeparateNumber(Math.round(nb_breaks[3])));
-        $("td.legend-breaks-3").html(commaSeparateNumber(Math.round(nb_breaks[3])) + " - " + commaSeparateNumber(Math.round(nb_breaks[4])));
+      nb_breaks = [0];
+      for (i = 1; i <= 4; i++) {
+        nb_breaks.push(((max_value-min_value)/4)*i);
+      }
+      $("td.legend-breaks-0").html(commaSeparateNumber(Math.round(nb_breaks[0])) + " - " + commaSeparateNumber(Math.round(nb_breaks[1])));
+      $("td.legend-breaks-1").html(commaSeparateNumber(Math.round(nb_breaks[1])) + " - " + commaSeparateNumber(Math.round(nb_breaks[2])));
+      $("td.legend-breaks-2").html(commaSeparateNumber(Math.round(nb_breaks[2])) + " - " + commaSeparateNumber(Math.round(nb_breaks[3])));
+      $("td.legend-breaks-3").html(commaSeparateNumber(Math.round(nb_breaks[3])) + " - " + commaSeparateNumber(Math.round(nb_breaks[4])));
       }(jQuery_2_1_1));
 
     function fill_color(v) {
@@ -472,21 +571,6 @@ var jQuery_2_1_1 = $.noConflict(true);
       else if (v >= nb_breaks[1]) return "1";
       else if (v >= nb_breaks[0]) return "0";
     }
-    function on_mouseover(e,feature) {
-      var layer = e.target;
-      layer.setStyle({
-        weight: 2,
-        color: '#666',
-        dashArray: '',
-        fillOpacity: 0.7
-      });
-      if (!L.Browser.ie && !L.Browser.opera) {
-        layer.bringToFront();
-      }
-      active_feature = feature;
-      initInfobox(feature);
-    }
-
     if (choro_layer != null) map.removeLayer(choro_layer);
     choro_layer = L.geoJson(active_geom, {
       style: function(feature) {
@@ -500,7 +584,6 @@ var jQuery_2_1_1 = $.noConflict(true);
         };
       },
       onEachFeature: function(feature, layer) {
-
         if (active_unit == "E")
           feature.properties.name = feature.properties.nom_ent + " (" + commaSeparateNumber(Math.round(feature.properties[active_year]*10)/10) + ")";
         layer.on({
@@ -525,15 +608,14 @@ var jQuery_2_1_1 = $.noConflict(true);
     });
     map.addLayer(choro_layer);
     (function ($) {
-      if (active_feature == NULL_FEATURE) {
+      if (active_feature == NULL_CONSTANT) {
         var first_key = Object.keys(choro_layer["_layers"])[0],
         feature = choro_layer["_layers"][first_key]["feature"];
-        initInfobox(feature);
-      }else{
-        initInfobox(active_feature);
+        set_active_feature(feature);
       }
-
+      initInfobox(active_feature);
     }(jQuery_2_1_1));
+
     if (searchControl != null)
       map.removeControl(searchControl);
     searchControl = new L.Control.Search({layer: choro_layer, propertyName: 'name', circleLocation:false});
@@ -548,22 +630,24 @@ var jQuery_2_1_1 = $.noConflict(true);
                 choro_layer.resetStyle(layer);
               });
             });
-
     map.addControl( searchControl );  //inizialize search control
     render_line();
     (function ($) { $("#loading_wrap").fadeOut(); }(jQuery_2_1_1));
   }
 
+  //change_active_year
+  // Global variables: years, active_year,active_geom
+  // Set variables: active_year,
+  // Call render_map
   function change_active_year(y) {
-    if (!(y in years)){
-      y = years[years.length-1]
+    if (years.indexOf(y) < 0) {
+      y = years[years.length-1];
     }
-    active_year = y;
+    set_active_year(y);
 		asc = false;
-		prop = y;
 		active_geom.features = active_geom.features.sort(function(a, b) {
-	        if (asc) return (a.properties[prop] > b.properties[prop]) ? 1 : ((a.properties[prop] < b.properties[prop]) ? -1 : 0);
-	        else return (b.properties[prop] > a.properties[prop]) ? 1 : ((b.properties[prop] < a.properties[prop]) ? -1 : 0);
+	        if (asc) return (a.properties[active_year] > b.properties[active_year]) ? 1 : ((a.properties[active_year] < b.properties[active_year]) ? -1 : 0);
+	        else return (b.properties[active_year] > a.properties[active_year]) ? 1 : ((b.properties[active_year] < a.properties[active_year]) ? -1 : 0);
 	    });
 		for (i = 0; i < 3; i++) {
 			(function ($) {
@@ -574,14 +658,19 @@ var jQuery_2_1_1 = $.noConflict(true);
     render_map(active_geom.features);
   }
 
-  function change_active_group(g) {
-    active_group = g;
-    change_active_unit(active_unit);
-  }
-
+  //change_active_unit
+  // global variables geom_grouped
+  // Call change_active_year
   function change_active_unit(u) {
-    active_unit = u;
-    active_geom = geom_grouped[active_unit];
+    if (u != active_unit){
+      //We have to change feature, we dont now wich
+      set_active_unit(u);
+      active_geom = geom_grouped[active_unit];
+      set_active_feature(active_geom['features'][0]);
+    }else {
+      set_active_unit(u);
+      active_geom = geom_grouped[active_unit];
+    }
     (function ($) {
       if (active_unit == "N") {
         $("#form-filter-entidad-mpal").hide();
@@ -621,7 +710,19 @@ var jQuery_2_1_1 = $.noConflict(true);
 
   }
 
-  function change_active_indicator(select_Data, default_group, default_unit, default_year) {
+
+  //change_active_group
+  // Global variables: active_unit
+  // Call change_active_unit
+  function change_active_group(g) {
+    set_active_group(g);
+    change_active_unit(active_unit);
+  }
+
+  //change_active_indicator download new data
+  // global: active_indicador, active_unit
+  // Call change_active_unit, renderYearBar
+  function change_active_indicator( default_group, default_unit, default_year) {
     cont = true;
     (function ($) {
       if ($('select#select-indicador-a option').length == 0) {
@@ -635,77 +736,78 @@ var jQuery_2_1_1 = $.noConflict(true);
       alert("Para uno or más de los objetivos seleccionados, ningún indicador coincide con la desagregación geográfica y objetivo que ha seleccionado. Por favor, seleccione un objetivo diferente.");
       return 0;
     }
-    active_group = default_group;
+    //Check if we have active_unit to conserve
+    if (default_unit != NULL_CONSTANT) {
+      set_active_unit(default_unit);
+    }
+    if (default_group != NULL_CONSTANT){
+      set_active_group(default_group);
+    }
     data_grouped = {};
     data_grouped_b = {};
     subids = [];
     years = [];
     units = [];
     (function ($) {
-      params = { id: select_Data, pageSize: 999999 };
-      $.getJSON('json/partition/'+select_Data+'.json', {}, function (data) {
-        $.each(data, function(key, valor) {
-          if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
-            // Month present
-            if (parseInt(valor["m"]) != 0) {
-              time_val = parseInt(valor["t"]) + "-" + parseInt(valor["m"]);
-            } else {   // Month not present
-              time_val = String(parseInt(valor["t"]));
-            }
-            if (typeof subids[valor["DesGeo"]] === 'undefined') {
-              subids[valor["DesGeo"]] = [];
-            };
-            if (subids[valor["DesGeo"]].indexOf(valor["id2"]) == -1) {
-              subids[valor["DesGeo"]].push(valor["id2"])
-            };
-            if (years.indexOf(time_val) == -1) {
-              years.push(time_val)
-            };
-            if (units.indexOf(valor["DesGeo"]) == -1)
-              units.push(valor["DesGeo"]);
-            if (typeof data_grouped[time_val] === 'undefined')
-              data_grouped[time_val] = {};
-            if (typeof data_grouped[time_val][valor["DesGeo"]] === 'undefined')
-              data_grouped[time_val][valor["DesGeo"]] = [];
-            if (typeof data_grouped[time_val][valor["DesGeo"]][valor["id2"]] === 'undefined')
-              data_grouped[time_val][valor["DesGeo"]][valor["id2"]] = [];
-            data_grouped[time_val][valor["DesGeo"]][valor["id2"]][String(parseInt(valor["cve"]))] = valor;
+    $.getJSON('json/partition/'+active_indicador+'.json', {}, function (data) {
+      $.each(data, function(key, valor) {
+        if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
+          // Month present
+          if (parseInt(valor["m"]) != 0) {
+            time_val = parseInt(valor["t"]) + "-" + parseInt(valor["m"]);
+          } else {   // Month not present
+            time_val = String(parseInt(valor["t"]));
           }
-        });
-        // Organize years
-        years.sort();
-        active_year = years[years.length-1];
-        // Organize units
-        $(".filter-geo").html('');
-        if (units.indexOf("N") != -1) {
-          $(".filter-geo").append('<option value="N" class="filter-item filtro-geo-N">Nacional</option>');
-          $(".stat-column-header-chart").html("Indicador a nivel nacional");
-          active_unit = "N";
+          if (typeof subids[valor["DesGeo"]] === 'undefined') {
+            subids[valor["DesGeo"]] = [];
+          };
+          if (subids[valor["DesGeo"]].indexOf(valor["id2"]) == -1) {
+            subids[valor["DesGeo"]].push(valor["id2"])
+          };
+          if (years.indexOf(time_val) == -1) {
+            years.push(time_val)
+          };
+          if (units.indexOf(valor["DesGeo"]) == -1)
+            units.push(valor["DesGeo"]);
+          if (typeof data_grouped[time_val] === 'undefined')
+            data_grouped[time_val] = {};
+          if (typeof data_grouped[time_val][valor["DesGeo"]] === 'undefined')
+            data_grouped[time_val][valor["DesGeo"]] = [];
+          if (typeof data_grouped[time_val][valor["DesGeo"]][valor["id2"]] === 'undefined')
+            data_grouped[time_val][valor["DesGeo"]][valor["id2"]] = [];
+          data_grouped[time_val][valor["DesGeo"]][valor["id2"]][String(parseInt(valor["cve"]))] = valor;
         }
-        if (units.indexOf("E") != -1) {
-          $(".filter-geo").append('<option value="E" class="filter-item filtro-geo-E">Estatal</option>');
-          $(".stat-column-header-chart").html("Indicador a nivel estatal");
-          $(".stat-column-header-top").html("Top 3 Estados");
-          active_unit = "E";
-        }
-        //Check if we have active_unit to conserve
-        if (default_unit != NULL_UNIT) {
-          if (active_unit == "E") {
-            active_unit = default_unit;
-          }
-        }
-        $('select.filter-geo option[value='+ active_unit +']').attr('selected', 'selected');
-        change_active_unit(active_unit);
+      });
+    // Organize years
+    years.sort();
+    // Organize units
+    $(".filter-geo").html('');
+      if (units.indexOf("N") != -1) {
+        $(".filter-geo").append('<option value="N" class="filter-item filtro-geo-N">Nacional</option>');
+        $(".stat-column-header-chart").html("Indicador a nivel nacional");
+        if (active_unit == NULL_CONSTANT)
+          set_active_unit("N");
+      }
+      if (units.indexOf("E") != -1) {
+        $(".filter-geo").append('<option value="E" class="filter-item filtro-geo-E">Estatal</option>');
+        $(".stat-column-header-chart").html("Indicador a nivel estatal");
+        $(".stat-column-header-top").html("Top 3 Estados");
+        if (active_unit == NULL_CONSTANT)
+          set_active_unit("E");
+      }
+
+      $('select.filter-geo option[value='+ active_unit +']').attr('selected', 'selected');
+      change_active_unit(active_unit);
         // Create filters (if applicable)
-        if (select_Data in indicadores_grupos) {
+        if (active_indicador in indicadores_grupos) {
           $("select.filter-grupo").empty();
-          $.each(indicadores_grupos[select_Data], function(k, v) {
+          $.each(indicadores_grupos[active_indicador], function(k, v) {
             if (subids[active_unit].indexOf(v.id2) != -1)
               $("select.filter-grupo").append('<option value="'+v.id2+'">'+v.id3+'</option>');
           })
           $(".form-group-grupo").show();
         } else {
-          active_group = "a";
+          set_active_group("a");
           $("select.filter-grupo").empty();
           $("select.filter-grupo").append('<option value="" selected>-- Todos --</option>');
           $(".form-group-grupo").hide();
@@ -715,7 +817,7 @@ var jQuery_2_1_1 = $.noConflict(true);
         $("table#datos tbody tr").remove();
         $("table#description tbody tr").remove();
 
-        metadatos_a = metadata_groupedbyid[select_Data];
+        metadatos_a = metadata_groupedbyid[active_indicador];
         $("table#datos tbody").append(
           "<tr class='indicador-a datos-indicador datos-indicador-descarga'>\
             <td class='nombre-ind'>"+metadatos_a["Nombre_del_indicador"]+"</td>\
@@ -764,69 +866,14 @@ var jQuery_2_1_1 = $.noConflict(true);
           var year_bar_tmp = document.getElementsByClassName("ui-widget-header")[0];
           year_bar_tmp.style.background="white";
           var year_button_tmp = document.getElementsByClassName("ui-slider-handle")[0];
+          year_button_tmp.getElementsByClassName("ui-slider-handle")[0];
           year_button_tmp.style.background="#69D8CF";
         }
-
       });
     }(jQuery_2_1_1));
-
   }
-  function change_acumulate(tmp_indicator){
-    (function ($) {
-      if($("#trim_to_ac").is(':checked')){
-        $.ajax({
-          async: false,
-          type: 'GET',
-          url: 'json/partition/'+tmp_indicator+'.json',
-          success: function(data) {
-            // exists code
-            indicador_selected = tmp_indicator;
-            is_acumulado = true;
-            var tmp = document.getElementsByClassName("check-slider")[0];
-            tmp.style.backgroundColor= "#4FD9B2";
-            var year_bar_tmp = document.getElementsByClassName("ui-widget-header")[0];
-            year_bar_tmp.style.background="#69D8CF";
-            var year_button_tmp = document.getElementsByClassName("ui-slider-handle")[0];
-            year_button_tmp.style.background="#DDDDDD";
-          },
-          error: function(data){
-            // not exists code
-            is_acumulado = false;
-            var checkbox = document.getElementById("trim_to_ac");
-            checkbox.checked = false;
-            //block check slider
-            var tmp = document.getElementsByClassName("check-slider")[0];
-            tmp.style.backgroundColor= "#a3a3a3";
-            $('#notAcumulado .modal-body p').text('').append('' +
-                                '<span><center>Lo sentimos</center></span></br>' +
-                                '<span><center>No existen datos acumulados para el indicador seleccionado.</center></span>');
-            $('#notAcumulado').modal('show');
-            $('#closeNotAcumulado').on('click', function() {
-              $('#notAcumulado').modal('hide');
-            });
 
-          }
-        });
-      } else{
-        is_acumulado = false;
-        indicador_selected = $("select#select-indicador-a option:selected").val();
-        //Check if acumulado exist
-        $.ajax({
-          async: false,
-          type: 'GET',
-          url: 'json/partition/'+indicador_selected+'1.json',
-          error: function(data){
-            var tmp = document.getElementsByClassName("check-slider")[0];
-            tmp.style.backgroundColor= "#a3a3a3";
-          },
-          success: function(data) {
-            var tmp = document.getElementsByClassName("check-slider")[0];
-            tmp.style.backgroundColor= "#4FD9B2";
-          }
-          });
-      }
-    }(jQuery_2_1_1));
-  }
+  //Call change_active_indicator
   function populate_indicador_a() {
     (function ($) {
       $("select#select-indicador-a").empty();
@@ -859,13 +906,13 @@ var jQuery_2_1_1 = $.noConflict(true);
         firstrun = false;
       }
       //First time, default_group = a
-      indicador_selected = $("select#select-indicador-a option:selected").val();
-      active_feature = NULL_FEATURE;
-      change_active_indicator(indicador_selected,TOTAL_GROUP, NULL_UNIT,NULL_YEAR);
+      set_active_indicador($("select#select-indicador-a option:selected").val());
+      change_active_indicator("a", NULL_CONSTANT,NULL_CONSTANT);
     }(jQuery_2_1_1));
   }
 
-  function pop_all() {
+  function init_all() {
+    init_all_values();
     (function ($) {
       $("select#select-objetivo-a").off();
       // Indicador A
@@ -878,7 +925,7 @@ var jQuery_2_1_1 = $.noConflict(true);
       });
       $("select#select-objetivo-a").change(function() {
        (function ($) { $("#loading_wrap").fadeIn(); }(jQuery_2_1_1));
-       pop_all();
+       init_all();
        populate_indicador_a();
      });
       if (firstrun == true) {
@@ -895,15 +942,13 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
 
   (function ($) {
-    indicador_selected = $("select#select-indicador-a option:selected").val();
-    pop_all();
-
+    init_all();
     $("select#select-indicador-a").change(function() {
       (function ($) { $("#loading_wrap").fadeIn(); }(jQuery_2_1_1));
-      indicador_selected = $("select#select-indicador-a option:selected").val();
-      var tmp_indicator =indicador_selected+"1";
+      active_indicador = $("select#select-indicador-a option:selected").val();
+      var tmp_indicator =active_indicador+"1";
       change_acumulate(tmp_indicator);
-      change_active_indicator(indicador_selected,active_group,active_unit,active_year);
+      change_active_indicator(active_group,active_unit,active_year);
     });
     $("select#filter-grupo").change(function() {
       change_active_group($("select#filter-grupo option:selected").val());
@@ -916,19 +961,19 @@ var jQuery_2_1_1 = $.noConflict(true);
 
     });
     $("#trim_to_ac").change(function() {
-        var tmp_indicator =indicador_selected+"1";
+        var tmp_indicator =active_indicador+"1";
         change_acumulate(tmp_indicator);
-        change_active_indicator(indicador_selected,active_group,active_unit,active_year);
+        change_active_indicator(active_group,active_unit,active_year);
 
     });
     $("ul.menu li.leaf:nth-child(2) a").mousedown(function() {
       o=$("select#select-objetivo-a option:selected").index();
-      i=indicador_selected;
+      i=active_indicador;
       $("ul.menu li.leaf:nth-child(2) a").attr("href","/explora?o="+o+"&i="+i);
     });
     $("ul.menu li.leaf:nth-child(3) a").mousedown(function() {
       o=$("select#select-objetivo-a option:selected").index();
-      i=indicador_selected;
+      i=active_indicador;
       $("ul.menu li.leaf:nth-child(3) a").attr("href","/compara?o="+o+"&i="+i);
     })
 

@@ -224,10 +224,10 @@
                   <div class="filters col-xs-12">
                     <div class="container">
                       <div class="col-xs-1">
-                      <label class="filter-header"style="font-size: 13px;margin-right=0px">Filtrar por:</label>
+                      <label class="filter-header"style="font-size: 11px;margin-right=0px">Filtrar por:</label>
                     </div>
                       <div class="col-xs-11">
-                        <div class="col-xs-3">
+                        <div class="col-xs-6">
                           <div style="display: none;" class="form-group form-group-grupo">
                             <label class="filter-header">GRUPO</label>
                             <select id="filter-grupo" class="filter-group filter-grupo">
@@ -245,8 +245,8 @@
                           </select>
                           </div>
                       </div>
-                      <div class="col-xs-3">
-                        <div class="">
+                      <div class="col-xs-2">
+                        <div style="width:max-content;">
                           <label class="filter-header">Ver por:</label>
                           <span style="padding-right:5px">Trimestral</span>
                           <label class="switch">

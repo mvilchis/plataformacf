@@ -233,7 +233,7 @@ path.highlighted                                  { fill:yellow !important;
 .infobox                                          { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
  	                                                  z-index: 100;
  	                                                  position: absolute;
- 	                                                  top: 90px;
+ 	                                                  top: 40px;
  	                                                  right: 10px;
  	                                                  padding: 10px;
  	                                                  background-color: rgba(255,255,255,1);
