@@ -7,35 +7,35 @@
       <td>
         <div class="item">
           <a href="http://www.nafin.com/portalnf/content/home/home.html" target="_blank">
-            <img src="img/acknowledgment/NacionalFinanciera.png" alt="Nacional Financiera">
+            <img class="reduce_image" src="img/acknowledgment/NacionalFinanciera.png" alt="Nacional Financiera">
           </a>
         </div>
         </td>
         <td>
           <div class="item">
             <a href="http://www.iadb.org/es/banco-interamericano-de-desarrollo,2837.html" target="_blank">
-              <img src="img/acknowledgment/BID.png" alt="BID">
+              <img class="reduce_image"  src="img/acknowledgment/BID.png" alt="BID">
               </a>
           </div>
         </td>
         <td >
           <div class="item">
             <a href="http://www.fomin.org/es-es/" target="_blank">
-              <img src="img/acknowledgment/Fomin.png" alt="FOMIN">
+              <img class="reduce_image"  src="img/acknowledgment/Fomin.png" alt="FOMIN">
             </a>
           </div>
         </td>
         <td>
           <div class="item">
             <a href="http://afico.org" target="_blank">
-              <img src="img/acknowledgment/Afico.png" alt="AFICO">
+              <img class="reduce_image" src="img/acknowledgment/Afico.png" alt="AFICO">
             </a>
           </div>
         </td>
         <td>
           <div class="item">
             <a href="http://www.crowdfundingmexico.mx/" target="_blank">
-              <img src="img/acknowledgment/Crowdfunding.png" alt="CROWDFUNDING">
+              <img class="reduce_image" src="img/acknowledgment/Crowdfunding.png" alt="CROWDFUNDING">
             </a>
           </div>
         </td>
@@ -56,7 +56,7 @@
         <td>
           <div class="item">
               <a href="http://mxabierto.org/" target="_blank">
-                <img src="img/acknowledgment/MxAbierto.png" alt="MX_D">
+                <img class="reduce_image" src="img/acknowledgment/MxAbierto.png" alt="MX_D">
               </a>
           </div>
         </td>

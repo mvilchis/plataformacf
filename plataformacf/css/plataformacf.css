@@ -100,6 +100,7 @@ img                                             { max-width: 100%; }
                                                   text-align:center;
                                                   text-align:center;
                                                   padding-left: 100px;
+                                                  padding-bottom: 20px;
                                                   padding-right: 100px;}
 .acknowledgment td                              { width:11.11111111111111%;
                                                   padding:0 15px;
@@ -112,6 +113,7 @@ img                                             { max-width: 100%; }
                                                 }
 .acknowledgment .item img                       { display: inline-block;
                                                   vertical-align: middle;}
+.acknowledgment .item .reduce_image             { width: 80%;}
 
 /**********************************
     Font Styles
@@ -233,7 +235,7 @@ path.highlighted                                  { fill:yellow !important;
 .infobox                                          { font-family: 'Open Sans', 'Helvetica Neue', 'Helvetica', sans-serif;
  	                                                  z-index: 100;
  	                                                  position: absolute;
- 	                                                  top: 40px;
+ 	                                                  top: 64px;
  	                                                  right: 10px;
  	                                                  padding: 10px;
  	                                                  background-color: rgba(255,255,255,1);
@@ -347,7 +349,7 @@ body.page-node .c3 svg                            { font-family: 'Open Sans', 'H
                                                   }
 #chart svg g.c3-lines path.c3-line:hover          { stroke: #00cc99; }
 #chart svg g.c3-lines path.c3-line                {	fill-opacity: 0; }
-.c3 svg .c3-axis path                             { stroke: #fff;
+body.page-node .c3 svg .c3-axis path              { stroke: #fff;
                                                     stroke-opacity: 0;
                                                   }
 .c3 svg .c3-zoom-rect                             {	fill: rgb(238,238,238);

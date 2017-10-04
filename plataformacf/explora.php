@@ -144,12 +144,15 @@
           <section class="objective-selector">
             <div class="container" style="padding-bottom:20px;padding-top:20px;">
               <div class="col-xs-12">
+                <div class="col-xs-1">
+                </div>
                 <div class="col-xs-1 vcenter">
                 <span style="float:right;">
                   Tipo
                 </span>
+
                 </div>
-                <div class="col-xs-5">
+                <div class="col-xs-4">
                   <div class="objective-selector-caption">
                     Selecciona un tipo de indicador
                   </div>
@@ -162,13 +165,15 @@
                   Indicador
                 </span>
                 </div>
-                <div class="col-xs-5">
+                <div class="col-xs-4">
                   <div class="objective-selector-caption">
                     Selecciona un indicador
                   </div>
                   <select id="select-indicador-a">
                     <option>--</option>
                   </select>
+                </div>
+                <div class="col-xs-1">
                 </div>
               </div>
             </div>
@@ -222,7 +227,7 @@
                   </div>
 
                   <div class="filters col-xs-12">
-                    <div class="container">
+                    <div class="container" style="padding-top:10px;padding-bottom:10px;">
                       <div class="col-xs-1">
                       <label class="filter-header"style="font-size: 11px;margin-right=0px">Filtrar por:</label>
                     </div>
@@ -236,7 +241,7 @@
                           </div>
                         </div>
                         <div class="col-xs-3">
-                          <div class="form-group">
+                          <div class="form-group" style="min-width:220px">
                           <label class="filter-header">DESAGREGACIÓN</label>
                           <select id="filter-geo" class="filter-group filter-geo">
                                <option class="filter-item">Nacional</option>
@@ -246,7 +251,7 @@
                           </div>
                       </div>
                       <div class="col-xs-2">
-                        <div style="width:max-content;">
+                        <div style="min-width:270px;">
                           <label class="filter-header">Ver por:</label>
                           <span style="padding-right:5px">Trimestral</span>
                           <label class="switch">

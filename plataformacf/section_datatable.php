@@ -16,7 +16,7 @@
 				</thead>
 				<tbody></tbody>
 			</table>
-			<div class="stat-column-heade"><h2>Descripción de los datos</h2></div>
+			<div class="stat-column-heade" style="padding-top:20px;"><h2>Descripción de los datos</h2></div>
 			<table id="description" class="datos" style="width: 100%;">
 				<thead>
 					<th>Descripción</th>

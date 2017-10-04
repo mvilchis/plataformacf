@@ -129,15 +129,15 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
   //Leaflet customize
   function highlightFromLegend(i) {
-    (function ($) {
+
       $("svg path.class-"+i).addClass("highlighted");
-    }(jQuery_2_1_1));
+
   }
 
   function clearHighlight() {
-    (function ($) {
+
       $("path").removeClass("highlighted");
-    }(jQuery_2_1_1));
+
   }
 
   function on_mouseover(e,feature) {
@@ -534,8 +534,8 @@ var jQuery_2_1_1 = $.noConflict(true);
   function render_map(features) {
     var re = new RegExp("^([0-9]{4,})");
     (function ($) {
-      min_value= 100000000000;
-      max_value= -1;
+      var min_value= 100000000000;
+      var max_value= -1;
       $.each(features,function (key,value) {
         $.each(value["properties"], function(key,value) {
           if (re.test(key)) {
@@ -557,7 +557,7 @@ var jQuery_2_1_1 = $.noConflict(true);
       }(jQuery_2_1_1));
 
     function fill_color(v) {
-      if (v == null) return "#ccc";
+      if (v == null) return "#ddfff6";
       else if (v >= nb_breaks[3]) return '#086';
       else if (v >= nb_breaks[2]) return '#00cc99';
       else if (v >= nb_breaks[1]) return '#7fd';

@@ -1,1 +1,1838 @@
-{"results":[{"_id":"5808f3c8be1a3e0100e79097","id":"i21","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79098","id":"i21","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e79099","id":"i21","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e7909a","id":"i21","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e7909b","id":"i21","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e7909c","id":"i21","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e7909d","id":"i21","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e7909e","id":"i22","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7909f","id":"i22","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e790a0","id":"i22","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e790a1","id":"i22","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e790a2","id":"i22","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e790a3","id":"i22","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e790a4","id":"i22","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e790a5","id":"i23","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790a6","id":"i23","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e790a7","id":"i23","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e790a8","id":"i23","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e790a9","id":"i23","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e790aa","id":"i23","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e790ab","id":"i23","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e790ac","id":"i24","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790ad","id":"i24","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e790ae","id":"i24","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e790af","id":"i24","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e790b0","id":"i24","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e790b1","id":"i24","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e790b2","id":"i24","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e790b3","id":"i24","id3":"ÉXITO.O.FRACASO.......1.o.0.-false","id2":"h"},{"_id":"5808f3c8be1a3e0100e790b4","id":"i24","id3":"ÉXITO.O.FRACASO.......1.o.0.-true","id2":"i"},{"_id":"5808f3c8be1a3e0100e790b5","id":"i25","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790b6","id":"i25","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e790b7","id":"i25","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e790b8","id":"i25","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e790b9","id":"i25","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e790ba","id":"i25","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e790bb","id":"i25","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e790bc","id":"i26","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790bd","id":"i27","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790be","id":"i27","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e790bf","id":"i27","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e790c0","id":"i27","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e790c1","id":"i27","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e790c2","id":"i27","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e790c3","id":"i27","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e790c4","id":"i31","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790c5","id":"i31","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e790c6","id":"i31","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e790c7","id":"i31","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e790c8","id":"i31","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e790c9","id":"i31","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e790ca","id":"i31","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e790cb","id":"i32","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790cc","id":"i32","id3":"Categoría-Inventos","id2":"b"},{"_id":"5808f3c8be1a3e0100e790cd","id":"i32","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e790ce","id":"i32","id3":"Categoría-Negocios","id2":"d"},{"_id":"5808f3c8be1a3e0100e790cf","id":"i32","id3":"Categoría-Arte","id2":"e"},{"_id":"5808f3c8be1a3e0100e790d0","id":"i32","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e790d1","id":"i32","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e790d2","id":"i33","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790d3","id":"i33","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e790d4","id":"i33","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e790d5","id":"i33","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e790d6","id":"i33","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e790d7","id":"i33","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e790d8","id":"i33","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e790d9","id":"i33","id3":"exito-0","id2":"h"},{"_id":"5808f3c8be1a3e0100e790da","id":"i33","id3":"exito-1","id2":"i"},{"_id":"5808f3c8be1a3e0100e790db","id":"i34","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790dc","id":"i34","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e790dd","id":"i34","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e790de","id":"i34","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e790df","id":"i34","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e790e0","id":"i34","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e790e1","id":"i34","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e790e2","id":"i35","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790e3","id":"i35","id3":"Sexo-Femenino","id2":"b"},{"_id":"5808f3c8be1a3e0100e790e4","id":"i35","id3":"Sexo-Masculino","id2":"c"},{"_id":"5808f3c8be1a3e0100e790e5","id":"i36","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790e6","id":"i36","id3":"Sexo-Femenino","id2":"b"},{"_id":"5808f3c8be1a3e0100e790e7","id":"i36","id3":"Sexo-Masculino","id2":"c"},{"_id":"5808f3c8be1a3e0100e790e8","id":"i41","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790e9","id":"i42","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790ea","id":"i43","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790eb","id":"i43","id3":"Fondeado-si","id2":"b"},{"_id":"5808f3c8be1a3e0100e790ec","id":"i43","id3":"Fondeado-no","id2":"c"},{"_id":"5808f3c8be1a3e0100e790ed","id":"i44","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790ee","id":"i44","id3":"Fondeado-si","id2":"b"},{"_id":"5808f3c8be1a3e0100e790ef","id":"i44","id3":"Fondeado-no","id2":"c"},{"_id":"5808f3c8be1a3e0100e790f0","id":"i45","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790f1","id":"i46","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790f2","id":"i47","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790f3","id":"i11","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e790f4","id":"i11","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e790f5","id":"i11","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e790f6","id":"i11","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e790f7","id":"i11","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e790f8","id":"i11","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e790f9","id":"i11","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e790fa","id":"i11","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e790fb","id":"i11","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e790fc","id":"i11","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e790fd","id":"i11","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e790fe","id":"i11","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e790ff","id":"i11","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e79100","id":"i11","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e79101","id":"i11","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e79102","id":"i12","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79103","id":"i12","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79104","id":"i12","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79105","id":"i12","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79106","id":"i12","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79107","id":"i12","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79108","id":"i12","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79109","id":"i12","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e7910a","id":"i12","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e7910b","id":"i12","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7910c","id":"i12","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7910d","id":"i12","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7910e","id":"i12","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7910f","id":"i12","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e79110","id":"i12","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e79111","id":"i13","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79112","id":"i13","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79113","id":"i13","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79114","id":"i13","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79115","id":"i13","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79116","id":"i13","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79117","id":"i13","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79118","id":"i13","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79119","id":"i13","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e7911a","id":"i13","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7911b","id":"i13","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7911c","id":"i13","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7911d","id":"i13","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7911e","id":"i13","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7911f","id":"i13","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e79120","id":"i14","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79121","id":"i14","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79122","id":"i14","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79123","id":"i14","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79124","id":"i14","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79125","id":"i14","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79126","id":"i14","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79127","id":"i14","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79128","id":"i14","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e79129","id":"i14","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7912a","id":"i14","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7912b","id":"i14","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7912c","id":"i14","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7912d","id":"i14","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7912e","id":"i14","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e7912f","id":"i14","id3":"exitoso-1","id2":"p"},{"_id":"5808f3c8be1a3e0100e79130","id":"i14","id3":"exitoso-0","id2":"q"},{"_id":"5808f3c8be1a3e0100e79131","id":"i15","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79132","id":"i15","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79133","id":"i15","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79134","id":"i15","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79135","id":"i15","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79136","id":"i15","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79137","id":"i15","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79138","id":"i15","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79139","id":"i15","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e7913a","id":"i15","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7913b","id":"i15","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7913c","id":"i15","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7913d","id":"i15","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7913e","id":"i15","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7913f","id":"i15","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e79140","id":"i16","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79141","id":"i16","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79142","id":"i16","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79143","id":"i16","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79144","id":"i16","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79145","id":"i16","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79146","id":"i16","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79147","id":"i16","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79148","id":"i16","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e79149","id":"i16","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7914a","id":"i16","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7914b","id":"i16","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7914c","id":"i16","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7914d","id":"i16","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7914e","id":"i16","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e7914f","id":"i16","id3":"exitoso-1","id2":"p"},{"_id":"5808f3c8be1a3e0100e79150","id":"i16","id3":"exitoso-0","id2":"q"},{"_id":"5808f3c8be1a3e0100e79151","id":"i16","id3":"plazo_meses-36","id2":"r"},{"_id":"5808f3c8be1a3e0100e79152","id":"i16","id3":"plazo_meses-24","id2":"s"},{"_id":"5808f3c8be1a3e0100e79153","id":"i16","id3":"plazo_meses-12","id2":"t"},{"_id":"5808f3c8be1a3e0100e79154","id":"i17","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79155","id":"i17","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79156","id":"i17","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79157","id":"i17","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79158","id":"i17","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79159","id":"i17","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e7915a","id":"i17","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e7915b","id":"i17","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e7915c","id":"i17","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e7915d","id":"i17","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7915e","id":"i17","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7915f","id":"i17","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e79160","id":"i17","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e79161","id":"i17","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e79162","id":"i17","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e79163","id":"i17","id3":"exitoso-1","id2":"p"},{"_id":"5808f3c8be1a3e0100e79164","id":"i17","id3":"exitoso-0","id2":"q"},{"_id":"5808f3c8be1a3e0100e79165","id":"i18","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79166","id":"i211","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79167","id":"i211","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e79168","id":"i211","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e79169","id":"i211","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e7916a","id":"i211","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e7916b","id":"i211","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e7916c","id":"i211","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e7916d","id":"i221","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7916e","id":"i221","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e7916f","id":"i221","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e79170","id":"i221","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e79171","id":"i221","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e79172","id":"i221","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e79173","id":"i221","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e79174","id":"i231","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79175","id":"i231","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e79176","id":"i231","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e79177","id":"i231","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e79178","id":"i231","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e79179","id":"i231","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e7917a","id":"i231","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e7917b","id":"i241","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7917c","id":"i241","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e7917d","id":"i241","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e7917e","id":"i241","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e7917f","id":"i241","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e79180","id":"i241","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e79181","id":"i241","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e79182","id":"i241","id3":"ÉXITO.O.FRACASO.......1.o.0.-false","id2":"h"},{"_id":"5808f3c8be1a3e0100e79183","id":"i241","id3":"ÉXITO.O.FRACASO.......1.o.0.-true","id2":"i"},{"_id":"5808f3c8be1a3e0100e79184","id":"i251","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79185","id":"i251","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e79186","id":"i251","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e79187","id":"i251","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e79188","id":"i251","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e79189","id":"i251","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e7918a","id":"i251","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e7918b","id":"i261","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7918c","id":"i271","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7918d","id":"i271","id3":"Categoria.Principal-Arte y Cultura","id2":"b"},{"_id":"5808f3c8be1a3e0100e7918e","id":"i271","id3":"Categoria.Principal-Industrias Creativas","id2":"c"},{"_id":"5808f3c8be1a3e0100e7918f","id":"i271","id3":"Categoria.Principal-Iniciativas Sociales","id2":"d"},{"_id":"5808f3c8be1a3e0100e79190","id":"i271","id3":"Categoria.Principal-Tecnología y Emprendimiento","id2":"e"},{"_id":"5808f3c8be1a3e0100e79191","id":"i271","id3":"Categoria.Principal-Gente","id2":"f"},{"_id":"5808f3c8be1a3e0100e79192","id":"i271","id3":"Categoria.Principal-","id2":"g"},{"_id":"5808f3c8be1a3e0100e79193","id":"i311","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79194","id":"i311","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e79195","id":"i311","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e79196","id":"i311","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e79197","id":"i311","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e79198","id":"i311","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e79199","id":"i311","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e7919a","id":"i321","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e7919b","id":"i321","id3":"Categoría-Inventos","id2":"b"},{"_id":"5808f3c8be1a3e0100e7919c","id":"i321","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e7919d","id":"i321","id3":"Categoría-Negocios","id2":"d"},{"_id":"5808f3c8be1a3e0100e7919e","id":"i321","id3":"Categoría-Arte","id2":"e"},{"_id":"5808f3c8be1a3e0100e7919f","id":"i321","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e791a0","id":"i321","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e791a1","id":"i331","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791a2","id":"i331","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e791a3","id":"i331","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e791a4","id":"i331","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e791a5","id":"i331","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e791a6","id":"i331","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e791a7","id":"i331","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e791a8","id":"i331","id3":"exito-0","id2":"h"},{"_id":"5808f3c8be1a3e0100e791a9","id":"i331","id3":"exito-1","id2":"i"},{"_id":"5808f3c8be1a3e0100e791aa","id":"i341","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791ab","id":"i341","id3":"Categoría-Arte","id2":"b"},{"_id":"5808f3c8be1a3e0100e791ac","id":"i341","id3":"Categoría-Comunitarios","id2":"c"},{"_id":"5808f3c8be1a3e0100e791ad","id":"i341","id3":"Categoría-Inventos","id2":"d"},{"_id":"5808f3c8be1a3e0100e791ae","id":"i341","id3":"Categoría-Negocios","id2":"e"},{"_id":"5808f3c8be1a3e0100e791af","id":"i341","id3":"Sexo-Femenino","id2":"f"},{"_id":"5808f3c8be1a3e0100e791b0","id":"i341","id3":"Sexo-Masculino","id2":"g"},{"_id":"5808f3c8be1a3e0100e791b1","id":"i351","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791b2","id":"i351","id3":"Sexo-Femenino","id2":"b"},{"_id":"5808f3c8be1a3e0100e791b3","id":"i351","id3":"Sexo-Masculino","id2":"c"},{"_id":"5808f3c8be1a3e0100e791b4","id":"i361","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791b5","id":"i361","id3":"Sexo-Femenino","id2":"b"},{"_id":"5808f3c8be1a3e0100e791b6","id":"i361","id3":"Sexo-Masculino","id2":"c"},{"_id":"5808f3c8be1a3e0100e791b7","id":"i411","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791b8","id":"i421","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791b9","id":"i431","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791ba","id":"i431","id3":"Fondeado-si","id2":"b"},{"_id":"5808f3c8be1a3e0100e791bb","id":"i431","id3":"Fondeado-no","id2":"c"},{"_id":"5808f3c8be1a3e0100e791bc","id":"i441","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791bd","id":"i441","id3":"Fondeado-si","id2":"b"},{"_id":"5808f3c8be1a3e0100e791be","id":"i441","id3":"Fondeado-no","id2":"c"},{"_id":"5808f3c8be1a3e0100e791bf","id":"i451","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791c0","id":"i461","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791c1","id":"i471","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791c2","id":"i111","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791c3","id":"i111","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e791c4","id":"i111","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e791c5","id":"i111","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e791c6","id":"i111","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e791c7","id":"i111","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e791c8","id":"i111","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e791c9","id":"i111","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e791ca","id":"i111","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e791cb","id":"i111","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e791cc","id":"i111","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e791cd","id":"i111","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e791ce","id":"i111","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e791cf","id":"i111","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e791d0","id":"i111","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e791d1","id":"i121","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791d2","id":"i121","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e791d3","id":"i121","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e791d4","id":"i121","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e791d5","id":"i121","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e791d6","id":"i121","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e791d7","id":"i121","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e791d8","id":"i121","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e791d9","id":"i121","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e791da","id":"i121","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e791db","id":"i121","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e791dc","id":"i121","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e791dd","id":"i121","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e791de","id":"i121","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e791df","id":"i121","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e791e0","id":"i131","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791e1","id":"i131","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e791e2","id":"i131","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e791e3","id":"i131","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e791e4","id":"i131","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e791e5","id":"i131","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e791e6","id":"i131","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e791e7","id":"i131","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e791e8","id":"i131","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e791e9","id":"i131","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e791ea","id":"i131","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e791eb","id":"i131","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e791ec","id":"i131","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e791ed","id":"i131","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e791ee","id":"i131","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e791ef","id":"i141","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e791f0","id":"i141","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e791f1","id":"i141","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e791f2","id":"i141","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e791f3","id":"i141","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e791f4","id":"i141","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e791f5","id":"i141","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e791f6","id":"i141","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e791f7","id":"i141","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e791f8","id":"i141","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e791f9","id":"i141","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e791fa","id":"i141","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e791fb","id":"i141","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e791fc","id":"i141","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e791fd","id":"i141","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e791fe","id":"i141","id3":"exitoso-1","id2":"p"},{"_id":"5808f3c8be1a3e0100e791ff","id":"i141","id3":"exitoso-0","id2":"q"},{"_id":"5808f3c8be1a3e0100e79200","id":"i151","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79201","id":"i151","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79202","id":"i151","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79203","id":"i151","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79204","id":"i151","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79205","id":"i151","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79206","id":"i151","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79207","id":"i151","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79208","id":"i151","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e79209","id":"i151","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e7920a","id":"i151","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7920b","id":"i151","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7920c","id":"i151","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7920d","id":"i151","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7920e","id":"i151","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e7920f","id":"i161","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79210","id":"i161","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79211","id":"i161","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79212","id":"i161","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3c8be1a3e0100e79213","id":"i161","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3c8be1a3e0100e79214","id":"i161","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3c8be1a3e0100e79215","id":"i161","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3c8be1a3e0100e79216","id":"i161","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3c8be1a3e0100e79217","id":"i161","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3c8be1a3e0100e79218","id":"i161","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3c8be1a3e0100e79219","id":"i161","id3":"genero-","id2":"k"},{"_id":"5808f3c8be1a3e0100e7921a","id":"i161","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3c8be1a3e0100e7921b","id":"i161","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3c8be1a3e0100e7921c","id":"i161","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3c8be1a3e0100e7921d","id":"i161","id3":"estado_civil-","id2":"o"},{"_id":"5808f3c8be1a3e0100e7921e","id":"i161","id3":"exitoso-1","id2":"p"},{"_id":"5808f3c8be1a3e0100e7921f","id":"i161","id3":"exitoso-0","id2":"q"},{"_id":"5808f3c8be1a3e0100e79220","id":"i161","id3":"plazo_meses-36","id2":"r"},{"_id":"5808f3c8be1a3e0100e79221","id":"i161","id3":"plazo_meses-24","id2":"s"},{"_id":"5808f3c8be1a3e0100e79222","id":"i161","id3":"plazo_meses-12","id2":"t"},{"_id":"5808f3c8be1a3e0100e79223","id":"i171","id3":"Total","id2":"a"},{"_id":"5808f3c8be1a3e0100e79224","id":"i171","id3":"categoria-AUTOMOVIL","id2":"b"},{"_id":"5808f3c8be1a3e0100e79225","id":"i171","id3":"categoria-CONSOLIDAR DEUDA","id2":"c"},{"_id":"5808f3c8be1a3e0100e79226","id":"i171","id3":"categoria-HOGAR","id2":"d"},{"_id":"5808f3cabe1a3e0100e79227","id":"i171","id3":"categoria-NEGOCIOS","id2":"e"},{"_id":"5808f3cabe1a3e0100e79228","id":"i171","id3":"categoria-OTRO","id2":"f"},{"_id":"5808f3cabe1a3e0100e79229","id":"i171","id3":"categoria-EDUCACION","id2":"g"},{"_id":"5808f3cabe1a3e0100e7922a","id":"i171","id3":"categoria-VACACIONES","id2":"h"},{"_id":"5808f3cabe1a3e0100e7922b","id":"i171","id3":"genero-Masculino","id2":"i"},{"_id":"5808f3cabe1a3e0100e7922c","id":"i171","id3":"genero-Femenino","id2":"j"},{"_id":"5808f3cabe1a3e0100e7922d","id":"i171","id3":"genero-","id2":"k"},{"_id":"5808f3cabe1a3e0100e7922e","id":"i171","id3":"estado_civil-UNION LIBRE","id2":"l"},{"_id":"5808f3cabe1a3e0100e7922f","id":"i171","id3":"estado_civil-CASADO","id2":"m"},{"_id":"5808f3cabe1a3e0100e79230","id":"i171","id3":"estado_civil-SOLTERO","id2":"n"},{"_id":"5808f3cabe1a3e0100e79231","id":"i171","id3":"estado_civil-","id2":"o"},{"_id":"5808f3cabe1a3e0100e79232","id":"i171","id3":"exitoso-1","id2":"p"},{"_id":"5808f3cabe1a3e0100e79233","id":"i171","id3":"exitoso-0","id2":"q"},{"_id":"5808f3cabe1a3e0100e79234","id":"i181","id3":"Total","id2":"a"}],"pagination":{"page":1,"pageSize":999999,"total":414}}
+{
+  "results": [
+    {
+      "_id": "5808f3c8be1a3e0100e79097",
+      "id": "i21",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79098",
+      "id": "i21",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79099",
+      "id": "i21",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909a",
+      "id": "i21",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909b",
+      "id": "i21",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909c",
+      "id": "i21",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909d",
+      "id": "i21",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909e",
+      "id": "i22",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7909f",
+      "id": "i22",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a0",
+      "id": "i22",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a1",
+      "id": "i22",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a2",
+      "id": "i22",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a3",
+      "id": "i22",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a4",
+      "id": "i22",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a5",
+      "id": "i23",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a6",
+      "id": "i23",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a7",
+      "id": "i23",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a8",
+      "id": "i23",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790a9",
+      "id": "i23",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790aa",
+      "id": "i23",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ab",
+      "id": "i23",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ac",
+      "id": "i24",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ad",
+      "id": "i24",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ae",
+      "id": "i24",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790af",
+      "id": "i24",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b0",
+      "id": "i24",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b1",
+      "id": "i24",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b2",
+      "id": "i24",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b3",
+      "id": "i24",
+      "id3": "ÉXITO.O.FRACASO.......1.o.0.-false",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b4",
+      "id": "i24",
+      "id3": "ÉXITO.O.FRACASO.......1.o.0.-true",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b5",
+      "id": "i25",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b6",
+      "id": "i25",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b7",
+      "id": "i25",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b8",
+      "id": "i25",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790b9",
+      "id": "i25",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ba",
+      "id": "i25",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790bb",
+      "id": "i25",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790bc",
+      "id": "i26",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790bd",
+      "id": "i27",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790be",
+      "id": "i27",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790bf",
+      "id": "i27",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790c0",
+      "id": "i27",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790c1",
+      "id": "i27",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790c2",
+      "id": "i27",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790c3",
+      "id": "i27",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    { "id":"id","id3":"id3","id2":"id2"},
+{ "id":"i31","id3":"Total","id2":"a"},
+{ "id":"i31","id3":"Categora-Comunitarios","id2":"b"},
+{ "id":"i31","id3":"Categora-Inventos","id2":"c"},
+{ "id":"i31","id3":"Categora-Comunidad","id2":"d"},
+{ "id":"i31","id3":"Categora-Animales","id2":"e"},
+{ "id":"i31","id3":"Categora-Cultura","id2":"f"},
+{ "id":"i31","id3":"Categora-Deporte","id2":"g"},
+{ "id":"i31","id3":"Categora-Educacin","id2":"h"},
+{ "id":"i31","id3":"Categora-Iniciativa","id2":"i"},
+{ "id":"i31","id3":"Categora-Salud","id2":"j"},
+{ "id":"i31","id3":"Categora-Sustentabi","id2":"k"},
+{ "id":"i31","id3":"Categora-Voluntaria","id2":"l"},
+{ "id":"i31","id3":"Categora-Cine y Vid","id2":"m"},
+{ "id":"i31","id3":"Categora-Cultural","id2":"n"},
+{ "id":"i31","id3":"Categora-Msica","id2":"o"},
+{ "id":"i31","id3":"Categora-Teatro","id2":"p"},
+{ "id":"i31","id3":"Categora-Danza","id2":"q"},
+{ "id":"i31","id3":"Categora-Editorial","id2":"r"},
+{ "id":"i31","id3":"Categora-Emergencia","id2":"s"},
+{ "id":"i31","id3":"Categora-Emprendimi","id2":"t"},
+{ "id":"i31","id3":"Categora-Medio Ambi","id2":"u"},
+{ "id":"i31","id3":"Categora-Fotografa","id2":"v"},
+{ "id":"i31","id3":"Categora-Tecnologa","id2":"w"},
+{ "id":"i31","id3":"Categora-Deportes","id2":"x"},
+{ "id":"i31","id3":"Categora-Educativa","id2":"y"},
+{ "id":"i32","id3":"Total","id2":"a"},
+{ "id":"i32","id3":"Categora-Comunidad","id2":"b"},
+{ "id":"i32","id3":"Categora-Cine y Vid","id2":"c"},
+{ "id":"i32","id3":"Categora-Iniciativa","id2":"d"},
+{ "id":"i32","id3":"Categora-Msica","id2":"e"},
+{ "id":"i32","id3":"Categora-Teatro","id2":"f"},
+{ "id":"i32","id3":"Categora-Voluntaria","id2":"g"},
+{ "id":"i32","id3":"Categora-Danza","id2":"h"},
+{ "id":"i32","id3":"Categora-Educacin","id2":"i"},
+{ "id":"i32","id3":"Categora-Medio Ambi","id2":"j"},
+{ "id":"i32","id3":"Categora-Sustentabi","id2":"k"},
+{ "id":"i32","id3":"Categora-Deporte","id2":"l"},
+{ "id":"i32","id3":"Categora-Editorial","id2":"m"},
+{ "id":"i32","id3":"Categora-Salud","id2":"n"},
+{ "id":"i32","id3":"Categora-Cultura","id2":"o"},
+{ "id":"i32","id3":"Categora-Emergencia","id2":"p"},
+{ "id":"i32","id3":"Categora-Animales","id2":"q"},
+{ "id":"i33","id3":"Total","id2":"a"},
+{ "id":"i33","id3":"Categora-Comunitarios","id2":"b"},
+{ "id":"i33","id3":"Categora-Inventos","id2":"c"},
+{ "id":"i33","id3":"Categora-Comunidad","id2":"d"},
+{ "id":"i33","id3":"Categora-Animales","id2":"e"},
+{ "id":"i33","id3":"Categora-Cultura","id2":"f"},
+{ "id":"i33","id3":"Categora-Deporte","id2":"g"},
+{ "id":"i33","id3":"Categora-Educacin","id2":"h"},
+{ "id":"i33","id3":"Categora-Iniciativa","id2":"i"},
+{ "id":"i33","id3":"Categora-Salud","id2":"j"},
+{ "id":"i33","id3":"Categora-Sustentabi","id2":"k"},
+{ "id":"i33","id3":"Categora-Voluntaria","id2":"l"},
+{ "id":"i33","id3":"Categora-Cine y Vid","id2":"m"},
+{ "id":"i33","id3":"Categora-Cultural","id2":"n"},
+{ "id":"i33","id3":"Categora-Msica","id2":"o"},
+{ "id":"i33","id3":"Categora-Teatro","id2":"p"},
+{ "id":"i33","id3":"Categora-Danza","id2":"q"},
+{ "id":"i33","id3":"Categora-Editorial","id2":"r"},
+{ "id":"i33","id3":"Categora-Emergencia","id2":"s"},
+{ "id":"i33","id3":"Categora-Emprendimi","id2":"t"},
+{ "id":"i33","id3":"Categora-Medio Ambi","id2":"u"},
+{ "id":"i33","id3":"Categora-Fotografa","id2":"v"},
+{ "id":"i33","id3":"Categora-Tecnologa","id2":"w"},
+{ "id":"i33","id3":"Categora-Deportes","id2":"x"},
+{ "id":"i33","id3":"Categora-Educativa","id2":"y"},
+{ "id":"i33","id3":"exito-0","id2":"z"},
+{ "id":"i33","id3":"exito-1","id2":"A"},
+{ "id":"i34","id3":"Total","id2":"a"},
+{ "id":"i34","id3":"Categora-Comunitarios","id2":"b"},
+{ "id":"i34","id3":"Categora-Inventos","id2":"c"},
+{ "id":"i34","id3":"Categora-Comunidad","id2":"d"},
+{ "id":"i34","id3":"Categora-Animales","id2":"e"},
+{ "id":"i34","id3":"Categora-Cultura","id2":"f"},
+{ "id":"i34","id3":"Categora-Deporte","id2":"g"},
+{ "id":"i34","id3":"Categora-Educacin","id2":"h"},
+{ "id":"i34","id3":"Categora-Iniciativa","id2":"i"},
+{ "id":"i34","id3":"Categora-Salud","id2":"j"},
+{ "id":"i34","id3":"Categora-Sustentabi","id2":"k"},
+{ "id":"i34","id3":"Categora-Voluntaria","id2":"l"},
+{ "id":"i34","id3":"Categora-Cine y Vid","id2":"m"},
+{ "id":"i34","id3":"Categora-Cultural","id2":"n"},
+{ "id":"i34","id3":"Categora-Msica","id2":"o"},
+{ "id":"i34","id3":"Categora-Teatro","id2":"p"},
+{ "id":"i34","id3":"Categora-Danza","id2":"q"},
+{ "id":"i34","id3":"Categora-Editorial","id2":"r"},
+{ "id":"i34","id3":"Categora-Emergencia","id2":"s"},
+{ "id":"i34","id3":"Categora-Emprendimi","id2":"t"},
+{ "id":"i34","id3":"Categora-Medio Ambi","id2":"u"},
+{ "id":"i34","id3":"Categora-Fotografa","id2":"v"},
+{ "id":"i34","id3":"Categora-Tecnologa","id2":"w"},
+{ "id":"i34","id3":"Categora-Deportes","id2":"x"},
+{ "id":"i34","id3":"Categora-Educativa","id2":"y"},
+{ "id":"i35","id3":"Total","id2":"a"},
+{ "id":"i36","id3":"Total","id2":"a"},
+    {
+      "_id": "5808f3c8be1a3e0100e790e8",
+      "id": "i41",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790e9",
+      "id": "i42",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ea",
+      "id": "i43",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790eb",
+      "id": "i43",
+      "id3": "Fondeado-si",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ec",
+      "id": "i43",
+      "id3": "Fondeado-no",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ed",
+      "id": "i44",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ee",
+      "id": "i44",
+      "id3": "Fondeado-si",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790ef",
+      "id": "i44",
+      "id3": "Fondeado-no",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790f0",
+      "id": "i45",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790f1",
+      "id": "i46",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e790f2",
+      "id": "i47",
+      "id3": "Total",
+      "id2": "a"
+    },
+    { "id":"id","id3":"id3","id2":"id2"},
+{ "id":"i11","id3":"Total","id2":"a"},
+{ "id":"i11","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i11","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i11","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i11","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i11","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i11","id3":"categoria-Otros","id2":"g"},
+{ "id":"i11","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i11","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i11","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i11","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i11","id3":"genero-Femenino","id2":"l"},
+{ "id":"i11","id3":"genero-Masculino","id2":"m"},
+{ "id":"i11","id3":"genero-NA","id2":"n"},
+{ "id":"i11","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i11","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i11","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i12","id3":"Total","id2":"a"},
+{ "id":"i12","id3":"categoria-Mejorar vivienda","id2":"b"},
+{ "id":"i12","id3":"categoria-Consolidar deudas","id2":"c"},
+{ "id":"i12","id3":"categoria-Gastos de automvil","id2":"d"},
+{ "id":"i12","id3":"categoria-Prstamo personal  de consumo","id2":"e"},
+{ "id":"i12","id3":"categoria-Otros","id2":"f"},
+{ "id":"i12","id3":"categoria-Prstamos productivos","id2":"g"},
+{ "id":"i12","id3":"categoria-Gastos escolares","id2":"h"},
+{ "id":"i12","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"i"},
+{ "id":"i12","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i12","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i12","id3":"genero-Masculino","id2":"l"},
+{ "id":"i12","id3":"genero-NA","id2":"m"},
+{ "id":"i12","id3":"genero-Femenino","id2":"n"},
+{ "id":"i12","id3":"estado_civil-soltero","id2":"o"},
+{ "id":"i12","id3":"estado_civil-NA","id2":"p"},
+{ "id":"i12","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i13","id3":"Total","id2":"a"},
+{ "id":"i13","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i13","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i13","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i13","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i13","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i13","id3":"categoria-Otros","id2":"g"},
+{ "id":"i13","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i13","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i13","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i13","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i13","id3":"genero-Femenino","id2":"l"},
+{ "id":"i13","id3":"genero-Masculino","id2":"m"},
+{ "id":"i13","id3":"genero-NA","id2":"n"},
+{ "id":"i13","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i13","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i13","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i14","id3":"Total","id2":"a"},
+{ "id":"i14","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i14","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i14","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i14","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i14","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i14","id3":"categoria-Otros","id2":"g"},
+{ "id":"i14","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i14","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i14","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i14","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i14","id3":"genero-Femenino","id2":"l"},
+{ "id":"i14","id3":"genero-Masculino","id2":"m"},
+{ "id":"i14","id3":"genero-NA","id2":"n"},
+{ "id":"i14","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i14","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i14","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i14","id3":"exitoso-0","id2":"r"},
+{ "id":"i14","id3":"exitoso-1","id2":"s"},
+{ "id":"i15","id3":"Total","id2":"a"},
+{ "id":"i15","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i15","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i15","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i15","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i15","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i15","id3":"categoria-Otros","id2":"g"},
+{ "id":"i15","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i15","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i15","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i15","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i15","id3":"genero-Femenino","id2":"l"},
+{ "id":"i15","id3":"genero-Masculino","id2":"m"},
+{ "id":"i15","id3":"genero-NA","id2":"n"},
+{ "id":"i15","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i15","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i15","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i16","id3":"Total","id2":"a"},
+{ "id":"i16","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i16","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i16","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i16","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i16","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i16","id3":"categoria-Otros","id2":"g"},
+{ "id":"i16","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i16","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i16","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i16","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i16","id3":"genero-Femenino","id2":"l"},
+{ "id":"i16","id3":"genero-Masculino","id2":"m"},
+{ "id":"i16","id3":"genero-NA","id2":"n"},
+{ "id":"i16","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i16","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i16","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i16","id3":"exitoso-0","id2":"r"},
+{ "id":"i16","id3":"exitoso-1","id2":"s"},
+{ "id":"i16","id3":"plazo_meses-6","id2":"t"},
+{ "id":"i16","id3":"plazo_meses-12","id2":"u"},
+{ "id":"i16","id3":"plazo_meses-18","id2":"v"},
+{ "id":"i16","id3":"plazo_meses-15","id2":"w"},
+{ "id":"i16","id3":"plazo_meses-3","id2":"x"},
+{ "id":"i16","id3":"plazo_meses-22","id2":"y"},
+{ "id":"i16","id3":"plazo_meses-24","id2":"z"},
+{ "id":"i16","id3":"plazo_meses-10","id2":"A"},
+{ "id":"i16","id3":"plazo_meses-4","id2":"B"},
+{ "id":"i16","id3":"plazo_meses-8","id2":"C"},
+{ "id":"i16","id3":"plazo_meses-36","id2":"D"},
+{ "id":"i16","id3":"plazo_meses-7","id2":"E"},
+{ "id":"i16","id3":"plazo_meses-16","id2":"F"},
+{ "id":"i16","id3":"plazo_meses-11","id2":"G"},
+{ "id":"i16","id3":"plazo_meses-9","id2":"H"},
+{ "id":"i16","id3":"plazo_meses-13","id2":"I"},
+{ "id":"i16","id3":"plazo_meses-5","id2":"J"},
+{ "id":"i16","id3":"plazo_meses-14","id2":"K"},
+{ "id":"i16","id3":"plazo_meses-20","id2":"L"},
+{ "id":"i16","id3":"plazo_meses-17","id2":"M"},
+{ "id":"i16","id3":"plazo_meses-30","id2":"N"},
+{ "id":"i16","id3":"plazo_meses-38","id2":"O"},
+{ "id":"i16","id3":"plazo_meses-48","id2":"P"},
+{ "id":"i16","id3":"plazo_meses-33","id2":"Q"},
+{ "id":"i16","id3":"plazo_meses-2","id2":"R"},
+{ "id":"i16","id3":"plazo_meses-21","id2":"S"},
+{ "id":"i16","id3":"plazo_meses-31","id2":"T"},
+{ "id":"i17","id3":"Total","id2":"a"},
+{ "id":"i18","id3":"Total","id2":"a"},
+{ "id":"i18","id3":"categoria-Prstamo personal  de consumo","id2":"b"},
+{ "id":"i18","id3":"categoria-Prstamos productivos","id2":"c"},
+{ "id":"i18","id3":"categoria-Mejorar vivienda","id2":"d"},
+{ "id":"i18","id3":"categoria-Consolidar deudas","id2":"e"},
+{ "id":"i18","id3":"categoria-Gastos de automvil","id2":"f"},
+{ "id":"i18","id3":"categoria-Otros","id2":"g"},
+{ "id":"i18","id3":"categoria-Prstamo para mejoramiento de vivienda","id2":"h"},
+{ "id":"i18","id3":"categoria-Gastos escolares","id2":"i"},
+{ "id":"i18","id3":"categoria-Entretenimiento","id2":"j"},
+{ "id":"i18","id3":"categoria-Gastos mdicos","id2":"k"},
+{ "id":"i18","id3":"genero-Femenino","id2":"l"},
+{ "id":"i18","id3":"genero-Masculino","id2":"m"},
+{ "id":"i18","id3":"genero-NA","id2":"n"},
+{ "id":"i18","id3":"estado_civil-NA","id2":"o"},
+{ "id":"i18","id3":"estado_civil-soltero","id2":"p"},
+{ "id":"i18","id3":"estado_civil-casado","id2":"q"},
+{ "id":"i18","id3":"exitoso-0","id2":"r"},
+{ "id":"i18","id3":"exitoso-1","id2":"s"},
+    {
+      "_id": "5808f3c8be1a3e0100e79166",
+      "id": "i211",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79167",
+      "id": "i211",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79168",
+      "id": "i211",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79169",
+      "id": "i211",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916a",
+      "id": "i211",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916b",
+      "id": "i211",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916c",
+      "id": "i211",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916d",
+      "id": "i221",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916e",
+      "id": "i221",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7916f",
+      "id": "i221",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79170",
+      "id": "i221",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79171",
+      "id": "i221",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79172",
+      "id": "i221",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79173",
+      "id": "i221",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79174",
+      "id": "i231",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79175",
+      "id": "i231",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79176",
+      "id": "i231",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79177",
+      "id": "i231",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79178",
+      "id": "i231",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79179",
+      "id": "i231",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917a",
+      "id": "i231",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917b",
+      "id": "i241",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917c",
+      "id": "i241",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917d",
+      "id": "i241",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917e",
+      "id": "i241",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7917f",
+      "id": "i241",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79180",
+      "id": "i241",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79181",
+      "id": "i241",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79182",
+      "id": "i241",
+      "id3": "ÉXITO.O.FRACASO.......1.o.0.-false",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79183",
+      "id": "i241",
+      "id3": "ÉXITO.O.FRACASO.......1.o.0.-true",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79184",
+      "id": "i251",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79185",
+      "id": "i251",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79186",
+      "id": "i251",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79187",
+      "id": "i251",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79188",
+      "id": "i251",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79189",
+      "id": "i251",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918a",
+      "id": "i251",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918b",
+      "id": "i261",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918c",
+      "id": "i271",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918d",
+      "id": "i271",
+      "id3": "Categoria.Principal-Arte y Cultura",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918e",
+      "id": "i271",
+      "id3": "Categoria.Principal-Industrias Creativas",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7918f",
+      "id": "i271",
+      "id3": "Categoria.Principal-Iniciativas Sociales",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79190",
+      "id": "i271",
+      "id3": "Categoria.Principal-Tecnología y Emprendimiento",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79191",
+      "id": "i271",
+      "id3": "Categoria.Principal-Gente",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79192",
+      "id": "i271",
+      "id3": "Categoria.Principal-",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79193",
+      "id": "i311",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79194",
+      "id": "i311",
+      "id3": "Categoría-Arte",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79195",
+      "id": "i311",
+      "id3": "Categoría-Comunitarios",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79196",
+      "id": "i311",
+      "id3": "Categoría-Inventos",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79197",
+      "id": "i311",
+      "id3": "Categoría-Negocios",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79198",
+      "id": "i311",
+      "id3": "Sexo-Femenino",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79199",
+      "id": "i311",
+      "id3": "Sexo-Masculino",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919a",
+      "id": "i321",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919b",
+      "id": "i321",
+      "id3": "Categoría-Inventos",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919c",
+      "id": "i321",
+      "id3": "Categoría-Comunitarios",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919d",
+      "id": "i321",
+      "id3": "Categoría-Negocios",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919e",
+      "id": "i321",
+      "id3": "Categoría-Arte",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7919f",
+      "id": "i321",
+      "id3": "Sexo-Femenino",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a0",
+      "id": "i321",
+      "id3": "Sexo-Masculino",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a1",
+      "id": "i331",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a2",
+      "id": "i331",
+      "id3": "Categoría-Arte",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a3",
+      "id": "i331",
+      "id3": "Categoría-Comunitarios",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a4",
+      "id": "i331",
+      "id3": "Categoría-Inventos",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a5",
+      "id": "i331",
+      "id3": "Categoría-Negocios",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a6",
+      "id": "i331",
+      "id3": "Sexo-Femenino",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a7",
+      "id": "i331",
+      "id3": "Sexo-Masculino",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a8",
+      "id": "i331",
+      "id3": "exito-0",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791a9",
+      "id": "i331",
+      "id3": "exito-1",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791aa",
+      "id": "i341",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ab",
+      "id": "i341",
+      "id3": "Categoría-Arte",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ac",
+      "id": "i341",
+      "id3": "Categoría-Comunitarios",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ad",
+      "id": "i341",
+      "id3": "Categoría-Inventos",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ae",
+      "id": "i341",
+      "id3": "Categoría-Negocios",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791af",
+      "id": "i341",
+      "id3": "Sexo-Femenino",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b0",
+      "id": "i341",
+      "id3": "Sexo-Masculino",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b1",
+      "id": "i351",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b2",
+      "id": "i351",
+      "id3": "Sexo-Femenino",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b3",
+      "id": "i351",
+      "id3": "Sexo-Masculino",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b4",
+      "id": "i361",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b5",
+      "id": "i361",
+      "id3": "Sexo-Femenino",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b6",
+      "id": "i361",
+      "id3": "Sexo-Masculino",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b7",
+      "id": "i411",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b8",
+      "id": "i421",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791b9",
+      "id": "i431",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ba",
+      "id": "i431",
+      "id3": "Fondeado-si",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791bb",
+      "id": "i431",
+      "id3": "Fondeado-no",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791bc",
+      "id": "i441",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791bd",
+      "id": "i441",
+      "id3": "Fondeado-si",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791be",
+      "id": "i441",
+      "id3": "Fondeado-no",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791bf",
+      "id": "i451",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c0",
+      "id": "i461",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c1",
+      "id": "i471",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c2",
+      "id": "i111",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c3",
+      "id": "i111",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c4",
+      "id": "i111",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c5",
+      "id": "i111",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c6",
+      "id": "i111",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c7",
+      "id": "i111",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c8",
+      "id": "i111",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791c9",
+      "id": "i111",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ca",
+      "id": "i111",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791cb",
+      "id": "i111",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791cc",
+      "id": "i111",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791cd",
+      "id": "i111",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ce",
+      "id": "i111",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791cf",
+      "id": "i111",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d0",
+      "id": "i111",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d1",
+      "id": "i121",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d2",
+      "id": "i121",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d3",
+      "id": "i121",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d4",
+      "id": "i121",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d5",
+      "id": "i121",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d6",
+      "id": "i121",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d7",
+      "id": "i121",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d8",
+      "id": "i121",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791d9",
+      "id": "i121",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791da",
+      "id": "i121",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791db",
+      "id": "i121",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791dc",
+      "id": "i121",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791dd",
+      "id": "i121",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791de",
+      "id": "i121",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791df",
+      "id": "i121",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e0",
+      "id": "i131",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e1",
+      "id": "i131",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e2",
+      "id": "i131",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e3",
+      "id": "i131",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e4",
+      "id": "i131",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e5",
+      "id": "i131",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e6",
+      "id": "i131",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e7",
+      "id": "i131",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e8",
+      "id": "i131",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791e9",
+      "id": "i131",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ea",
+      "id": "i131",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791eb",
+      "id": "i131",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ec",
+      "id": "i131",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ed",
+      "id": "i131",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ee",
+      "id": "i131",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ef",
+      "id": "i141",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f0",
+      "id": "i141",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f1",
+      "id": "i141",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f2",
+      "id": "i141",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f3",
+      "id": "i141",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f4",
+      "id": "i141",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f5",
+      "id": "i141",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f6",
+      "id": "i141",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f7",
+      "id": "i141",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f8",
+      "id": "i141",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791f9",
+      "id": "i141",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791fa",
+      "id": "i141",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791fb",
+      "id": "i141",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791fc",
+      "id": "i141",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791fd",
+      "id": "i141",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791fe",
+      "id": "i141",
+      "id3": "exitoso-1",
+      "id2": "p"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e791ff",
+      "id": "i141",
+      "id3": "exitoso-0",
+      "id2": "q"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79200",
+      "id": "i151",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79201",
+      "id": "i151",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79202",
+      "id": "i151",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79203",
+      "id": "i151",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79204",
+      "id": "i151",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79205",
+      "id": "i151",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79206",
+      "id": "i151",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79207",
+      "id": "i151",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79208",
+      "id": "i151",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79209",
+      "id": "i151",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920a",
+      "id": "i151",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920b",
+      "id": "i151",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920c",
+      "id": "i151",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920d",
+      "id": "i151",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920e",
+      "id": "i151",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7920f",
+      "id": "i161",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79210",
+      "id": "i161",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79211",
+      "id": "i161",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79212",
+      "id": "i161",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79213",
+      "id": "i161",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79214",
+      "id": "i161",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79215",
+      "id": "i161",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79216",
+      "id": "i161",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79217",
+      "id": "i161",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79218",
+      "id": "i161",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79219",
+      "id": "i161",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921a",
+      "id": "i161",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921b",
+      "id": "i161",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921c",
+      "id": "i161",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921d",
+      "id": "i161",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921e",
+      "id": "i161",
+      "id3": "exitoso-1",
+      "id2": "p"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e7921f",
+      "id": "i161",
+      "id3": "exitoso-0",
+      "id2": "q"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79220",
+      "id": "i161",
+      "id3": "plazo_meses-36",
+      "id2": "r"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79221",
+      "id": "i161",
+      "id3": "plazo_meses-24",
+      "id2": "s"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79222",
+      "id": "i161",
+      "id3": "plazo_meses-12",
+      "id2": "t"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79223",
+      "id": "i171",
+      "id3": "Total",
+      "id2": "a"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79224",
+      "id": "i171",
+      "id3": "categoria-AUTOMOVIL",
+      "id2": "b"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79225",
+      "id": "i171",
+      "id3": "categoria-CONSOLIDAR DEUDA",
+      "id2": "c"
+    },
+    {
+      "_id": "5808f3c8be1a3e0100e79226",
+      "id": "i171",
+      "id3": "categoria-HOGAR",
+      "id2": "d"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79227",
+      "id": "i171",
+      "id3": "categoria-NEGOCIOS",
+      "id2": "e"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79228",
+      "id": "i171",
+      "id3": "categoria-OTRO",
+      "id2": "f"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79229",
+      "id": "i171",
+      "id3": "categoria-EDUCACION",
+      "id2": "g"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922a",
+      "id": "i171",
+      "id3": "categoria-VACACIONES",
+      "id2": "h"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922b",
+      "id": "i171",
+      "id3": "genero-Masculino",
+      "id2": "i"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922c",
+      "id": "i171",
+      "id3": "genero-Femenino",
+      "id2": "j"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922d",
+      "id": "i171",
+      "id3": "genero-NA",
+      "id2": "k"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922e",
+      "id": "i171",
+      "id3": "estado_civil-UNION LIBRE",
+      "id2": "l"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e7922f",
+      "id": "i171",
+      "id3": "estado_civil-CASADO",
+      "id2": "m"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79230",
+      "id": "i171",
+      "id3": "estado_civil-SOLTERO",
+      "id2": "n"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79231",
+      "id": "i171",
+      "id3": "estado_civil-NA",
+      "id2": "o"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79232",
+      "id": "i171",
+      "id3": "exitoso-1",
+      "id2": "p"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79233",
+      "id": "i171",
+      "id3": "exitoso-0",
+      "id2": "q"
+    },
+    {
+      "_id": "5808f3cabe1a3e0100e79234",
+      "id": "i181",
+      "id3": "Total",
+      "id2": "a"
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "pageSize": 999999,
+    "total": 414
+  }
+}
