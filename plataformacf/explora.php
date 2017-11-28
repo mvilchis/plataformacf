@@ -154,7 +154,7 @@
                 </div>
                 <div class="col-xs-4">
                   <div class="objective-selector-caption">
-                    Selecciona un tipo de indicador
+                    Selecciona un tipo de financiamiento
                   </div>
                   <select id="select-objetivo-a">
                     <option>--</option>
