@@ -129,15 +129,12 @@ var jQuery_2_1_1 = $.noConflict(true);
   }
   //Leaflet customize
   function highlightFromLegend(i) {
-    (function ($) {
-      $("svg path.class-"+i).addClass("highlighted");
-    }(jQuery_2_1_1));
+    $("svg path.class-"+i).addClass("highlighted");
+
   }
 
   function clearHighlight() {
-    (function ($) {
-      $("path").removeClass("highlighted");
-    }(jQuery_2_1_1));
+    $("path").removeClass("highlighted");
   }
 
   function on_mouseover(e,feature) {
@@ -561,8 +558,8 @@ var jQuery_2_1_1 = $.noConflict(true);
       else if (v >= nb_breaks[0]) return '#ddfff6';
     }
     function category(v) {
-      if (active_unit == "N") return "0";
-      else if (v == null) return "#ccc";
+      //if (active_unit == "N") return "0";
+      if (v == null) return "#ccc";
       else if (v >= nb_breaks[3]) return "3";
       else if (v >= nb_breaks[2]) return "2";
       else if (v >= nb_breaks[1]) return "1";
