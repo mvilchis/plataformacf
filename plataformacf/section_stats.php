@@ -54,7 +54,13 @@
 				<div class="col-xs-3" id="f_1">
 					<div style="padding-bottom: 200px;float:right;"><img  width=147 height=25 src='img/promedio.png'/></div>
 					<div>
-					<button type="button" class="btn btn-primary mxbutton" type="button" onmousedown="exportToImage('line');" style="margin: 0px;bottom: 0;position: absolute;right: 0;">Exportar gráfica</button>
+						<select class="btn btn-primary mxbutton"  style="margin: 0px;bottom: 0;position: absolute;right: 0;" id="print-graph" onchange="exportToImage('line',this.value);">
+							<option selected hidden>Exportar gráfica</option>
+							<option  style="background-color:#DDDDDD; color:black;" value=1>formato png</option>
+							<option  style="background-color:#DDDDDD; color:black;" value=2>formato pdf</option>
+							<option  style="background-color:#DDDDDD; color:black;" value=4>formato svg</option>
+						</select>
+					<!-- button type="button" type="button" onmousedown="" ></button-->
 				</div>
 				</div>
 			</div>

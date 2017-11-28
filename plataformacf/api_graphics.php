@@ -217,7 +217,7 @@ var jQuery_2_1_1 = $.noConflict(true);
 
   //From graph to image:
   // Use global variables: 0
-  function exportToImage(i) {
+  function exportToImage(i, type_image) {
     (function ($) {
       $('#chart svg .c3-axis path').css('fill-opacity',0);
       $('#chart svg .c3-axis path').css('stroke','#ccc');
@@ -229,7 +229,22 @@ var jQuery_2_1_1 = $.noConflict(true);
     var svg = $("#chart svg")[0];
     var serializer = new XMLSerializer();
     var str = serializer.serializeToString(svg);
-    $.post("svg2pdf/svg2pdf", str)
+    var script_to_run = "svg2pdf/svg2pdf";
+    switch(type_image) {
+      case "1":
+        script_to_run="svg2pdf/svg2png";
+      break;
+      case "2":
+        script_to_run="svg2pdf/svg2pdf"
+      break;
+      case "3":
+        script_to_run="svg2pdf/svg2jpeg"
+      break;
+      case "4":
+        script_to_run="svg2pdf/svg"
+      break;
+   }
+    $.post(script_to_run, str)
       .done(function(data) {
         window.open(data);
         if (i == "line") {
