@@ -16,7 +16,7 @@ var jQuery_2_1_1 = $.noConflict(true);
   include('h_objetivos.php');
   $o_id=pg_escape_string($_GET["o"]);
   $i_id=pg_escape_string($_GET["i"]);
-  $result = file_get_contents("json/cf_metadata.json");
+  $result = file_get_contents("bucket/json/cf_metadata.json");
   $metadata = json_decode($result, true);
   $indicadores_id = array();
   foreach($metadata["results"] as $value) {
@@ -29,7 +29,7 @@ var jQuery_2_1_1 = $.noConflict(true);
     if (count($obj) < 1) unset($indicadores[$key]);
   }
 
-  $result = file_get_contents("json/cf_geo.json");
+  $result = file_get_contents("bucket/json/cf_geo.json");
   $metadata_desag = json_decode($result, true);
   $desagregacion = array();
   foreach($metadata_desag["results"] as $value) {
@@ -51,7 +51,7 @@ var jQuery_2_1_1 = $.noConflict(true);
     }
   }
 
-  $result = file_get_contents("json/cf_grupos.json");
+  $result = file_get_contents("bucket/json/cf_grupos.json");
   $metadata_grupos = json_decode($result, true);
   $grupos = array();
   foreach($metadata_grupos["results"] as $value) {
@@ -60,7 +60,7 @@ var jQuery_2_1_1 = $.noConflict(true);
     array_push($grupos[$value["id"]],$value);
   }
 
-  $result = file_get_contents("json/estado_cve.json");
+  $result = file_get_contents("bucket/json/estado_cve.json");
   $estados = json_decode($result, true);
 ?>
 <!--                END  READ DATA                            -->
@@ -161,7 +161,7 @@ var jQuery_2_1_1 = $.noConflict(true);
       (function ($) {
         var filters = {'Categoria':active_group,
                       'Agregacion':active_unit};
-        d3.csv("to_csv/raw_csv/"+active_indicador+".csv", function(csv) {
+        d3.csv("bucket/to_csv/raw_csv/"+active_indicador+".csv", function(csv) {
           csv = csv.filter(function(row) {
                   return ['Categoria','Agregacion'].reduce(
                           function(pass, column) {
@@ -411,7 +411,7 @@ var jQuery_2_1_1 = $.noConflict(true);
           $.ajax({
             async: false,
             type: 'GET',
-            url: 'json/partition/'+tmp_indicator+'.json',
+            url: 'bucket/json/partition/'+tmp_indicator+'.json',
             success: function(data) {
               // exists code
               set_active_indicador(tmp_indicator);
@@ -447,7 +447,7 @@ var jQuery_2_1_1 = $.noConflict(true);
           $.ajax({
             async: false,
             type: 'GET',
-            url: 'json/partition/'+active_indicador+'1.json',
+            url: 'bucket/json/partition/'+active_indicador+'1.json',
             error: function(data){
               var tmp = document.getElementsByClassName("check-slider")[0];
               tmp.style.backgroundColor= "#a3a3a3";
@@ -758,7 +758,7 @@ var jQuery_2_1_1 = $.noConflict(true);
     years = [];
     units = [];
     (function ($) {
-    $.getJSON('json/partition/'+active_indicador+'.json', {}, function (data) {
+    $.getJSON('bucket/json/partition/'+active_indicador+'.json', {}, function (data) {
       $.each(data, function(key, valor) {
         if (valor["t"] != "NA" && valor["DesGeo"] != "NA" && valor["cve"] != "NA") {
           // Month present
@@ -849,7 +849,7 @@ var jQuery_2_1_1 = $.noConflict(true);
               <td><span class='fformat'>CSV</span></td>\
               <td style='min-width:80px;'>\
               <center>\
-                <a target='_blank' href='to_csv/raw_csv/all_data.csv'>\
+                <a target='_blank' href='bucket/to_csv/raw_csv/all_data.csv'>\
                   <img width=35 height=36 src='img/icon-circle-arrow-right-gray.png' />\
                 </a>\
               </center>\

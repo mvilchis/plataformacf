@@ -1,6 +1,6 @@
 #! /bin/bash
 PATH_RAW="raw_data/Data.csv"
-PATH_OUTPUT="json/data_explanation.json"
+PATH_OUTPUT="bucket/json/data_explanation.json"
 
 #### INIT VARIABLES ####
 total_proyect=0

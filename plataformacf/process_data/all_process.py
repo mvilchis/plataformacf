@@ -3,12 +3,12 @@
 import json
 import ast
 import codecs
-with open('json/estado_cve.json') as data_file:
+with open('bucket/json/estado_cve.json') as data_file:
         estados = json.load(data_file)
 estados['0'] = {u'nombre':'No aplica', 'clave':'-'}
 
 #Indicadores is a list
-with open('json/cf_metadata.json') as data_file:
+with open('bucket/json/cf_metadata.json') as data_file:
         indicadores = json.load(data_file)
 #Transform to dict
 dic_indicadores = {}
@@ -16,7 +16,7 @@ for indicador in indicadores['results']:
     dic_indicadores[indicador['Clave']] = indicador
 
 allS = ""
-with open('to_csv/raw_csv/all', 'r') as f:
+with open('bucket/to_csv/raw_csv/all', 'r') as f:
   for line in f:
         if line.replace("\n",""):
             line_split = line.split(',')
@@ -38,6 +38,6 @@ with open('to_csv/raw_csv/all', 'r') as f:
             new_line += "Estatal" if line_split[6] == "E" else "Nacional"
             new_line += "\n"
             allS += new_line
-f = codecs.open('to_csv/raw_csv/tmp2', 'w', "utf-8")
+f = codecs.open('bucket/to_csv/raw_csv/tmp2', 'w', "utf-8")
 f.write(allS)
 f.close()
