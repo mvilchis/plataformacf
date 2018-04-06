@@ -1,6 +1,6 @@
 plataformacf/svg2pdf/tmp/*
 plataformacf/all_process.py
 plataformacf/create_all_csv.sh
-plataformacf/to_csv/raw_csv/all
+plataformacf/bucket/to_csv/raw_csv/all
 plataformacf/raw_data/
 
