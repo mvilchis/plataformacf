@@ -1,6 +1,6 @@
 #! /bin/bash
 PATH_RAW="raw_data/AcumuladoDonacion.csv"
-PATH_OUTPUT="json/partition/"
+PATH_OUTPUT="bucket/json/partition/"
 #INDICADORES=("i31" "i32" "i33" "i34" "i35" "i36" "i11" "i12" "i13" "i14" "i15" "i16" "i17" "i18" "i111" "i121" "i131" "i181" "i311" "i321" "i311" "i351" )
 #INDICADORES=("i111" "i121" "i131" "i181")
 INDICADORES=("i311" "i321" "i331" "i341" "i351" "i361" )

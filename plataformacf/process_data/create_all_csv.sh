@@ -7,4 +7,4 @@
 #
 
 #Create mega file
-for file in $(ls to_csv/raw_csv/*.csv); do  tail -n +2 $file >> to_csv/raw_csv/all; done
+for file in $(ls bucket/to_csv/raw_csv/*.csv); do  tail -n +2 $file >> bucket/to_csv/raw_csv/all; done
