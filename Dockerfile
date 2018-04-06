@@ -46,6 +46,13 @@ RUN rm /var/www/index.html
 RUN chown -R $USER:$USER /var/www/
 RUN chmod a+w /var/www -R
 
+RUN curl -L -O https://github.com/GoogleCloudPlatform/gcsfuse/releases/download/v0.23.0/gcsfuse_0.23.0_amd64.deb
+RUN dpkg --install gcsfuse_0.23.0_amd64.deb
+RUN chmod g+rw /dev/fuse
+RUN chgrp fuse /dev/fuse
+
+RUN mkdir /var/www/bucket
+
+
 EXPOSE 80 3306 22
 CMD exec supervisord -n
-
