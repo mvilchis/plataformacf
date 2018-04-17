@@ -28,8 +28,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.5/leaflet.js"></script>
   <script src="js/leaflet-search.min.js"></script>
   <script src="js/leaflet.easyPrint.js"></script>
-  <script src="bucket/json/nacion.json"></script>
-  <script src="bucket/json/entidad.json"></script>
+  <script src="https://storage.googleapis.com/db-crowdfunding/json/nacion.json"></script>
+  <script src="https://storage.googleapis.com/db-crowdfunding/json/entidad.json"></script>
 
 </head>
 <body>
@@ -58,7 +58,7 @@
     $o_id=pg_escape_string($_GET["o"]);
     $i_id=pg_escape_string($_GET["i"]);
 
-    $result = file_get_contents("bucket/json/cf_metadata.json");
+    $result = file_get_contents("https://storage.googleapis.com/db-crowdfunding/json/cf_metadata.json");
     $metadata = json_decode($result, true);
     $indicadores_id = array();
     foreach ($metadata["results"] as $value) {
@@ -73,7 +73,7 @@
         }
     }
 
-    $result = file_get_contents("bucket/json/cf_geo.json");
+    $result = file_get_contents("https://storage.googleapis.com/db-crowdfunding/json/cf_geo.json");
     $metadata_desag = json_decode($result, true);
     $desagregacion = array();
     foreach ($metadata_desag["results"] as $value) {
@@ -97,7 +97,7 @@
             }
         }
     }
-    $result = file_get_contents("bucket/json/cf_grupos.json");
+    $result = file_get_contents("https://storage.googleapis.com/db-crowdfunding/json/cf_grupos.json");
     $metadata_grupos = json_decode($result, true);
     $grupos = array();
     foreach ($metadata_grupos["results"] as $value) {

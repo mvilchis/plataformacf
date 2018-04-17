@@ -45,7 +45,7 @@
       <div class="col-sm-12 texto_parrafo " >
     <?php
     include('h_objetivos.php');
-    $result = file_get_contents("bucket/json/cf_metadata.json");
+    $result = file_get_contents("https://storage.googleapis.com/db-crowdfunding/json/cf_metadata.json");
     $metadata = json_decode($result, true);
     $indicadores_id = array();
     foreach($metadata["results"] as $value) {

@@ -15,7 +15,7 @@
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-navbar/dgm-navbar.html">
   <link rel="import" href="https://cdn.datos.gob.mx/bower_components/dgm-footer/dgm-footer.html">
   <script type="text/javascript" src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <script src="bucket/json/data_explanation.json"></script>
+  <script src="https://storage.googleapis.com/db-crowdfunding/json/data_explanation.json"></script>
 
 </head>
 <body>
@@ -95,7 +95,7 @@
       <?php
         // Read indicadores
         include('h_objetivos.php');
-        $result = file_get_contents("bucket/json/cf_metadata.json");
+        $result = file_get_contents("https://storage.googleapis.com/db-crowdfunding/json/cf_metadata.json");
         $metadata = json_decode($result, true);
         $indicadores_id = array();
         foreach ($metadata["results"] as $value) {
