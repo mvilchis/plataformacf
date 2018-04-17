@@ -12,6 +12,7 @@ var jQuery_2_1_1 = $.noConflict(true);
 <!-- plus a jQuery UI theme, here I use "flick" -->
 
 <!--                  READ DATA                             -->
+<?php header('Access-Control-Allow-Origin: *'); ?>
 <?php
   include('h_objetivos.php');
   $o_id=pg_escape_string($_GET["o"]);
